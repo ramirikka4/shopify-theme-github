@@ -54,6 +54,10 @@
     height: 10px;
     width: 10px;
   }
+
+  .author-name{
+    font-weight: 700;
+  }
 </style>
 
 <div class="testimonials-header">
@@ -83,7 +87,7 @@
           {%- endif -%}
         
           {%- if block.settings.title != blank -%}
-            {{ block.settings.title }}
+            <div class="author-name">{{ block.settings.title }}</div>
           {%- endif -%}
         </div>
       </div>
