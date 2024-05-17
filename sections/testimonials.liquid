@@ -1,4 +1,6 @@
-{{ 'testimonials.css' | asset_url | stylesheet_tag }}
+<style>
+  
+</style>
 
 {%- if section.settings.title != blank -%}
   <h2 class="image-with-text__heading inline-richtext h0">{{ section.settings.title }}</h2>
@@ -32,6 +34,9 @@
         draggable: true,
       },
       loop: true,
+      autoplay: {
+    delay: 5000,
+  },
     });
   });
 </script>
