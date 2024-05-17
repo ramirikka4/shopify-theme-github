@@ -130,11 +130,10 @@
     {%- endfor -%}
   </div>
   <div class="swiper-pagination"></div>
-</div>
-
-{%- if section.settings.review_button != blank -%}
+  {%- if section.settings.review_button != blank -%}
     <button class="review-button">{{ section.settings.review_button }}</button>
   {%- endif -%}
+</div>
 
 <script>
   addEventListener('DOMContentLoaded', (event) => {
