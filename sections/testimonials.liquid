@@ -1,5 +1,20 @@
 <style>
-  
+  .star-rating:empty {
+  --star-percent: calc(var(--star-rating) / 5 * 100%);
+  display: inline-block;
+  font-size: 16px;
+}
+
+.star-rating:before {
+  content: "\2605\2605\2605\2605\2605";
+  background: linear-gradient(
+    90deg,
+    #f1b824 var(--star-percent),
+    #e1e1e1 var(--star-percent)
+  );
+  background-clip: text;
+  color: transparent;
+}
 </style>
 
 {%- if section.settings.title != blank -%}
