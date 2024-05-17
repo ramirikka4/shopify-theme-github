@@ -7,30 +7,17 @@
   <div class="swiper-wrapper">
     {%- for block in section.blocks -%}
       <div class="swiper-slide testimonials" {{ block.shopify_attributes }}>
-        <div class="testimonial-image-container">
-          {%- if block.settings.image != blank -%}
-            {{
-              block.settings.image
-              | image_url: width: 600
-              | image_tag: height: 100, alt: block.settings.image.alt, preload: true
-            }}
-          {%- endif -%}
-        </div>
-        <div class="testimonial-author">
           {%- if block.settings.description != blank -%}
             <div class="testimonials_description">
               {{ block.settings.description -}}
             </div>
           {%- endif -%}
-          <div class="star-author_container">
             {%- if block.settings.star_rating != blank -%}
               <div class="star-rating" style="--star-rating: {{ block.settings.star_rating }};"></div>
             {%- endif -%}
             {%- if block.settings.title != blank -%}
               {{ block.settings.title }}
             {%- endif -%}
-          </div>
-        </div>
       </div>
     {%- endfor -%}
   </div>
