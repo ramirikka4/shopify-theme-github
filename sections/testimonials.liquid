@@ -4,6 +4,10 @@
     text-align: center;
   }
 
+  .header-line{
+    display: flex;
+  }
+
   .swiper-wrapper {
     padding-top: 20px;
     padding-bottom: 50px;
@@ -60,9 +64,11 @@
 
 <div class="testimonials-header">
   {%- if section.settings.title != blank -%}
-    <hr>
-    <h2 class="">{{ section.settings.title }}</h2>
-    <hr>
+    <div class="header-line"> 
+      <hr>
+      <h2 class="">{{ section.settings.title }}</h2>
+      <hr>
+    </div>
   {%- endif -%}
   
   {%- if section.settings.section_description != blank -%}
