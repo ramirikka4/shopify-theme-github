@@ -189,6 +189,14 @@
             "star_rating": "4",
             "title": "Maya Lisa"
           }
+        },
+        "button_JKbryA": {
+          "type": "button",
+          "settings": {
+            "button_label": "Button label",
+            "button_link": "https:\/\/google.com",
+            "button_style_secondary": false
+          }
         }
       },
       "block_order": [
@@ -197,7 +205,8 @@
         "title_KEffHG",
         "title_GGwPaU",
         "title_MC9WeQ",
-        "title_7tJgre"
+        "title_7tJgre",
+        "button_JKbryA"
       ],
       "settings": {
         "title": "OUR REVIEWS",
