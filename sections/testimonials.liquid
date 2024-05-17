@@ -1,6 +1,259 @@
-{% schema %}
-  {
-    "name": "Section name",
-    "settings": []
+<style>
+  #section-{{ section.id }} {
+    color: {{ section.settings.text_color }};
+    background: {{ section.settings.background }};
   }
+
+  #section-{{ section.id }} .flickity-page-dots .dot:not(.is-selected) {
+    border-color: {{section.settings.background | color_mix: section.settings.text_color, 85}};
+  }
+
+  .testimonials-section-container{
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+
+  .testimonials-section-header{
+    text-align: center;
+    max-width: 730px;
+    margin: 0 auto 25px;
+    padding: 0 15px;
+  }
+
+  .testimonial-qoutes-container{
+    display:flex;
+    justify-content: center;
+    padding-left: 15px;
+    padding-right: 15px;
+    text-align: center;
+  }
+
+  .testimonial-qoutes-container-inner img{
+    max-width: {{ section.settings.author_image }};
+    border-radius: 20px;
+    margin-top: 20px;
+  }
+
+  .testimonial-qoutes-container.flickity-enabled{
+    display: block;
+  }
+
+  .testimonial-qoutes-container-inner{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 500px;
+    width: calc(100% / {{ section.blocks.size }});
+    margin-left: 40px;
+    margin-right: 40px;
+    opacity: 0.2;
+    transition: opacity .25s cubic-bezier(.104,.204,.492,1);
+  }
+
+  .testimonial-qoutes-container-inner.is-selected{
+    opacity: 1;
+  }
+
+  .testimonial-opacity{
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    margin-left: 40px;
+    margin-right: 40px;
+    opacity: 1;
+  }
+
+  .testimonials-blockqoute{
+    font-size: {{section.settings.font_size}};
+    margin-bottom: 20px;
+  }
+
+  .testimonials-cite{
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 3px;
+  }
+
+  .SectionHeader__Heading{
+    color: white;
+    font-weight: 700;
+  }
+  .SectionHeader__Description{
+    line-height: 1.7;
+  }
+
+  .flickity-page-dots{
+    margin-top: 40px;
+  }
+
+  @media screen and (max-width: 640px) {
+    .testimonial-qoutes-container-inner{
+      opacity: 0;
+    }
+  }
+</style>
+
+{%- liquid
+  if section.blocks.size > 1
+    assign showslider = true
+  endif
+-%}
+
+<section
+  class="testimonials-section-container"
+  id="section-{{ section.id }}"
+>
+  <div class="testimonials-section-header">
+    <h2 class="SectionHeader__Heading Heading u-h1">{{ section.settings.title | escape }}</h2>
+    <div class="SectionHeader__Description Rte">
+      {{ section.settings.paragraph }}
+    </div>
+  </div>
+
+  {%- if section.blocks.size > 0 -%}
+    <div
+      class="testimonial-qoutes-container"
+      {% if showslider %}
+        data-flickity='{ "wrapAround": true, "prevNextButtons": false, "autoPlay": {{ section.settings.slider_auto_play_speed | times: 1000 }},  "pageDots": true, "percentPosition": false, "dragThreshold": 16 }'
+      {% endif %}
+    >
+      {%- for block in section.blocks -%}
+        <div
+          {% if showslider %}
+            class="testimonial-qoutes-container-inner"
+          {% else %}
+            class="testimonial-opacity"
+          {% endif %}
+        >
+          <div class="testimonials-blockqoute">
+            {%- if block.settings.quote != blank -%}
+              {{ block.settings.quote }}
+            {%- endif -%}
+          </div>
+
+          {%- if block.settings.author != blank -%}
+            <div class="testimonials-cite">
+              <a href="{{ block.settings.link }}">
+                {{ block.settings.author }}
+              </a>
+            </div>
+          {%- endif -%}
+
+          {%- if block.settings.author_image != blank -%}
+            {{
+              block.settings.author_image
+              | image_url: width: '160x160'
+              | image_tag: block.settings.author_image.alt, '160x160'
+            }}
+          {%- endif -%}
+        </div>
+      {%- endfor -%}
+    </div>
+  {%- endif -%}
+</section>
+
+{% schema %}
+{
+  "name": "Testimonials",
+  "max_blocks": 6,
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Heading",
+      "default": "Testimonials"
+    },
+    {
+      "type": "richtext",
+      "id": "paragraph",
+      "label": "Description"
+    },
+    {
+      "type": "select",
+      "id": "font_size",
+      "label": "Font size",
+      "default": "24px",
+      "options": [
+        {
+          "label": "Small",
+          "value": "20px"
+        },
+        {
+          "label": "Medium",
+          "value": "24px"
+        },
+        {
+          "label": "Large",
+          "value": "28px"
+        }
+      ]
+    },
+    {
+      "type": "checkbox",
+      "id": "autoplay",
+      "label": "Auto-rotate slides",
+      "default": true
+    },
+    {
+      "type": "range",
+      "id": "slider_auto_play_speed",
+      "min": 1,
+      "max": 10,
+      "step": 1,
+      "unit": "s",
+      "label": "Change slide every",
+      "default": 5
+    },
+    {
+      "type": "color",
+      "id": "background",
+      "label": "Background",
+      "default": "#103a3a"
+    },
+    {
+      "type": "color",
+      "id": "text_color",
+      "label": "Text",
+      "default": "#f6f6f0"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "quote",
+      "name": "Testimonial",
+      "settings": [
+        {
+          "type": "richtext",
+          "id": "quote",
+          "label": "Text",
+          "default": "<p>Add your customer or client quote here to showcase them.</p>"
+        },
+        {
+          "type": "text",
+          "id": "author",
+          "label": "Author",
+          "default": "Testimonial Author"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Testimonials",
+      "category": "Text",
+      "blocks": [
+        {
+          "type": "quote"
+        },
+        {
+          "type": "quote"
+        },
+        {
+          "type": "quote"
+        }
+      ]
+    }
+  ]
+}
 {% endschema %}
