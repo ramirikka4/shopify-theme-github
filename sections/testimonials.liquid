@@ -4,6 +4,10 @@
     text-align: center;
   }
 
+  .testimonials-header h2{
+    letter-spacing: 2px;
+  }
+
   .header-line{
     display: flex;
     align-items: center;
@@ -75,7 +79,7 @@
   {%- if section.settings.title != blank -%}
     <div class="header-line"> 
       <div class="line"></div>
-      <h2 class="">{{ section.settings.title }}</h2>
+      <h2>{{ section.settings.title }}</h2>
       <div class="line"></div>
     </div>
   {%- endif -%}
