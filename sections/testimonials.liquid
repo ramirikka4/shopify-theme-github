@@ -87,6 +87,10 @@
     font-weight: 700;
   }
 
+  .button-container{
+    display:flex;
+  }
+
   .review-button{
     
   }
@@ -130,10 +134,13 @@
     {%- endfor -%}
   </div>
   <div class="swiper-pagination"></div>
-  {%- if section.settings.review_button != blank -%}
-    <button class="review-button">{{ section.settings.review_button }}</button>
-  {%- endif -%}
 </div>
+
+{%- if section.settings.review_button != blank -%}
+  <div class="button-container">
+    <button class="review-button">{{ section.settings.review_button }}</button>
+  </div>
+  {%- endif -%}
 
 <script>
   addEventListener('DOMContentLoaded', (event) => {
