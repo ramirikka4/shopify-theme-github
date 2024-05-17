@@ -1,4 +1,12 @@
 <style>
+
+  .testimonials-header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-text: center;
+  }
+  
   .star-rating:empty {
   --star-percent: calc(var(--star-rating) / 5 * 100%);
   display: inline-block;
@@ -20,18 +28,22 @@
     width: 300px;
     background-color: #F4F4F4;
     border-radius: 10px;
-    display: display-flex;
+    display: flex;
     flex-direction: column;
+    justify-content: center;
   }
 </style>
 
-{%- if section.settings.title != blank -%}
-  <h2 class="">{{ section.settings.title }}</h2>
-{%- endif -%}
+<div class="testimonials-header">
+  {%- if section.settings.title != blank -%}
+    <h2 class="">{{ section.settings.title }}</h2>
+  {%- endif -%}
+  
+  {%- if section.settings.section_description != blank -%}
+    {{ section.settings.section_description }}
+  {%- endif -%}
+</div>
 
-{%- if section.settings.section_description != blank -%}
-  {{ section.settings.section_description }}
-{%- endif -%}
 
 <div class="swiper testimonials-slider">
   <div class="swiper-wrapper">
