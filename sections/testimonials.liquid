@@ -144,7 +144,7 @@
     role="link" aria-disabled="true"
     {% else %}
     href="{{ section.settings.button_link }}"
-    {% endif %} class="review-button">{{ section.settings.review_button }}</a>
+    {% endif %} class="button{% if section.settings.button_style_secondary %} button--secondary{% else %} button--primary{% endif %}">{{ section.settings.review_button }}</a>
   </div>
   {%- endif -%}
   
@@ -194,6 +194,12 @@
       "type": "url",
       "id": "button_link",
       "label": "Button link"
+    },
+    {
+      "type": "checkbox",
+      "id": "button_style_secondary",
+      "default": false,
+      "label": "t:sections.image-with-text.blocks.button.settings.outline_button.label"
     }
   ],
   "blocks": [
