@@ -201,7 +201,8 @@
       ],
       "settings": {
         "title": "OUR REVIEWS",
-        "section_description": "<p>Customer Satisfaction is Our Only Goal<\/p>"
+        "section_description": "<p>Customer Satisfaction is Our Only Goal<\/p>",
+        "review_button": "<p>Review us on Google<\/p>"
       }
     }
   },
