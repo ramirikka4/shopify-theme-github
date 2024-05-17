@@ -127,6 +127,11 @@
   </div>
   <div class="swiper-pagination"></div>
 </div>
+
+{%- if section.settings.review_button != blank -%}
+    <button>{{ section.settings.review_button }}</button>
+  {%- endif -%}
+
 <script>
   addEventListener('DOMContentLoaded', (event) => {
     var swiper = new Swiper('.testimonials-slider', {
@@ -163,6 +168,11 @@
       "type": "richtext",
       "id": "section_description",
       "label": "Section Description"
+    },
+    {
+      "type": "richtext",
+      "id": "review_button",
+      "label": "Button Text"
     }
   ],
   "blocks": [
