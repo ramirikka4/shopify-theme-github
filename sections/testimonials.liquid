@@ -64,18 +64,20 @@
       </div>
     {%- endfor -%}
   </div>
-  <div class="swiper-scrollbar"></div>
+  <div class="swiper-pagination"></div>
 </div>
 <script>
   addEventListener('DOMContentLoaded', (event) => {
     var swiper = new Swiper('.testimonials-slider', {
       scrollbar: {
-        el: '.swiper-scrollbar',
         draggable: true,
       },
       loop: true,
       autoplay: {
       delay: 5000,
+      },
+      pagination: {
+        el: ".swiper-pagination",
       },
     });
   });
