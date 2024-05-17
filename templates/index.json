@@ -165,12 +165,39 @@
             "star_rating": "3.5",
             "title": "TEST"
           }
+        },
+        "title_GGwPaU": {
+          "type": "title",
+          "settings": {
+            "description": "<p>This is a new testimonial<\/p><p>This is a new testimonial<\/p><p>This is a new testimonial<\/p>",
+            "star_rating": "4",
+            "title": "Test23"
+          }
+        },
+        "title_MC9WeQ": {
+          "type": "title",
+          "settings": {
+            "description": "<p>This is a new testimonial<\/p><p>This is a new testimonial<\/p><p>This is a new testimonial<\/p>",
+            "star_rating": "4",
+            "title": "Test23"
+          }
+        },
+        "title_7tJgre": {
+          "type": "title",
+          "settings": {
+            "description": "<p>This is a new testimonial<\/p><p>This is a new testimonial<\/p><p>This is a new testimonial<\/p>",
+            "star_rating": "4",
+            "title": "Test23"
+          }
         }
       },
       "block_order": [
         "title_QYfiXH",
         "title_VazUiY",
-        "title_KEffHG"
+        "title_KEffHG",
+        "title_GGwPaU",
+        "title_MC9WeQ",
+        "title_7tJgre"
       ],
       "settings": {
         "title": "OUR REVIEWS",
