@@ -86,6 +86,10 @@
   .author-name{
     font-weight: 700;
   }
+
+  .review-button{
+    
+  }
 </style>
 
 <div class="testimonials-header">
@@ -129,7 +133,7 @@
 </div>
 
 {%- if section.settings.review_button != blank -%}
-    <button>{{ section.settings.review_button }}</button>
+    <button class="review-button">{{ section.settings.review_button }}</button>
   {%- endif -%}
 
 <script>
