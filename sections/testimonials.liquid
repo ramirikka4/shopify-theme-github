@@ -141,9 +141,6 @@
 {%- if section.settings.review_button != blank -%}
   <div class="button-container">
     <button class="review-button">{{ section.settings.review_button }}</button>
-  </div>
-  {%- endif -%}
-
   {%- if section.block.settings.button_label != blank -%}
     <a
     {% if section.block.settings.button_link == blank %}
@@ -155,6 +152,9 @@
   {{ section.block.settings.button_label | escape }}
 </a>
 {%- endif -%}
+  </div>
+  {%- endif -%}
+
 
 <script>
   addEventListener('DOMContentLoaded', (event) => {
