@@ -151,9 +151,7 @@
     {% else %}
     href="{{ section.block.settings.button_link }}"
     {% endif %}
-    class="button{% if section.block.settings.button_style_secondary %} button--secondary{% else %} button--primary{% endif %}"
-    {{ section.block.shopify_attributes }}
-      >
+    class="button{% if section.block.settings.button_style_secondary %} button--secondary{% else %} button--primary{% endif %}">
   {{ section.block.settings.button_label | escape }}
 </a>
 {%- endif -%}
