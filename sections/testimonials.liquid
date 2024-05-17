@@ -8,6 +8,12 @@
     display: flex;
   }
 
+  .line {
+    flex-grow: 1;
+    height: 1px;
+    background-color: #000; /* Change color if needed */
+  }
+
   .swiper-wrapper {
     padding-top: 20px;
     padding-bottom: 50px;
@@ -65,9 +71,9 @@
 <div class="testimonials-header">
   {%- if section.settings.title != blank -%}
     <div class="header-line"> 
-      <hr>
+      <div class="line"></div>
       <h2 class="">{{ section.settings.title }}</h2>
-      <hr>
+      <div class="line"></div>
     </div>
   {%- endif -%}
   
