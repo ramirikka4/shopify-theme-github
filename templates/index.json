@@ -149,7 +149,8 @@
           "settings": {
             "description": "<p>Received a stunning arrangement for my birthday today! My sister said the team at the store was extremely helpful and pleasant!<\/p>",
             "star_rating": "3.5",
-            "title": "Lisa Prunty"
+            "title": "Lisa Prunty",
+            "font_size": "24px"
           }
         },
         "title_VazUiY": {
@@ -157,7 +158,8 @@
           "settings": {
             "description": "<p>I received an arrangement today from my husband for our anniversary! Just stunning! He mentioned they couldn’t have been more pleasant.<\/p>",
             "star_rating": "3.5",
-            "title": "Maya Lisa"
+            "title": "Maya Lisa",
+            "font_size": "24px"
           }
         },
         "title_KEffHG": {
@@ -165,7 +167,8 @@
           "settings": {
             "description": "<p>Received a stunning arrangement for my birthday today! My sister said the team at the store was extremely helpful and pleasant!<\/p>",
             "star_rating": "3.5",
-            "title": "Lisa Prunty"
+            "title": "Lisa Prunty",
+            "font_size": "24px"
           }
         },
         "title_GGwPaU": {
@@ -173,7 +176,8 @@
           "settings": {
             "description": "<p>Just got a beautiful bouquet for our anniversary! My husband mentioned how pleasant and helpful everyone was at the store!<\/p>",
             "star_rating": "4",
-            "title": "Carl Horlen"
+            "title": "Carl Horlen",
+            "font_size": "24px"
           }
         },
         "title_MC9WeQ": {
@@ -181,7 +185,8 @@
           "settings": {
             "description": "<p>Just got a beautiful bouquet for our anniversary! My husband mentioned how pleasant and helpful everyone was at the store!<\/p>",
             "star_rating": "4",
-            "title": "Carl Horlen"
+            "title": "Carl Horlen",
+            "font_size": "24px"
           }
         },
         "title_7tJgre": {
@@ -189,7 +194,8 @@
           "settings": {
             "description": "<p>I received an arrangement today from my husband for our anniversary! Just stunning! He mentioned they couldn’t have been more pleasant.<\/p>",
             "star_rating": "4",
-            "title": "Maya Lisa"
+            "title": "Maya Lisa",
+            "font_size": "24px"
           }
         }
       },
@@ -206,7 +212,10 @@
         "section_description": "<p>Customer Satisfaction is Our Only Goal<\/p>",
         "review_button": "<p>Review us on Google<\/p>",
         "button_link": "https:\/\/google.com",
-        "button_style_secondary": false
+        "button_style_secondary": false,
+        "background": "#efefef",
+        "text_color": "#1c1b1b",
+        "autoplay": false
       }
     },
     "social_media_images_weVgzh": {
