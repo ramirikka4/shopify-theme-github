@@ -50,21 +50,15 @@ slideshow-component .slideshow.banner {
   }
 
   .banner--mobile-bottom .slideshow__text.banner__box {
-    max-width: 54.5rem;
-    height: auto;
-  }
-  .slideshow.banner {
-    display: flex;
-    flex-direction: column;
-  }
-  .slideshow__text.banner__box {
-    max-width: 100%; /* or a specific width */
-    align-self: center; /* Ensures the box is centered if necessary */
+    max-width: 100%;
   }
 
   .banner--mobile-bottom .slideshow__text-wrapper {
-    flex-grow: 0;
-    width: auto;
+    flex-grow: 1;
+  }
+
+  .banner--mobile-bottom .slideshow__text.banner__box {
+    height: 100%;
   }
 
   .banner--mobile-bottom .slideshow__text .button {
