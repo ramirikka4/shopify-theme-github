@@ -30,8 +30,20 @@
 </style>
 
   <div class="social-media-image-header">
-    {%- if section.settings.title != blank -%}
-        <h2>{{ section.settings.title }}</h2>
+    
+     <div class="social-media-logo_container">
+        {%- if section.settings.social_media_logo != blank -%}
+            {{
+              section.settings.social_media_logo
+              | image_url: width: 600
+              | image_tag: height: 40, alt: section.settings.social_media_logo.alt, preload: true
+            }}
+        {%- else -%}
+      {{ 'logo' | placeholder_svg_tag: 'placeholder-svg' }}
+    {%- endif -%}
+       
+    {%- if section.settings.section_title != blank -%}
+        <h2>{{ section.settings.section_title }}</h2>
     {%- endif -%}
   </div>
 
@@ -60,8 +72,13 @@
   "class": "social-media-image-section shopify-section page-width",
   "settings": [
     {
+      "type": "image_picker",
+      "id": "social_media_logo",
+      "label": "Staff image"
+    },
+    {
       "type": "richtext",
-      "id": "section_description",
+      "id": "section_title",
       "label": "Follow us @bywildblooms on Instagram"
     }
   ],
