@@ -72,40 +72,13 @@
             "title": "Jenny Murtaugh",
             "description": "<p>Florist<\/p>"
           }
-        },
-        "title_hiqRYJ": {
-          "type": "title",
-          "settings": {
-            "staff_image": "shopify:\/\/shop_images\/Product4.jpg",
-            "title": "Jenny Murtaugh",
-            "description": "<p>Florist<\/p>"
-          }
-        },
-        "title_83hirA": {
-          "type": "title",
-          "settings": {
-            "staff_image": "shopify:\/\/shop_images\/Product4.jpg",
-            "title": "Jenny Murtaugh",
-            "description": "<p>Florist<\/p>"
-          }
-        },
-        "title_VjBJ4a": {
-          "type": "title",
-          "settings": {
-            "staff_image": "shopify:\/\/shop_images\/Product4.jpg",
-            "title": "Jenny Murtaugh",
-            "description": "<p>Florist<\/p>"
-          }
         }
       },
       "block_order": [
         "title_ebieRj",
         "title_VU4NmM",
         "title_Km8bg3",
-        "title_z9xtzL",
-        "title_hiqRYJ",
-        "title_83hirA",
-        "title_VjBJ4a"
+        "title_z9xtzL"
       ],
       "settings": {
         "title": "MEET THE TEAM",
