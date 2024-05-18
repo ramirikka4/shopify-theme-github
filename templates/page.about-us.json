@@ -88,6 +88,53 @@
         "button_style_secondary": false
       }
     },
+    "image_with_text_6VPEGH": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_CbKBNj": {
+          "type": "heading",
+          "settings": {
+            "heading": "<strong>Wild Blooms Floral Studio, <\/strong><em><strong>We Tell Stories With Flowers<\/strong><\/em>",
+            "heading_size": "h1"
+          }
+        },
+        "text_8M4aLd": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Our journey started with a vision of infusing modern aesthetics into our floral designs for our diverse clients, transcending traditional boundaries. Providing top-quality, stunning floral arrangements.<\/p>",
+            "text_style": "body"
+          }
+        },
+        "button_gPxDQH": {
+          "type": "button",
+          "settings": {
+            "button_label": "",
+            "button_link": "",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_CbKBNj",
+        "text_8M4aLd",
+        "button_gPxDQH"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/Hero_Event_-_Image_2.png",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "text_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "section_color_scheme": "",
+        "color_scheme": "",
+        "image_behavior": "none",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
     "logo_text_dPM8fd": {
       "type": "logo-text",
       "blocks": {
@@ -178,6 +225,7 @@
   "order": [
     "image_with_text_fehBXY",
     "personal_DxjXeB",
+    "image_with_text_6VPEGH",
     "logo_text_dPM8fd",
     "social_media_images_jGUARH"
   ]
