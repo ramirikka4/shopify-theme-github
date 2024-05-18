@@ -421,7 +421,7 @@
   .image-with-text__grid.grid.grid--gapless.grid--1-col.grid--2-col-tablet.image-with-text__grid--reverse {
     flex-direction: column-reverse;
   }
-  .image-with-text.section.page-width{
+  .image-with-text.section .page-width{
     padding: 0;
   }
 }
