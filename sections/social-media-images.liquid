@@ -33,7 +33,7 @@
       {%- if section.settings.social_media_logo != blank -%} 
         {{ section.settings.social_media_logo 
           | image_url: width: 600
-          | image_tag: height: 70, alt: section.settings.social_media_logo.alt, preload: true
+          | image_tag: height: 20, alt: section.settings.social_media_logo.alt, preload: true
         }} 
         {%- else -%} 
           {{ 
