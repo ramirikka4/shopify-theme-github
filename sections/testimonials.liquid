@@ -71,6 +71,8 @@
   
 <script>
   addEventListener('DOMContentLoaded', (event) => {
+    var autoplayEnabled = {{ section.settings.autoplay | json }};
+    
     var swiper = new Swiper('.testimonials-slider', {
       scrollbar: {
         draggable: true,
@@ -93,7 +95,16 @@
         0: {
           slidesPerView: 1,
         }
+      };
+
+      if (autoplayEnabled) {
+      swiperOptions.autoplay = {
+        delay: 4500,
+        disableOnInteraction: false,
+        };
       }
+    
+      var swiper = new Swiper('.testimonials-slider', swiperOptions);
     });
   });
 </script>
@@ -145,6 +156,12 @@
       "id": "text_color",
       "label": "Text",
       "default": "#1c1b1b"
+    },
+    {
+      "type": "checkbox",
+      "id": "autoplay",
+      "label": "Enable Autoplay",
+      "default": true
     }
   ],
   "blocks": [
