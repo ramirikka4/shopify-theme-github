@@ -1,6 +1,10 @@
 {{ 'testimonials.css' | asset_url | stylesheet_tag }}
 
 <style>
+  .testimonials-section{
+    padding: {{section.settings.section_padding}};
+  }
+  
   #section-{{ section.id }} {
     background: {{ section.settings.background }};
   }
@@ -156,6 +160,16 @@
       "id": "text_color",
       "label": "Text",
       "default": "#1c1b1b"
+    },
+    {
+      "type": "range",
+      "id": "section_padding",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "t:sections.all.padding.padding_top",
+      "default": 36
     },
     {
       "type": "checkbox",
