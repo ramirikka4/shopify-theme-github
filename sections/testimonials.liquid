@@ -1,12 +1,10 @@
 {{ 'testimonials.css' | asset_url | stylesheet_tag }}
 
 <style>
-  .testimonials-section{
-    padding: {{section.settings.section_padding}};
-  }
   
   #section-{{ section.id }} {
     background: {{ section.settings.background }};
+    padding: {{section.settings.section_padding}};
   }
   .testimonials-header h2{
     color: {{ section.settings.header_color }};
