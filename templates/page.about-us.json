@@ -87,10 +87,58 @@
         "button_link": "",
         "button_style_secondary": false
       }
+    },
+    "logo_text_dPM8fd": {
+      "type": "logo-text",
+      "blocks": {
+        "title_Pc7TEX": {
+          "type": "title",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Product4.jpg",
+            "title": "Always Fresh",
+            "description": "<p>We source only the freshest flowers from local farms.<\/p>"
+          }
+        },
+        "title_KCYrD7": {
+          "type": "title",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Product3.jpg",
+            "title": "Curated",
+            "description": "<p>Expertly Handpicked, Beautifully Arranged.<\/p>"
+          }
+        },
+        "title_eHCEKW": {
+          "type": "title",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Product2.jpg",
+            "title": "Quality",
+            "description": "<p>Expertly cared for to ensure premium quality.<\/p>"
+          }
+        },
+        "title_KECDjc": {
+          "type": "title",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Product1.jpg",
+            "title": "Honest",
+            "description": "<p>Always honest, ethical, and professional.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "title_Pc7TEX",
+        "title_KCYrD7",
+        "title_eHCEKW",
+        "title_KECDjc"
+      ],
+      "settings": {
+        "title": "WE PROMISE",
+        "description": "<p>Fresh flowers and guaranteed happiness every time!<\/p>"
+      }
     }
   },
   "order": [
     "image_with_text_fehBXY",
-    "personal_DxjXeB"
+    "personal_DxjXeB",
+    "logo_text_dPM8fd"
   ]
 }
