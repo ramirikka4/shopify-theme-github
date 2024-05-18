@@ -206,12 +206,52 @@
         "button_link": "https:\/\/google.com",
         "button_style_secondary": false
       }
+    },
+    "social_media_images_weVgzh": {
+      "type": "social-media-images",
+      "blocks": {
+        "title_4bNj7t": {
+          "type": "title",
+          "settings": {
+            "media_image": "shopify:\/\/shop_images\/Product4.jpg"
+          }
+        },
+        "title_B9tUD4": {
+          "type": "title",
+          "settings": {
+            "media_image": "shopify:\/\/shop_images\/Product4.jpg"
+          }
+        },
+        "title_kPj7cQ": {
+          "type": "title",
+          "settings": {
+            "media_image": "shopify:\/\/shop_images\/Product4.jpg"
+          }
+        },
+        "title_Ktw4HM": {
+          "type": "title",
+          "settings": {
+            "media_image": "shopify:\/\/shop_images\/Product4.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "title_4bNj7t",
+        "title_B9tUD4",
+        "title_kPj7cQ",
+        "title_Ktw4HM"
+      ],
+      "settings": {
+        "social_media_logo": "shopify:\/\/shop_images\/IG.png",
+        "section_title": "<p>Follow us<strong>@bywildblooms<\/strong>on Instagram<\/p>"
+      }
     }
   },
   "order": [
     "slideshow_zkBBUR",
     "featured_collection",
     "image_with_text_UGWEbh",
-    "testimonials_FQEfCp"
+    "testimonials_FQEfCp",
+    "social_media_images_weVgzh"
   ]
 }
