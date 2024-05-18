@@ -1,5 +1,17 @@
 {{ 'testimonials.css' | asset_url | stylesheet_tag }}
 
+<style>
+  #section-{{ section.id }} {
+    background: {{ section.settings.background }};
+  }
+  .testimonials-header h2{
+    color: {{ section.settings.header_color }};
+  }
+
+  .testimonials-header p{
+    color: {{ section.settings.header_color }};
+  }
+</style>
 <div id="section-{{ section.id }}">
   <div class="testimonials-header">
     {%- if section.settings.title != blank -%}
