@@ -30,4 +30,9 @@
     .section-title h2{
     font-size: 16px;
   }
+
+    .image-container img{
+      width: 150px;
+      height: 150px;
+    }
   }
