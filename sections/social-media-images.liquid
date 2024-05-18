@@ -35,8 +35,7 @@
 
 </style>
 
-  <div class="social-media-image-header">
-    
+  <div class="social-media-header">
      <div class="social-media-logo_container">
         {%- if section.settings.social_media_logo != blank -%}
             {{
@@ -45,9 +44,10 @@
               | image_tag: height: 40, alt: section.settings.social_media_logo.alt, preload: true
             }}
         {%- else -%}
-      {{ 'logo' | placeholder_svg_tag: 'placeholder-svg' }}
-    {%- endif -%}
-       <div/>
+            {{ 'logo' | placeholder_svg_tag: 'placeholder-svg' }}
+        {%- endif -%}
+      <div/>
+        
     {%- if section.settings.section_title != blank -%}
         <h2>{{ section.settings.section_title }}</h2>
     {%- endif -%}
@@ -56,7 +56,6 @@
   <div class="social-media-image-container">
     {%- for block in section.blocks -%}
       <div class="image-container" {{ block.shopify_attributes }}>
-          <div class="more-info-image_container">
           {%- if block.settings.media_image != blank -%}
             {{
               block.settings.media_image
@@ -66,7 +65,6 @@
           {%- else -%}
             {{ 'logo' | placeholder_svg_tag: 'placeholder-svg' }}
           {%- endif -%}
-        </div>
       </div>
     {%- endfor -%}
   </div>
