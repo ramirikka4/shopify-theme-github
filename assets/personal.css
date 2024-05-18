@@ -79,3 +79,13 @@
     justify-content: center;
     margin-top: 50px;
   }
+
+  @media only screen and (max-width: 48em) {
+  .personal-header h2{
+    font-size: 20px;
+  }
+
+  .personal-header p{
+    font-size: 16px;
+  }
+  }
