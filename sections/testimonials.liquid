@@ -95,10 +95,7 @@
   }
 
   @media only screen and (max-width: 48em) {
-    .swiper-wrapper {
-      display: flex;
-      justify-content: center;
-    }
+
   }
 </style>
 
@@ -175,6 +172,7 @@
         // when window width is < 768px (48em)
         0: {
           slidesPerView: 1,
+          centeredSlides: true, // Center the active slide
         }
       }
     });
