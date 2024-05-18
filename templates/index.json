@@ -7,6 +7,7 @@
           "type": "slide",
           "settings": {
             "image": "shopify:\/\/shop_images\/Slider_Image_-_1.jpg",
+            "secondsubheading": "WELCOME TO",
             "heading": "WILD BLOOMS",
             "heading_size": "h1",
             "subheading": "FLORAL & EVENTS",
@@ -25,6 +26,7 @@
           "type": "slide",
           "settings": {
             "image": "shopify:\/\/shop_images\/Product2.jpg",
+            "secondsubheading": "WELCOME TO",
             "heading": "WILD BLOOMS",
             "heading_size": "h1",
             "subheading": "FLORAL STUDIO",
