@@ -52,18 +52,18 @@
     </div>
     <div class="swiper-pagination"></div>
   </div>
+  {%- if section.settings.review_button != blank -%}
+    <div class="button-container">
+      <a {% if section.settings.button_link == blank %}
+      role="link" aria-disabled="true"
+      {% else %}
+      href="{{ section.settings.button_link }}"
+      {% endif %} class="button{% if section.settings.button_style_secondary %} button--secondary{% else %} button--primary{% endif %}">{{ section.settings.review_button }}</a>
+    </div>
+    {%- endif -%}
 </div>
 
 
-{%- if section.settings.review_button != blank -%}
-  <div class="button-container">
-    <a {% if section.settings.button_link == blank %}
-    role="link" aria-disabled="true"
-    {% else %}
-    href="{{ section.settings.button_link }}"
-    {% endif %} class="button{% if section.settings.button_style_secondary %} button--secondary{% else %} button--primary{% endif %}">{{ section.settings.review_button }}</a>
-  </div>
-  {%- endif -%}
   
 <script>
   addEventListener('DOMContentLoaded', (event) => {
