@@ -54,7 +54,12 @@ slideshow-component .slideshow.banner {
     height: auto;
   }
   .slideshow.banner {
+    display: flex;
     flex-direction: column;
+  }
+  .slideshow__text.banner__box {
+    max-width: 100%; /* or a specific width */
+    align-self: center; /* Ensures the box is centered if necessary */
   }
 
   .banner--mobile-bottom .slideshow__text-wrapper {
