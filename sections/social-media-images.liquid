@@ -31,7 +31,7 @@
             {{
               block.settings.media_image
               | image_url: width: 600
-              | image_tag: height: 160, alt: block.settings.media_image.alt, preload: true
+              | image_tag: height: 220, alt: block.settings.media_image.alt, preload: true
             }}
           {%- else -%}
             {{ 'logo' | placeholder_svg_tag: 'placeholder-svg' }}
