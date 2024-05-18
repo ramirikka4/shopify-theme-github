@@ -134,11 +134,50 @@
         "title": "WE PROMISE",
         "section_description": "<p>Fresh flowers and guaranteed happiness every time!<\/p>"
       }
+    },
+    "social_media_images_jGUARH": {
+      "type": "social-media-images",
+      "blocks": {
+        "title_wqGMBX": {
+          "type": "title",
+          "settings": {
+            "media_image": "shopify:\/\/shop_images\/Product4.jpg"
+          }
+        },
+        "title_3f9nWT": {
+          "type": "title",
+          "settings": {
+            "media_image": "shopify:\/\/shop_images\/Product4.jpg"
+          }
+        },
+        "title_4DjRRt": {
+          "type": "title",
+          "settings": {
+            "media_image": "shopify:\/\/shop_images\/Product4.jpg"
+          }
+        },
+        "title_xYpyCC": {
+          "type": "title",
+          "settings": {
+            "media_image": "shopify:\/\/shop_images\/Product4.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "title_wqGMBX",
+        "title_3f9nWT",
+        "title_4DjRRt",
+        "title_xYpyCC"
+      ],
+      "settings": {
+        "title": "Follow us @bywildblooms on Instagram"
+      }
     }
   },
   "order": [
     "image_with_text_fehBXY",
     "personal_DxjXeB",
-    "logo_text_dPM8fd"
+    "logo_text_dPM8fd",
+    "social_media_images_jGUARH"
   ]
 }
