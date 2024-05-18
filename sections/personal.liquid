@@ -44,7 +44,19 @@
   .staff-container {
     text-align: center;
   }
+
+  .staff-image-container {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    overflow: hidden;
+  }
   
+  .staff-image-container img {
+    width: 100%;
+    object-fit: cover;
+  }
+    
 </style>
 
   <div class="personal-header">
@@ -65,14 +77,15 @@
     {%- for block in section.blocks -%}
       <div class="staff-container" {{ block.shopify_attributes }}>
         <div class="staff">
-          {%- if block.settings.staff_image != blank -%}
-            {{
-              block.settings.staff_image
-              | image_url: width: '160x160'
-              | image_tag: block.settings.staff_image.alt, '160x160'
-            }}
-          {%- endif -%}
-          
+          <div class="staff-image-container"> 
+            {%- if block.settings.staff_image != blank -%}
+              {{
+                block.settings.staff_image
+                | image_url: width: '160x160'
+                | image_tag: block.settings.staff_image.alt, '160x160'
+              }}
+            {%- endif -%}
+          </div>
           {%- if block.settings.title != blank -%}
             <div class="staff-name">{{ block.settings.title }}</div>
           {%- endif -%}
