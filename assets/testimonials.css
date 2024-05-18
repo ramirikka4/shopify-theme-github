@@ -114,4 +114,9 @@
    .swiper-slide.testimonials.swiper-slide-next{
     opacity: 0.5;
     }
+
+    .swiper-slide.testimonials.swiper-slide-active {
+      justify-content: center;
+      display: flex;
+    }
   }

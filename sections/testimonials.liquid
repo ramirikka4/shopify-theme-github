@@ -61,7 +61,10 @@
       pagination: {
         el: ".swiper-pagination",
       },
-      
+      autoplay: {
+        delay: 4500,
+        disableOnInteraction: false,
+      },
       breakpoints: {
         // when window width is >= 768px (48em)
         768: {
@@ -70,7 +73,6 @@
         // when window width is < 768px (48em)
         0: {
           slidesPerView: 1,
-          centeredSlides: true,
         }
       }
     });
