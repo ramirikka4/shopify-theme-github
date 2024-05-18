@@ -47,15 +47,17 @@
   <div class="social-media-image-container">
     {%- for block in section.blocks -%}
       <div class="image-container" {{ block.shopify_attributes }}>
-          <div class="staff-image-container"> 
-            {%- if block.settings.staff_image != blank -%}
-              {{
-                block.settings.staff_image
-                | image_url: width: '160x160'
-                | image_tag: block.settings.staff_image.alt, '160x160'
-              }}
-            {%- endif -%}
-          </div>
+          <div class="more-info-image_container">
+          {%- if block.settings.image != blank -%}
+            {{
+              block.settings.image
+              | image_url: width: 600
+              | image_tag: height: 70, alt: block.settings.image.alt, preload: true
+            }}
+          {%- else -%}
+            {{ 'logo' | placeholder_svg_tag: 'placeholder-svg' }}
+          {%- endif -%}
+        </div>
       </div>
     {%- endfor -%}
   </div>
