@@ -53,6 +53,9 @@ slideshow-component .slideshow.banner {
     max-width: 54.5rem;
     height: auto;
   }
+  .slideshow.banner {
+    flex-direction: column;
+  }
 
   .banner--mobile-bottom .slideshow__text-wrapper {
     flex-grow: 0;
