@@ -30,6 +30,10 @@
     .section-title h2{
     font-size: 16px;
   }
+  
+  .social-media-image-container{
+    gap: 10px;
+  }
 
     .image-container img{
       width: 180px;
