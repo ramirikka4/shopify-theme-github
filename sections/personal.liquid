@@ -1,6 +1,135 @@
-{% schema %}
-  {
-    "name": "Section name",
-    "settings": []
+<style>
+  .testimonials-section{
+    padding-top: 36px;
+    padding-bottom: 36px;
   }
+  
+  .personal-header{
+    text-align: center;
+  }
+
+  .personal-header h2{
+    letter-spacing: 2px;
+    font-size: 30px;
+    font-family: Arial, sans-serif;
+  }
+
+  .personal-header p{
+    letter-spacing: 1px;
+    font-size: 18px;
+    font-family: Arial, sans-serif;
+    font-weight: 400;
+    color: #000000d4;
+  }
+
+  .header-line{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .line:empty {
+    flex-grow: 1;
+    height: 1px;
+    background-color: #ccc;
+    display: block;
+  }
+  
+</style>
+
+  <div class="personal-header">
+    {%- if section.settings.title != blank -%}
+      <div class="personal-line"> 
+        <div class="line"></div>
+        <h2>{{ section.settings.title }}</h2>
+        <div class="line"></div>
+      </div>
+    {%- endif -%}
+    
+    {%- if section.settings.section_description != blank -%}
+      {{ section.settings.section_description }}
+    {%- endif -%}
+  </div>
+
+  
+
+  {%- if section.settings.review_button != blank -%}
+  <div class="button-container">
+    <a {% if section.settings.button_link == blank %}
+    role="link" aria-disabled="true"
+    {% else %}
+    href="{{ section.settings.button_link }}"
+    {% endif %} class="button{% if section.settings.button_style_secondary %} button--secondary{% else %} button--primary{% endif %}">{{ section.settings.review_button }}</a>
+  </div>
+  {%- endif -%}
+
+{% schema %}
+{
+  "name": "Personal",
+  "tag": "section",
+  "class": "personal-section shopify-section page-width",
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Section Title",
+      "default": "MEET THE TEAM"
+    },
+    {
+      "type": "richtext",
+      "id": "section_description",
+      "label": "Section Description"
+    },
+    {
+      "type": "richtext",
+      "id": "join_button",
+      "label": "Button Label"
+    },
+    {
+      "type": "url",
+      "id": "button_link",
+      "label": "Button link"
+    },
+    {
+      "type": "checkbox",
+      "id": "button_style_secondary",
+      "default": false,
+      "label": "t:sections.image-with-text.blocks.button.settings.outline_button.label"
+    }
+  ],
+  "blocks": [
+    {
+      "name": "Testimonial",
+      "type": "title",
+      "settings": [
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Name"
+        },
+        {
+          "type": "richtext",
+          "id": "description",
+          "label": "Job Title"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Personal",
+      "blocks": [
+        {
+          "type": "title"
+        },
+        {
+          "type": "title"
+        },
+        {
+          "type": "title"
+        }
+      ]
+    }
+  ]
+}
 {% endschema %}
