@@ -213,7 +213,7 @@
         "review_button": "<p>Review us on Google<\/p>",
         "button_link": "https:\/\/google.com",
         "button_style_secondary": false,
-        "background": "#efefef",
+        "background": "#ffffff",
         "text_color": "#1c1b1b",
         "autoplay": false
       }
