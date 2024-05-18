@@ -67,13 +67,11 @@
     {%- endif -%}
 </div>
 
-
-  
 <script>
   addEventListener('DOMContentLoaded', (event) => {
     var autoplayEnabled = {{ section.settings.autoplay | json }};
     
-    var swiper = new Swiper('.testimonials-slider', {
+    var swiperOptions = {
       scrollbar: {
         draggable: true,
       },
@@ -90,19 +88,21 @@
         // when window width is < 768px (48em)
         0: {
           slidesPerView: 1,
-        },
-        
-      if (autoplayEnabled) {
-      autoplay: {
+        }
+      }
+    };
+    
+    if (autoplayEnabled) {
+      swiperOptions.autoplay = {
         delay: 4500,
         disableOnInteraction: false,
-        };
-      }
       };
-
-    });
+    }
+    
+    var swiper = new Swiper('.testimonials-slider', swiperOptions);
   });
 </script>
+
 
 {% schema %}
 {
