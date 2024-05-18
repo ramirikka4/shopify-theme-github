@@ -9,7 +9,7 @@
 
 @media screen and (min-width: 750px) {
   .image-with-text__grid--reverse {
-    flex-direction: column-reverse;
+    flex-direction: row-reverse;
   }
 }
 
@@ -419,6 +419,6 @@
 
 @media screen and (min-width: 750px) {
   .image-with-text.section.page-width{
-    padding: 0;
+    flex-direction: column-reverse;
   }
 }
