@@ -25,9 +25,9 @@
           "type": "slide",
           "settings": {
             "image": "shopify:\/\/shop_images\/Product2.jpg",
-            "heading": "Image slide",
+            "heading": "WILD BLOOMS",
             "heading_size": "h1",
-            "subheading": "Tell your brand's story through images",
+            "subheading": "FLORAL STUDIO",
             "button_label": "Shop Now",
             "link": "shopify:\/\/collections\/all",
             "button_style_secondary": false,
@@ -95,7 +95,7 @@
         "heading_chCbDb": {
           "type": "heading",
           "settings": {
-            "heading": "Creating Memorable Events with Elegance and Style",
+            "heading": "Creating Memorable Events <em>with Elegance and Style<\/em>",
             "heading_size": "h2"
           }
         },
