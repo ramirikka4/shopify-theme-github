@@ -57,6 +57,10 @@
     object-fit: cover;
   }
 
+  .staff-details{
+    margin-top: 10px;
+  }
+
   .button-container{
     display:flex;
     justify-content: center;
@@ -90,15 +94,18 @@
               }}
             {%- endif -%}
           </div>
-          {%- if block.settings.title != blank -%}
-            <div class="staff-name">{{ block.settings.title }}</div>
-          {%- endif -%}
 
-          {%- if block.settings.description != blank -%}
-            <div class="job_description">
-              {{ block.settings.description -}}
-            </div>
-          {%- endif -%}
+          <div class="staff-details"> 
+            {%- if block.settings.title != blank -%}
+              <div class="staff-name">{{ block.settings.title }}</div>
+            {%- endif -%}
+  
+            {%- if block.settings.description != blank -%}
+              <div class="job_description">
+                {{ block.settings.description -}}
+              </div>
+            {%- endif -%}
+          </div>
       </div>
     {%- endfor -%}
   </div>
