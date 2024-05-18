@@ -1,44 +1,47 @@
 {{ 'testimonials.css' | asset_url | stylesheet_tag }}
 
-<div class="testimonials-header">
-  {%- if section.settings.title != blank -%}
-    <div class="header-line"> 
-      <div class="line"></div>
-      <h2>{{ section.settings.title }}</h2>
-      <div class="line"></div>
-    </div>
-  {%- endif -%}
-  
-  {%- if section.settings.section_description != blank -%}
-    {{ section.settings.section_description }}
-  {%- endif -%}
-</div>
-
-
-<div class="swiper testimonials-slider">
-  <div class="swiper-wrapper">
-    {%- for block in section.blocks -%}
-      <div class="swiper-slide testimonials" {{ block.shopify_attributes }}>
-        <div class="testimonials-box">
-          {%- if block.settings.star_rating != blank -%}
-              <div class="star-rating" style="--star-rating: {{ block.settings.star_rating }};"></div>
-            {%- endif -%}
-        
-          {%- if block.settings.description != blank -%}
-            <div class="testimonials_description">
-              {{ block.settings.description -}}
-            </div>
-          {%- endif -%}
-        
-          {%- if block.settings.title != blank -%}
-            <div class="author-name">{{ block.settings.title }}</div>
-          {%- endif -%}
-        </div>
+<div id="section-{{ section.id }}">
+  <div class="testimonials-header">
+    {%- if section.settings.title != blank -%}
+      <div class="header-line"> 
+        <div class="line"></div>
+        <h2>{{ section.settings.title }}</h2>
+        <div class="line"></div>
       </div>
-    {%- endfor -%}
+    {%- endif -%}
+    
+    {%- if section.settings.section_description != blank -%}
+      {{ section.settings.section_description }}
+    {%- endif -%}
   </div>
-  <div class="swiper-pagination"></div>
+  
+  
+  <div class="swiper testimonials-slider">
+    <div class="swiper-wrapper">
+      {%- for block in section.blocks -%}
+        <div class="swiper-slide testimonials" {{ block.shopify_attributes }}>
+          <div class="testimonials-box">
+            {%- if block.settings.star_rating != blank -%}
+                <div class="star-rating" style="--star-rating: {{ block.settings.star_rating }};"></div>
+              {%- endif -%}
+          
+            {%- if block.settings.description != blank -%}
+              <div class="testimonials_description">
+                {{ block.settings.description -}}
+              </div>
+            {%- endif -%}
+          
+            {%- if block.settings.title != blank -%}
+              <div class="author-name">{{ block.settings.title }}</div>
+            {%- endif -%}
+          </div>
+        </div>
+      {%- endfor -%}
+    </div>
+    <div class="swiper-pagination"></div>
+  </div>
 </div>
+
 
 {%- if section.settings.review_button != blank -%}
   <div class="button-container">
@@ -114,6 +117,18 @@
       "id": "button_style_secondary",
       "default": false,
       "label": "t:sections.image-with-text.blocks.button.settings.outline_button.label"
+    },
+    {
+      "type": "color",
+      "id": "background",
+      "label": "Background",
+      "default": "#efefef"
+    },
+    {
+      "type": "color",
+      "id": "text_color",
+      "label": "Text",
+      "default": "#1c1b1b"
     }
   ],
   "blocks": [
