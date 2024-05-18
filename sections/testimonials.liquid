@@ -95,9 +95,7 @@
   }
 
   @media only screen and (max-width: 48em) {
-    .testimonials-box{
-    min-width: 600px;
-  }
+
   }
 </style>
 
@@ -158,7 +156,6 @@
         draggable: true,
       },
       loop: true,
-      slidesPerView: 3,
       spaceBetween: 30,
       pagination: {
         el: ".swiper-pagination",
@@ -167,6 +164,16 @@
         delay: 4500,
         disableOnInteraction: false,
       },
+      breakpoints: {
+        // when window width is >= 768px (48em)
+        768: {
+          slidesPerView: 3,
+        },
+        // when window width is < 768px (48em)
+        0: {
+          slidesPerView: 1,
+        }
+      }
     });
   });
 </script>
