@@ -36,9 +36,60 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
+    },
+    "personal_DxjXeB": {
+      "type": "personal",
+      "blocks": {
+        "title_ebieRj": {
+          "type": "title",
+          "settings": {
+            "staff_image": "shopify:\/\/shop_images\/Product4.jpg",
+            "title": "Jenny Murtaugh",
+            "description": "<p>Florist<\/p>"
+          }
+        },
+        "title_VU4NmM": {
+          "type": "title",
+          "settings": {
+            "staff_image": "shopify:\/\/shop_images\/Product4.jpg",
+            "title": "Jenny Murtaugh",
+            "description": "<p>Florist<\/p>"
+          }
+        },
+        "title_Km8bg3": {
+          "type": "title",
+          "settings": {
+            "staff_image": "shopify:\/\/shop_images\/Product4.jpg",
+            "title": "Jenny Murtaugh",
+            "description": "<p>Florist<\/p>"
+          }
+        },
+        "title_z9xtzL": {
+          "type": "title",
+          "settings": {
+            "staff_image": "shopify:\/\/shop_images\/Product4.jpg",
+            "title": "Jenny Murtaugh",
+            "description": "<p>Florist<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "title_ebieRj",
+        "title_VU4NmM",
+        "title_Km8bg3",
+        "title_z9xtzL"
+      ],
+      "settings": {
+        "title": "MEET THE TEAM",
+        "section_description": "<p>Explore our latest bouquets below<\/p>",
+        "join_button": "<p>JOIN THE TEAM<\/p>",
+        "button_link": "",
+        "button_style_secondary": false
+      }
     }
   },
   "order": [
-    "image_with_text_fehBXY"
+    "image_with_text_fehBXY",
+    "personal_DxjXeB"
   ]
 }
