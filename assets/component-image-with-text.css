@@ -419,6 +419,7 @@
 
 @media screen and (min-width: 750px) {
   .image-with-text{
+    display: flex;
     flex-direction: column-reverse;
   }
 }
