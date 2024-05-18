@@ -11,18 +11,6 @@
 </style>
 
   <div class="social-media-header">
-     <div class="social-media-logo_container">
-        {%- if section.settings.social_media_logo != blank -%}
-            {{
-              section.settings.social_media_logo
-              | image_url: width: "60x60"
-              | image_tag: section.settings.social_media_logo.alt, '60x60'
-            }}
-        {%- else -%}
-            {{ 'logo' | placeholder_svg_tag: 'placeholder-svg' }}
-        {%- endif -%}
-      <div/>
-
       <div class="section-title"> 
         {%- if section.settings.section_title != blank -%}
           <h2>{{ section.settings.section_title }}</h2>
