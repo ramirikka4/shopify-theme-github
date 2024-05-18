@@ -33,8 +33,8 @@
     <div class="social-media-logo_container"> 
       {%- if section.settings.social_media_logo != blank -%} 
         {{ section.settings.social_media_logo 
-          | image_url: width: "60x60" 
-          | image_tag: section.settings.social_media_logo.alt, '60x60' 
+          | image_url: width: 600
+          | image_tag: height: 70, alt: section.settings.social_media_logo.alt, preload: true
         }} 
         {%- else -%} 
           {{ 
