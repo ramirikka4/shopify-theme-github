@@ -1,5 +1,5 @@
 <style>
-  .personal-section{
+  .social-media-image-section{
     padding-top: 36px;
     padding-bottom: 36px;
   }
@@ -8,36 +8,13 @@
     text-align: center;
   }
 
-  .personal-header h2{
+  .social-media-image-header h2{
     letter-spacing: 2px;
     font-size: 30px;
     font-family: Arial, sans-serif;
   }
 
-  .personal-header p{
-    letter-spacing: 1px;
-    font-size: 18px;
-    font-family: Arial, sans-serif;
-    font-weight: 400;
-    color: #000000d4;
-    margin: 0;
-    padding: 0;
-  }
-
-  .personal-line{
-    display: flex;
-    align-items: center;
-    gap: 20px;
-  }
-
-  .line:empty {
-    flex-grow: 1;
-    height: 1px;
-    background-color: #ccc;
-    display: block;
-  }
-
-  .personal-container{
+  .social-media-image-container{
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -45,7 +22,7 @@
     margin-top: 60px;
   }
 
-  .staff-container {
+  .image-container {
     text-align: center;
   }
 
@@ -69,7 +46,7 @@
 
   <div class="social-media-image-container">
     {%- for block in section.blocks -%}
-      <div class="staff-container" {{ block.shopify_attributes }}>
+      <div class="image-container" {{ block.shopify_attributes }}>
           <div class="staff-image-container"> 
             {%- if block.settings.staff_image != blank -%}
               {{
