@@ -25,3 +25,9 @@
     gap: 20px;
     flex-wrap: wrap;
   }
+
+  @media only screen and (max-width: 48em) {
+    .section-title h2{
+    font-size: 16px;
+  }
+  }
