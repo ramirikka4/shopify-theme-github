@@ -7,7 +7,7 @@
           "type": "slide",
           "settings": {
             "image": "shopify:\/\/shop_images\/Slider_Image_-_1.jpg",
-            "heading": "WEST AVENUE",
+            "heading": "WILD BLOOMS",
             "heading_size": "h1",
             "subheading": "FLORAL & EVENTS",
             "button_label": "Shop Now",
@@ -203,7 +203,8 @@
         "title": "OUR REVIEWS",
         "section_description": "<p>Customer Satisfaction is Our Only Goal<\/p>",
         "review_button": "<p>Review us on Google<\/p>",
-        "button_link": "https:\/\/google.com"
+        "button_link": "https:\/\/google.com",
+        "button_style_secondary": false
       }
     }
   },
