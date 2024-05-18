@@ -1,0 +1,106 @@
+.testimonials-section{
+    padding-top: 36px;
+    padding-bottom: 36px;
+  }
+  
+  .testimonials-header{
+    text-align: center;
+  }
+
+  .testimonials-header h2{
+    letter-spacing: 2px;
+    font-size: 30px;
+    font-family: Arial, sans-serif;
+  }
+
+  .testimonials-header p{
+    letter-spacing: 1px;
+    font-size: 18px;
+    font-family: Arial, sans-serif;
+    font-weight: 400;
+    color: #000000d4;
+  }
+
+  .header-line{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .line:empty {
+    flex-grow: 1;
+    height: 1px;
+    background-color: #ccc;
+    display: block;
+  }
+
+  .swiper-wrapper {
+    padding-top: 20px;
+    padding-bottom: 50px;
+  }
+  
+  .star-rating:empty {
+  --star-percent: calc(var(--star-rating) / 5 * 100%);
+  display: inline-block;
+  font-size: 16px;
+  }
+
+  .star-rating:before {
+    content: "\2605\2605\2605\2605\2605";
+    background: linear-gradient(
+      90deg,
+      #f1b824 var(--star-percent),
+      #e1e1e1 var(--star-percent)
+    );
+    background-clip: text;
+    color: transparent;
+  }
+
+  .testimonials-box{
+    background-color: #F4F4F4;
+    border-radius: 10px;
+    max-width: 300px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 35px;
+    padding-left: 35px;
+    text-align: center;
+  }
+
+  .swiper-slide.testimonials,
+  .swiper-slide.testimonials.swiper-slide-active,
+  .swiper-slide.testimonials.swiper-slide-prev{
+    opacity: 0.5;
+  }
+
+  .swiper-slide.testimonials.swiper-slide-next{
+    opacity: 1;
+  }
+  
+  .swiper-pagination-bullet-active {
+    background: black;
+    height: 10px;
+    width: 10px;
+  }
+
+  .author-name{
+    font-weight: 700;
+  }
+
+  .button-container{
+    display:flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+
+  @media only screen and (max-width: 48em) {
+    .swiper-slide.testimonials,
+    .swiper-slide.testimonials.swiper-slide-active,
+    .swiper-slide.testimonials.swiper-slide-prev{
+      opacity: 1;
+    }
+
+   .swiper-slide.testimonials.swiper-slide-next{
+    opacity: 0.5;
+    }
+  }
