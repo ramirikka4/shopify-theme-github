@@ -66,16 +66,17 @@
   }
 </style>
 
-<div
-  class="more-info_container"
-  id="section-{{ section.id }}"
->
-  <div class="more-info_header_container">
+  <div class="more-info-header">
     {%- if section.settings.title != blank -%}
-      <h2 class="SectionHeader__Heading Heading u-h1">{{ section.settings.title }}</h2>
+      <div class="more-info-line"> 
+        <div class="line"></div>
+        <h2>{{ section.settings.title }}</h2>
+        <div class="line"></div>
+      </div>
     {%- endif -%}
-    {%- if section.settings.description != blank -%}
-      <div class="rte">{{ section.settings.description }}</div>
+    
+    {%- if section.settings.section_description != blank -%}
+      {{ section.settings.section_description }}
     {%- endif -%}
   </div>
 
@@ -102,13 +103,13 @@
       </div>
     {%- endfor -%}
   </div>
-</div>
+
 
 {% schema %}
 {
   "name": "More Info Section",
   "tag": "section",
-  "class": "shopify section",
+  "class": "more-info-section shopify-section page-width",
   "settings": [
     {
       "type": "text",
@@ -120,33 +121,6 @@
       "type": "richtext",
       "id": "description",
       "label": "Section Description"
-    },
-    {
-      "type": "range",
-      "id": "number_of_columns",
-      "label": "Number of columns",
-      "min": 1,
-      "max": 5,
-      "step": 1,
-      "default": 3
-    },
-    {
-      "type": "color",
-      "id": "background",
-      "label": "Background",
-      "default": "#efefef"
-    },
-    {
-      "type": "color",
-      "id": "header_color",
-      "label": "Header Color",
-      "default": "#3f7172"
-    },
-    {
-      "type": "color",
-      "id": "text_color",
-      "label": "Text",
-      "default": "#1c1b1b"
     }
   ],
   "blocks": [
@@ -177,6 +151,9 @@
     {
       "name": "More Info Section",
       "blocks": [
+        {
+          "type": "title"
+        },
         {
           "type": "title"
         },
