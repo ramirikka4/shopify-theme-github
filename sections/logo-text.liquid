@@ -1,68 +1,66 @@
 <style>
-  #section-{{ section.id }} {
-    background: {{ section.settings.background }};
+  .personal-section{
+    padding-top: 36px;
+    padding-bottom: 36px;
   }
-
-  .more-info_container p{
-    color: {{ section.settings.text_color }};
-  }
-
-  .more-info_container h2, .more-info_container h3{
-    color: {{ section.settings.header_color }};
-  }
-
-  .more-info_container {
-    display: flex;
-    flex-direction: column;
-   	align-items: center;
-    gap: 90px;
-  }
-
-  .more-info_header_container {
+  
+  .more-info-header{
     text-align: center;
   }
 
-  .more-info_header_container p{
-    max-width: 400px;
+  .more-info-header h2{
+    letter-spacing: 2px;
+    font-size: 30px;
+    font-family: Arial, sans-serif;
+  }
+
+  .more-info-header p{
+    letter-spacing: 1px;
+    font-size: 18px;
+    font-family: Arial, sans-serif;
+    font-weight: 400;
+    color: #000000d4;
+    margin: 0;
+    padding: 0;
+  }
+
+  .more-info-line{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .line:empty {
+    flex-grow: 1;
+    height: 1px;
+    background-color: #ccc;
+    display: block;
   }
 
   .more-info_items_container{
     display: flex;
-    align-items: center;
     justify-content: center;
-  	gap: 50px;
+    flex-wrap: wrap;
+    gap: 50px;
+    margin-top: 30px;
   }
 
-  .more-info_items{
-    width: calc(100% / {{ section.settings.number_of_columns }});
-  	text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  .more-info_items {
+    text-align: center;
   }
 
-  .more-info_items img{
-    height: 80px;
-    margin-bottom: 20px;
+  .staff-details{
+    margin-top: 20px;
   }
 
-  .more-info_items_description{
-    max-width: 400px;
+  .staff-name{
+    font-weight: 600;
+    color: #000000;
   }
 
-  @media screen and (max-width: 640px) {
-    .more-info_container {
-      padding-right: 20px;
-      padding-left: 20px;
-    }
-
-    .more-info_items_container {
-      flex-direction: column;
-    }
-
-    .more-info_items{
-    width: 100%;
-    }
+  .job_description p{
+    margin: 0;
+    padding: 0;
   }
 </style>
 
