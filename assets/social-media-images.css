@@ -1,0 +1,27 @@
+  .social-media-image-section{
+    padding-top: 36px;
+    padding-bottom: 36px;
+  }
+  
+ .social-media-header{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px
+ }
+
+  .social-media-logo_container{
+    height: 20px;
+  }
+
+  .section-title h2{
+    font-size: 20px;
+  }
+
+  .social-media-image-container{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
