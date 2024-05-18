@@ -49,16 +49,16 @@
     text-align: center;
   }
 
-  .staff-details{
+  .item-details{
     margin-top: 20px;
   }
 
-  .staff-name{
+  .item-title{
     font-weight: 600;
     color: #000000;
   }
 
-  .job_description p{
+  .more-info_items_description p{
     margin: 0;
     padding: 0;
   }
@@ -92,12 +92,14 @@
             {{ 'logo' | placeholder_svg_tag: 'placeholder-svg' }}
           {%- endif -%}
         </div>
-        {%- if block.settings.title != blank -%}
-          <h3 class="SectionHeader__SubHeading Heading u-h4">{{ block.settings.title }}</h3>
-        {%- endif -%}
-        {%- if block.settings.description != blank -%}
-          <div class="more-info_items_description">{{ block.settings.description }}</div>
-        {%- endif -%}
+        <div class="item-details"> 
+          {%- if block.settings.title != blank -%}
+            <h3 class="item-title">{{ block.settings.title }}</h3>
+          {%- endif -%}
+          {%- if block.settings.description != blank -%}
+            <div class="more-info_items_description">{{ block.settings.description }}</div>
+          {%- endif -%}
+        </div>
       </div>
     {%- endfor -%}
   </div>
