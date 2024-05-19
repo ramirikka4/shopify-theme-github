@@ -36,20 +36,6 @@
 </style>
 
 <div id="section-{{ section.id }}">
-  <div class="more-info-header">
-    {%- if section.settings.title != blank -%}
-      <div class="more-info-line"> 
-        <div class="line"></div>
-        <h2>{{ section.settings.title }}</h2>
-        <div class="line"></div>
-      </div>
-    {%- endif -%}
-    
-    {%- if section.settings.section_description != blank -%}
-      {{ section.settings.section_description }}
-    {%- endif -%}
-  </div>
-
   <div class="more-info_items_container">
     {%- for block in section.blocks -%}
       <div class="more-info_items" {{ block.shopify_attributes }}>
@@ -87,57 +73,6 @@
     "groups": ["header", "footer"]
   },
   "settings": [
-    {
-      "type": "text",
-      "id": "title",
-      "label": "Section Header",
-      "default": "This is the section header"
-    },
-    {
-      "type": "select",
-      "id": "header_font_size",
-      "label": "Font size",
-      "default": "30px",
-      "options": [
-        {
-          "label": "Small",
-          "value": "20px"
-        },
-        {
-          "label": "Medium",
-          "value": "25px"
-        },
-        {
-          "label": "Large",
-          "value": "30px"
-        }
-      ]
-    },
-    {
-      "type": "richtext",
-      "id": "section_description",
-      "label": "Section Description"
-    },
-    {
-      "type": "select",
-      "id": "sub_header_font_size",
-      "label": "Description Font size",
-      "default": "18px",
-      "options": [
-        {
-          "label": "Small",
-          "value": "16px"
-        },
-        {
-          "label": "Medium",
-          "value": "18px"
-        },
-        {
-          "label": "Large",
-          "value": "20px"
-        }
-      ]
-    },
     {
       "type": "color",
       "id": "background",
