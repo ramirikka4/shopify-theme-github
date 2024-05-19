@@ -41,7 +41,7 @@
     color: black;
   }
 
-  .contact-us-icons_container .item-details .item-title h2.item-title {
+  .h2.contact-us-item-title {
     margin-top: 10px;
   }
 
@@ -65,7 +65,7 @@
         </div>
         <div class="item-details"> 
           {%- if block.settings.title != blank -%}
-            <h2 class="item-title">{{ block.settings.title }}</h2>
+            <h2 class="contact-us-item-title">{{ block.settings.title }}</h2>
           {%- endif -%}
           {%- if block.settings.description != blank -%}
             <div class="contact-us-icons_description">{{ block.settings.description }}</div>
