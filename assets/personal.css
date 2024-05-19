@@ -41,13 +41,13 @@
 
   .staff-image-container {
     overflow: hidden;
-    max-height: 200px;
+    
   }
   
   .staff-image-container img {
     border-radius: 50%;
     width: 100%;
-    object-fit: cover;
+    object-fit: cover;max-height: 200px;
   }
 
   .staff-details{
