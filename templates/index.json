@@ -216,10 +216,10 @@
         "button_link": "https:\/\/google.com",
         "button_style_secondary": false,
         "background": "#ffffff",
-        "text_color": "#121212",
+        "text_color": "#4770db",
         "section_padding_y": 36,
         "section_padding_x": 0,
-        "autoplay": true
+        "autoplay": false
       }
     },
     "social_media_images_weVgzh": {
