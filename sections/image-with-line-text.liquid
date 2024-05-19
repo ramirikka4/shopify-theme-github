@@ -30,7 +30,29 @@
     </div>
 
     <div>
-      
+      {%- for block in section.blocks -%}
+      <div class="more-info_items" {{ block.shopify_attributes }}>
+        <div class="more-info-image_container">
+          {%- if block.settings.image != blank -%}
+            {{
+              block.settings.image
+              | image_url: width: 600
+              | image_tag: height: 70, alt: block.settings.image.alt, preload: true
+            }}
+          {%- else -%}
+            {{ 'logo' | placeholder_svg_tag: 'placeholder-svg' }}
+          {%- endif -%}
+        </div>
+        <div class="item-details"> 
+          {%- if block.settings.title != blank -%}
+            <div class="item-title">{{ block.settings.title }}</div>
+          {%- endif -%}
+          {%- if block.settings.description != blank -%}
+            <div class="more-info_items_description">{{ block.settings.description }}</div>
+          {%- endif -%}
+        </div>
+      </div>
+    {%- endfor -%}
     </div>
     
   </div>
@@ -137,50 +159,9 @@
   ],
   "blocks": [
     {
-      "name": "Testimonial",
+      "name": "Image",
       "type": "title",
       "settings": [
-        {
-          "type": "richtext",
-          "id": "description",
-          "label": "Testimonial text"
-        },
-        {
-          "type": "select",
-          "id": "star_rating",
-          "label": "Star Rating",
-          "options": [
-            {
-              "value": "",
-              "label": "None"
-            },
-            {
-              "value": "3",
-              "label": "3 out of 5"
-            },
-            {
-              "value": "3.5",
-              "label": "3.5 out of 5"
-            },
-            {
-              "value": "4",
-              "label": "4 out of 5"
-            },
-            {
-              "value": "4.5",
-              "label": "4.5 out of 5"
-            },
-            {
-              "value": "5",
-              "label": "5 out of 5"
-            }
-          ]
-        },
-        {
-          "type": "text",
-          "id": "title",
-          "label": "Author's name"
-        },
         {
           "type": "select",
           "id": "font_size",
@@ -206,14 +187,8 @@
   ],
   "presets": [
     {
-      "name": "Testimonial",
+      "name": "Image",
       "blocks": [
-        {
-          "type": "title"
-        },
-        {
-          "type": "title"
-        },
         {
           "type": "title"
         }
