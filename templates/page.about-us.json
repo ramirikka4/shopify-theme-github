@@ -6,7 +6,7 @@
         "heading_WAyYML": {
           "type": "heading",
           "settings": {
-            "heading": "About Us",
+            "heading": "<p>About Us<\/p>",
             "heading_size": "h0"
           }
         },
@@ -100,8 +100,8 @@
         "heading_CbKBNj": {
           "type": "heading",
           "settings": {
-            "heading": "Wild Blooms Floral Studio, <em><strong>We Tell Stories With Flowers<\/strong><\/em>",
-            "heading_size": "h1"
+            "heading": "<p>Wild Blooms Floral Studio,<\/p><p><em><strong>We Tell Stories With Flowers<\/strong><\/em><\/p>",
+            "heading_size": "h2"
           }
         },
         "text_8M4aLd": {
