@@ -1,5 +1,48 @@
 {{ 'personal.css' | asset_url | stylesheet_tag }}
 
+<style>
+  
+  #section-{{ section.id }} {
+    background: {{ section.settings.background }};
+    padding-top: {{ section.settings.section_padding_y }}px;
+    padding-bottom: {{ section.settings.section_padding_y }}px;
+    padding-left: {{ section.settings.section_padding_x }}px;
+    padding-right: {{ section.settings.section_padding_x }}px;
+  }
+  
+  .testimonials-header h2{
+    color: {{ section.settings.header_color }};
+    font-size: {{ section.settings.header_font_size }};
+  }
+
+  .testimonials-header p{
+    font-size: {{ section.settings.sub_header_font_size }};
+  }
+
+  .testimonials-header p{
+    color: {{ section.settings.header_color }};
+  }
+
+  .author-name{
+    font-size: {{ section.blocks.settings.font_size }};
+  }
+
+  .testimonials_description{
+    font-size: {{ section.blocks.settings.font_size }};
+  }
+
+  @media only screen and (max-width: 48em) {
+    .testimonials-header h2{
+      font-size: 20px;
+    }
+
+    .testimonials-header p{
+      font-size: 16px;
+    }
+  }
+
+</style>
+
 <div id="section-{{ section.id }}">
   <div class="personal-header">
     {%- if section.settings.title != blank -%}
@@ -129,6 +172,38 @@
       "id": "button_style_secondary",
       "default": false,
       "label": "t:sections.image-with-text.blocks.button.settings.outline_button.label"
+    },
+    {
+      "type": "color",
+      "id": "background",
+      "label": "Background",
+      "default": "#ffffff"
+    },
+    {
+      "type": "color",
+      "id": "text_color",
+      "label": "Text",
+      "default": "#1c1b1b"
+    },
+    {
+      "type": "range",
+      "id": "section_padding_y",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "Section Padding Top & Bottom",
+      "default": 36
+    },
+    {
+      "type": "range",
+      "id": "section_padding_x",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "Section Padding Left & Right",
+      "default": 20
     }
   ],
   "blocks": [
