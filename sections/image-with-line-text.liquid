@@ -50,9 +50,9 @@
     {%- for block in section.blocks -%}
       <div class="staff-container" {{ block.shopify_attributes }}>
           <div class="staff-image-container"> 
-            {%- if block.settings.staff_image != blank -%}
+            {%- if block.settings.line_image != blank -%}
               {{
-                block.settings.staff_image
+                block.settings.line_image
                 | image_url: width: '160x160'
                 | image_tag: block.settings.staff_image.alt, '160x160'
               }}
