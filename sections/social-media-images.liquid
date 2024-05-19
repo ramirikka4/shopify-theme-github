@@ -24,7 +24,7 @@
     font-size: {{ section.settings.font_size }};
   }
 </style>
-
+<div id="section-{{ section.id }}">
   <div class="social-media-header">
     <div class="social-media-logo_container"> 
       {%- if section.settings.social_media_logo != blank -%} 
@@ -60,6 +60,7 @@
       </div>
     {%- endfor -%}
   </div>
+</div>
 
 {% schema %}
 {
