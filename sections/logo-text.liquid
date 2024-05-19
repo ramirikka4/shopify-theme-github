@@ -36,19 +36,28 @@
 </style>
 
 <div id="section-{{ section.id }}">
-  <div class="more-info-header">
-    {%- if section.settings.title != blank -%}
-      <div class="more-info-line"> 
+  <div class="text-and-line-container"> 
         <div class="line"></div>
-        <h2>{{ section.settings.title }}</h2>
+          {%- if section.settings.sub_title != blank -%}
+                <div class="header-line"> 
+                  <h3>{{ section.settings.sub_title }}</h3>
+                </div>
+          {%- endif -%}
+          <div class="social-media-logo_container"> 
+            {%- if section.settings.social_media_logo != blank -%} 
+              {{ section.settings.social_media_logo 
+                | image_url: width: 600
+                | image_tag: height: 25, alt: section.settings.social_media_logo.alt, preload: true
+              }} 
+              {%- endif -%} 
+          </div>
+          {%- if section.settings.title != blank -%}
+            <div class="header-line"> 
+              <h3>{{ section.settings.title }}</h3>
+            </div>
+          {%- endif -%}
         <div class="line"></div>
-      </div>
-    {%- endif -%}
-    
-    {%- if section.settings.section_description != blank -%}
-      {{ section.settings.section_description }}
-    {%- endif -%}
-  </div>
+    </div>
 
   <div class="more-info_items_container">
     {%- for block in section.blocks -%}
