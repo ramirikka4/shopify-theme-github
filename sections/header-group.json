@@ -47,7 +47,7 @@
     "breadcrumb_6VWYUL": {
       "type": "breadcrumb",
       "settings": {
-        "breadcrumbs_home_icon_bool": true,
+        "breadcrumbs_home_icon_bool": false,
         "breadcrumb_delimeter": "angle_right",
         "breadcrumb_bg_color": "#ffffff",
         "breadcrumb_text_color": "#465076",
