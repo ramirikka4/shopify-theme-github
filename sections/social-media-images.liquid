@@ -1,5 +1,30 @@
 {{ 'social-media-images.css' | asset_url | stylesheet_tag }}
 
+<style>
+  #section-{{ section.id }} {
+    background: {{ section.settings.background }};
+    padding-top: {{ section.settings.section_padding_y }}px;
+    padding-bottom: {{ section.settings.section_padding_y }}px;
+    padding-left: {{ section.settings.section_padding_x }}px;
+    padding-right: {{ section.settings.section_padding_x }}px;
+  }
+  .testimonials-header h2{
+    color: {{ section.settings.header_color }};
+  }
+
+  .testimonials-header p{
+    color: {{ section.settings.header_color }};
+  }
+
+  .author-name{
+    font-size: {{ section.settings.font_size }};
+  }
+
+  .testimonials_description{
+    font-size: {{ section.settings.font_size }};
+  }
+</style>
+
   <div class="social-media-header">
     <div class="social-media-logo_container"> 
       {%- if section.settings.social_media_logo != blank -%} 
@@ -54,6 +79,58 @@
       "type": "richtext",
       "id": "section_title",
       "label": "Section Title"
+    },
+    {
+      "type": "select",
+      "id": "font_size",
+      "label": "Font size",
+      "default": "20px",
+      "options": [
+        {
+          "label": "Small",
+          "value": "16px"
+        },
+        {
+          "label": "Medium",
+          "value": "20px"
+        },
+        {
+          "label": "Large",
+          "value": "24px"
+        }
+      ]
+    },
+    {
+      "type": "color",
+      "id": "background",
+      "label": "Background",
+      "default": "#ffffff"
+    },
+    {
+      "type": "color",
+      "id": "text_color",
+      "label": "Text",
+      "default": "#1c1b1b"
+    },
+    {
+      "type": "range",
+      "id": "section_padding_y",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "Section Padding Top & Bottom",
+      "default": 36
+    },
+    {
+      "type": "range",
+      "id": "section_padding_x",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "Section Padding Left & Right",
+      "default": 20
     }
   ],
   "blocks": [
