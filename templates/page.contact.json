@@ -85,7 +85,7 @@
       ],
       "settings": {
         "background": "#ffffff",
-        "text_color": "#1c1b1b",
+        "text_color": "#000000",
         "section_padding_y": 36,
         "section_padding_x": 0
       }
