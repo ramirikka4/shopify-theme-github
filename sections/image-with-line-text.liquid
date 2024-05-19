@@ -61,7 +61,7 @@
           {%- if block.settings.image != blank -%}
             {{
               block.settings.image
-              | image_url: width: 600
+              | image_url: width: 1500
               | image_tag: height: 300, alt: block.settings.image.alt, preload: true
             }}
           {%- else -%}
