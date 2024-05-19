@@ -20,11 +20,11 @@
   }
 
   @media only screen and (max-width: 48em) {
-    .more-info-header h3{
+    .logo-text-container h3{
       font-size: 20px;
     }
   
-    .more-info-header p{
+    .logo-text-container p{
       font-size: 16px;
     }
   
@@ -46,7 +46,7 @@
   }
 
   .social-media-logo_container img{
-      max-height: 25px;
+      max-height: 50px;
   }
 
   .line:empty{
@@ -81,7 +81,7 @@
             {%- if section.settings.social_media_logo != blank -%} 
               {{ section.settings.social_media_logo 
                 | image_url: width: 600
-                | image_tag: height: 25, alt: section.settings.social_media_logo.alt, preload: true
+                | image_tag: height: 70, alt: section.settings.social_media_logo.alt, preload: true
               }} 
               {%- endif -%} 
           </div>
