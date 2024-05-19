@@ -3484,14 +3484,16 @@ h1, h2, h4, h5, .h0, .h1, .h2, .h3, .h4, .h5, .banner__text.rte {
   font-family: EditorsNote !important;
 }
 
-.personal-header h2{
-  font-family: EditorsNote !important;
-}
+
 
 @font-face { font-family: EditorsNoteItalic; src: url('https://cdn.shopify.com/s/files/1/0591/6370/5430/files/Editor_sNote-Italic.ttf?v=1716120810');}
 
 @font-face { font-family: GothamRounded; src: url('https://cdn.shopify.com/s/files/1/0591/6370/5430/files/Gotham-Rounded-Book.ttf?v=1716120810');}
 h3, h2.title.inline-richtext.h2 {
+  font-family: GothamRounded !important;
+}
+
+.personal-header h2{
   font-family: GothamRounded !important;
 }
 
