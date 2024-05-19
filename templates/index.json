@@ -294,7 +294,7 @@
         "text_color": "#121212",
         "section_padding_y": 36,
         "section_padding_x": 0,
-        "autoplay": false
+        "autoplay": true
       }
     },
     "social_media_images_weVgzh": {
