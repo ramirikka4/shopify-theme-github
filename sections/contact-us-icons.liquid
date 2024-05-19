@@ -1,17 +1,16 @@
 {{ 'logo-text.css' | asset_url | stylesheet_tag }}
 
 <style>
-  
   #section-{{ section.id }} {
     background: {{ section.settings.background }};
     padding-top: {{ section.settings.section_padding_y }}px;
     padding-bottom: {{ section.settings.section_padding_y }}px;
     padding-left: {{ section.settings.section_padding_x }}px;
     padding-right: {{ section.settings.section_padding_x }}px;
-    color: {{ section.settings.text_color}};
+    color: {{ section.settings.text_color }};
   }
   
-  .contact-us-icons_container{
+  .contact-us-icons_container {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -20,10 +19,9 @@
     text-align: center;
     align-items: center;
     align-content: center;
-    
   }
 
-  .contact-us-icons_items{
+  .contact-us-icons_items {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -32,24 +30,23 @@
     border-right: none;
   }
 
-  .contact-us-image_container img{
+  .contact-us-image_container img {
     max-height: 30px;
   }
 
-  .contact-us-icons_items.border{
-    border-right: 1px solid #7f7f7f59;
+  .contact-us-icons_items.border {
+    border-right: solid #7f7f7f59;
   }
 
   @media only screen and (max-width: 48em) {
-    
+    /* Add any necessary media queries here */
   }
-
 </style>
 
 <div id="section-{{ section.id }}">
   <div class="contact-us-icons_container">
     {%- for block in section.blocks -%}
-      <div class="contact-us-icons_items {% if section.settings.border %} border{% endif %}" {{ block.shopify_attributes }}>
+      <div class="contact-us-icons_items{% if section.settings.border %} border{% endif %}" {{ block.shopify_attributes }}>
         <div class="contact-us-image_container">
           {%- if block.settings.image != blank -%}
             {{
@@ -113,6 +110,12 @@
       "unit": "px",
       "label": "Section Padding Left & Right",
       "default": 0
+    },
+    {
+      "type": "checkbox",
+      "id": "border",
+      "label": "Toggle Border Right",
+      "default": false
     }
   ],
   "blocks": [
@@ -135,14 +138,7 @@
           "type": "richtext",
           "id": "description",
           "label": "Description"
-        },
-        {
-          "type": "checkbox",
-          "id": "border",
-          "label": "Border Right",
-          "default": false
         }
-
       ]
     }
   ],
