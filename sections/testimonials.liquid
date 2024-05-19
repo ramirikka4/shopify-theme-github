@@ -50,21 +50,26 @@
 
 <div id="section-{{ section.id }}">
   <div class="testimonials-header">
-    <div class="social-media-logo_container"> 
-      {%- if section.settings.social_media_logo != blank -%} 
-        {{ section.settings.social_media_logo 
-          | image_url: width: 600
-          | image_tag: height: 20, alt: section.settings.social_media_logo.alt, preload: true
-        }} 
-        {%- endif -%} 
-    </div>
-    {%- if section.settings.title != blank -%}
-      <div class="header-line"> 
         <div class="line"></div>
-        <h3>{{ section.settings.title }}</h3>
+          {%- if section.settings.title != blank -%}
+                <div class="header-line"> 
+                  <h3>{{ section.settings.title }}</h3>
+                </div>
+          {%- endif -%}
+          <div class="social-media-logo_container"> 
+            {%- if section.settings.social_media_logo != blank -%} 
+              {{ section.settings.social_media_logo 
+                | image_url: width: 600
+                | image_tag: height: 20, alt: section.settings.social_media_logo.alt, preload: true
+              }} 
+              {%- endif -%} 
+          {%- if section.settings.title != blank -%}
+            <div class="header-line"> 
+              <h3>{{ section.settings.title }}</h3>
+            </div>
+          {%- endif -%}
+          </div>
         <div class="line"></div>
-      </div>
-    {%- endif -%}
     
     {%- if section.settings.section_description != blank -%}
       {{ section.settings.section_description }}
