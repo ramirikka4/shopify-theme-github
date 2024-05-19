@@ -97,7 +97,7 @@
         "heading_chCbDb": {
           "type": "heading",
           "settings": {
-            "heading": "<p>Creating Memorable Events <\/p><p><em><strong>with Elegance and Style<\/strong><\/em><\/p>",
+            "heading": "<p>Creating Memorable Events<\/p><p><em><strong>with Elegance and Style<\/strong><\/em><\/p>",
             "heading_size": "h2"
           }
         },
@@ -175,7 +175,7 @@
         "heading_GpfdYK": {
           "type": "heading",
           "settings": {
-            "heading": "<p>Receive fresh flowers with our floral subscription<\/p>",
+            "heading": "<p>Receive fresh flowers<\/p><p><em>with our floral subscription<\/em><\/p>",
             "heading_size": "h2"
           }
         },
