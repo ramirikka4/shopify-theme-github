@@ -50,39 +50,26 @@
     "image_with_line_text_HXjKgA": {
       "type": "image-with-line-text",
       "blocks": {
-        "heading_4YKR3f": {
-          "type": "heading",
+        "title_gKeJbW": {
+          "type": "title",
           "settings": {
-            "heading": "BIRTHDAYS",
-            "heading_size": "h2"
-          }
-        },
-        "text_Ucjj3c": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Welcome the little one with charming and delightful floral arrangements, perfect for celebrating this special moment.<\/p>",
-            "text_style": "body"
+            "image": "shopify:\/\/shop_images\/Image_1.jpg",
+            "font_size": "20px"
           }
         }
       },
       "block_order": [
-        "heading_4YKR3f",
-        "text_Ucjj3c"
+        "title_gKeJbW"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/Product4.jpg",
-        "height": "small",
-        "desktop_image_width": "small",
-        "layout": "text_first",
-        "desktop_content_position": "middle",
-        "desktop_content_alignment": "center",
-        "content_layout": "no-overlap",
-        "section_color_scheme": "",
-        "color_scheme": "",
-        "image_behavior": "none",
-        "mobile_content_alignment": "center",
-        "padding_top": 36,
-        "padding_bottom": 36
+        "title": "OUR REVIEWS",
+        "header_font_size": "30px",
+        "section_description": "<p>Hello<\/p>",
+        "sub_header_font_size": "18px",
+        "background": "#ffffff",
+        "text_color": "#1c1b1b",
+        "section_padding_y": 36,
+        "section_padding_x": 0
       }
     },
     "image_with_text_KBtgcF": {
@@ -134,40 +121,15 @@
     },
     "image_with_line_text_rddRQc": {
       "type": "image-with-line-text",
-      "blocks": {
-        "heading_cjp9hr": {
-          "type": "heading",
-          "settings": {
-            "heading": "BIRTHDAYS",
-            "heading_size": "h2"
-          }
-        },
-        "text_mkpkGa": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Welcome the little one with charming and delightful floral arrangements, perfect for celebrating this special moment.<\/p>",
-            "text_style": "body"
-          }
-        }
-      },
-      "block_order": [
-        "heading_cjp9hr",
-        "text_mkpkGa"
-      ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/Product4.jpg",
-        "height": "medium",
-        "desktop_image_width": "medium",
-        "layout": "image_first",
-        "desktop_content_position": "middle",
-        "desktop_content_alignment": "center",
-        "content_layout": "no-overlap",
-        "section_color_scheme": "",
-        "color_scheme": "",
-        "image_behavior": "none",
-        "mobile_content_alignment": "center",
-        "padding_top": 36,
-        "padding_bottom": 36
+        "title": "OUR REVIEWS",
+        "header_font_size": "30px",
+        "section_description": "",
+        "sub_header_font_size": "18px",
+        "background": "#ffffff",
+        "text_color": "#1c1b1b",
+        "section_padding_y": 36,
+        "section_padding_x": 0
       }
     },
     "social_media_images_dx3YBx": {
