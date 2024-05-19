@@ -34,7 +34,7 @@
     max-height: 30px;
   }
 
-  .contact-us-icons_items.border-right{
+  .contact-us-icons_items.border{
     border-right: 1px solid #7f7f7f59;
   }
 
@@ -47,7 +47,7 @@
 <div id="section-{{ section.id }}">
   <div class="contact-us-icons_container">
     {%- for block in section.blocks -%}
-      <div class="contact-us-icons_items {% if section.settings.reverse_layout %} border-right{% endif %}" {{ block.shopify_attributes }}>
+      <div class="contact-us-icons_items {% if section.settings.border %} border{% endif %}" {{ block.shopify_attributes }}>
         <div class="contact-us-image_container">
           {%- if block.settings.image != blank -%}
             {{
