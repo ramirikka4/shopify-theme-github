@@ -33,9 +33,6 @@
     }
   }
 
-  
-  
-
   .logo-text-container{
     display: flex;
     flex-direction: row;
@@ -45,7 +42,7 @@
     gap: 10px;
   }
 
-  .social-media-logo_container img{
+  .logo-text-logo_container img{
       max-height: 50px;
   }
 
@@ -77,7 +74,7 @@
 <div id="section-{{ section.id }}">
   <div class="logo-text-container"> 
         <div class="line"></div>
-          <div class="social-media-logo_container"> 
+          <div class="logo-text-logo_container"> 
             {%- if section.settings.social_media_logo != blank -%} 
               {{ section.settings.social_media_logo 
                 | image_url: width: 600
