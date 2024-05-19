@@ -36,10 +36,10 @@
 </style>
 
 <div id="section-{{ section.id }}">
-  <div class="more-info_items_container">
+  <div class="contact-us-icons_container">
     {%- for block in section.blocks -%}
-      <div class="more-info_items" {{ block.shopify_attributes }}>
-        <div class="more-info-image_container">
+      <div class="contact-us-icons_items" {{ block.shopify_attributes }}>
+        <div class="contact-us-image_container">
           {%- if block.settings.image != blank -%}
             {{
               block.settings.image
@@ -55,7 +55,7 @@
             <div class="item-title">{{ block.settings.title }}</div>
           {%- endif -%}
           {%- if block.settings.description != blank -%}
-            <div class="more-info_items_description">{{ block.settings.description }}</div>
+            <div class="contact-us-icons_description">{{ block.settings.description }}</div>
           {%- endif -%}
         </div>
       </div>
