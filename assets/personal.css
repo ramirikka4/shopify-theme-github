@@ -41,6 +41,7 @@
 
   .staff-image-container {
     overflow: hidden;
+    max-height: 200px;
   }
   
   .staff-image-container img {
