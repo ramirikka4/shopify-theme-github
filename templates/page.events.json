@@ -119,7 +119,7 @@
       "settings": {
         "image": "shopify:\/\/shop_images\/Events_Collage_Image.png",
         "height": "small",
-        "desktop_image_width": "medium",
+        "desktop_image_width": "small",
         "layout": "text_first",
         "desktop_content_position": "middle",
         "desktop_content_alignment": "left",
