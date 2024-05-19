@@ -28,6 +28,10 @@
     max-height: 50px;
   }
 
+  .contact-us-icons_items.border-right{
+    border-right: solid 1px black;
+  }
+
   @media only screen and (max-width: 48em) {
     
   }
@@ -37,7 +41,7 @@
 <div id="section-{{ section.id }}">
   <div class="contact-us-icons_container">
     {%- for block in section.blocks -%}
-      <div class="contact-us-icons_items" {{ block.shopify_attributes }}>
+      <div class="contact-us-icons_items {% if section.settings.reverse_layout %} border-right{% endif %}" {{ block.shopify_attributes }}>
         <div class="contact-us-image_container">
           {%- if block.settings.image != blank -%}
             {{
@@ -125,7 +129,14 @@
           "type": "richtext",
           "id": "description",
           "label": "Description"
+        },
+        {
+          "type": "checkbox",
+          "id": "border-right",
+          "label": "Border-right",
+          "default": false
         }
+
       ]
     }
   ],
