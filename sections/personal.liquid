@@ -53,7 +53,7 @@
             {%- if block.settings.staff_image != blank -%}
               {{
                 block.settings.staff_image
-                | image_url: width: 1500
+                | image_url: width: 700
                 | image_tag: height: 230, alt: block.settings.staff_image.alt, preload: true
               }}
             {%- endif -%}
