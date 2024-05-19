@@ -50,6 +50,7 @@
 
 <div id="section-{{ section.id }}">
   <div class="testimonials-header">
+    <div> 
         <div class="line"></div>
           {%- if section.settings.sub_title != blank -%}
                 <div class="header-line"> 
@@ -70,7 +71,7 @@
           {%- endif -%}
           </div>
         <div class="line"></div>
-    
+    </div>
     {%- if section.settings.section_description != blank -%}
       {{ section.settings.section_description }}
     {%- endif -%}
