@@ -3463,8 +3463,6 @@ details-disclosure > details {
     z-index: 1;
     overflow: hidden;
     text-align: center;
-    color: #3267EA;
-    font-family: Arial, sans-serif;
 }
 .inline-richtext.h2.scroll-trigger.animate--slide-in:before, 
 .inline-richtext.h2.scroll-trigger.animate--slide-in:after {
@@ -3482,13 +3480,7 @@ details-disclosure > details {
     text-align: right;
 }
 
-@font-face {
-font-family: "EditorsNote";
-src: url("EditorsNote-Regular.woff2") format("woff2"),
-url("EditorsNote-Regular.woff") format("woff");
-}
-
-h1, h2, h3, h0 { font-family: "EditorsNote"!important; }
+@font-face { font-family: EditorsNote; src: url('https://cdn.shopify.com/s/files/1/0591/6370/5430/files/Editor_sNote-Regular.ttf?v=1716120810');}
 
 
 
