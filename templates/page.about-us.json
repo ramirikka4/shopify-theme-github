@@ -23,7 +23,7 @@
         "text_iULLxH"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/Slider_Image_-_1.jpg",
+        "image": "shopify:\/\/shop_images\/About_Header_Image.jpg",
         "height": "adapt",
         "desktop_image_width": "medium",
         "layout": "text_first",
@@ -34,8 +34,8 @@
         "color_scheme": "scheme-2",
         "image_behavior": "none",
         "mobile_content_alignment": "left",
-        "padding_top": 36,
-        "padding_bottom": 36
+        "padding_top": 0,
+        "padding_bottom": 0
       }
     },
     "personal_DxjXeB": {
@@ -44,7 +44,7 @@
         "title_ebieRj": {
           "type": "title",
           "settings": {
-            "staff_image": "shopify:\/\/shop_images\/Product1.jpg",
+            "staff_image": "shopify:\/\/shop_images\/Team_1.jpg",
             "title": "Jenny Murtaugh",
             "description": "<p>Florist<\/p>"
           }
@@ -52,7 +52,7 @@
         "title_VU4NmM": {
           "type": "title",
           "settings": {
-            "staff_image": "shopify:\/\/shop_images\/Product3.jpg",
+            "staff_image": "shopify:\/\/shop_images\/Team_2.jpg",
             "title": "Jenny Murtaugh",
             "description": "<p>Florist<\/p>"
           }
@@ -60,7 +60,7 @@
         "title_Km8bg3": {
           "type": "title",
           "settings": {
-            "staff_image": "shopify:\/\/shop_images\/Product4.jpg",
+            "staff_image": "shopify:\/\/shop_images\/Team_4.jpg",
             "title": "Jenny Murtaugh",
             "description": "<p>Florist<\/p>"
           }
@@ -68,7 +68,7 @@
         "title_z9xtzL": {
           "type": "title",
           "settings": {
-            "staff_image": "shopify:\/\/shop_images\/Product2.jpg",
+            "staff_image": "shopify:\/\/shop_images\/Team_3.jpg",
             "title": "Jenny Murtaugh",
             "description": "<p>Florist<\/p>"
           }
@@ -126,7 +126,7 @@
         "button_gPxDQH"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/Hero_Event_-_Image_2.png",
+        "image": "shopify:\/\/shop_images\/About_Collage_Images.jpg",
         "height": "adapt",
         "desktop_image_width": "medium",
         "layout": "text_first",
@@ -147,7 +147,7 @@
         "title_Pc7TEX": {
           "type": "title",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Product4.jpg",
+            "image": "shopify:\/\/shop_images\/Icon_1.jpg",
             "title": "Always Fresh",
             "description": "<p>We source only the freshest flowers from local farms.<\/p>"
           }
@@ -155,7 +155,7 @@
         "title_KCYrD7": {
           "type": "title",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Product3.jpg",
+            "image": "shopify:\/\/shop_images\/Icon_2.jpg",
             "title": "Curated",
             "description": "<p>Expertly Handpicked, Beautifully Arranged.<\/p>"
           }
@@ -163,7 +163,7 @@
         "title_eHCEKW": {
           "type": "title",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Product2.jpg",
+            "image": "shopify:\/\/shop_images\/Icon_3.jpg",
             "title": "Quality",
             "description": "<p>Expertly cared for to ensure premium quality.<\/p>"
           }
@@ -171,7 +171,7 @@
         "title_KECDjc": {
           "type": "title",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Product1.jpg",
+            "image": "shopify:\/\/shop_images\/Icon_4.jpg",
             "title": "Honest",
             "description": "<p>Always honest, ethical, and professional.<\/p>"
           }
@@ -200,25 +200,25 @@
         "title_wqGMBX": {
           "type": "title",
           "settings": {
-            "media_image": "shopify:\/\/shop_images\/Product4.jpg"
+            "media_image": "shopify:\/\/shop_images\/1.png"
           }
         },
         "title_3f9nWT": {
           "type": "title",
           "settings": {
-            "media_image": "shopify:\/\/shop_images\/Product4.jpg"
+            "media_image": "shopify:\/\/shop_images\/3.png"
           }
         },
         "title_4DjRRt": {
           "type": "title",
           "settings": {
-            "media_image": "shopify:\/\/shop_images\/Product4.jpg"
+            "media_image": "shopify:\/\/shop_images\/2.png"
           }
         },
         "title_xYpyCC": {
           "type": "title",
           "settings": {
-            "media_image": "shopify:\/\/shop_images\/Product4.jpg"
+            "media_image": "shopify:\/\/shop_images\/4.png"
           }
         }
       },
