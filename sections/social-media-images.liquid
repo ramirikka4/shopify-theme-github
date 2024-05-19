@@ -14,10 +14,6 @@
     font-size: {{ section.settings.font_size }}px;
   }
 
-  .image-container img{
-      max-height: {{ section.settings.image_size }};
-    }
-
   @media only screen and (max-width: 48em) {
     .section-title h2{
     font-size: 16px;
@@ -148,26 +144,6 @@
           "type": "image_picker",
           "id": "media_image",
           "label": "Social Media Image"
-        },
-        {
-          "type": "select",
-          "id": "image_size",
-          "label": "Image Size",
-          "default": "260px",
-          "options": [
-            {
-              "label": "Small",
-              "value": "200px"
-            },
-            {
-              "label": "Medium",
-              "value": "260px"
-            },
-            {
-              "label": "Large",
-              "value": "300px"
-            }
-          ]
         }
       ]
     }
