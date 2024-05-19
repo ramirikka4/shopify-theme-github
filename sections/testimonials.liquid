@@ -35,12 +35,28 @@
     .testimonials-header p{
       font-size: 16px;
     }
+
+    .testimonials-header{
+      display: flex;
+    }
   }
 
 </style>
 
 <div id="section-{{ section.id }}">
   <div class="testimonials-header">
+    <div class="social-media-logo_container"> 
+      {%- if section.settings.social_media_logo != blank -%} 
+        {{ section.settings.social_media_logo 
+          | image_url: width: 600
+          | image_tag: height: 20, alt: section.settings.social_media_logo.alt, preload: true
+        }} 
+        {%- else -%} 
+          {{ 
+          'logo' | placeholder_svg_tag: 'placeholder-svg' 
+          }} 
+        {%- endif -%} 
+    </div>
     {%- if section.settings.title != blank -%}
       <div class="header-line"> 
         <div class="line"></div>
