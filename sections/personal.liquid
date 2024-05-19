@@ -54,7 +54,7 @@
               {{
                 block.settings.staff_image
                 | image_url: width: 600
-                | image_tag: block.settings.staff_image.alt, '160x160'
+                | image_tag: height: 260, alt: block.settings.staff_image.alt, preload: true
               }}
             {%- endif -%}
           </div>
