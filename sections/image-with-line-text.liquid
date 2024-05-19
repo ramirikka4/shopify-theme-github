@@ -60,7 +60,7 @@
             {{
               block.settings.image
               | image_url: width: 600
-              | image_tag: height: 70, alt: block.settings.image.alt, preload: true
+              | image_tag: height: 300, alt: block.settings.image.alt, preload: true
             }}
           {%- else -%}
             {{ 'logo' | placeholder_svg_tag: 'placeholder-svg' }}
