@@ -53,22 +53,28 @@
         "title_7QkKkX": {
           "type": "title",
           "settings": {
+            "image": "shopify:\/\/shop_images\/IG.png",
             "title": "Phone",
-            "description": "<p>(702) 836-9236)<\/p>"
+            "description": "<p>(702) 836-9236)<\/p>",
+            "border-right": false
           }
         },
         "title_FTgpaa": {
           "type": "title",
           "settings": {
+            "image": "shopify:\/\/shop_images\/Google_Icon_f5bd9443-1ac2-4346-8ed4-666dc0df253b.png",
             "title": "Email",
-            "description": "<p>hello@bywildblooms.com<\/p>"
+            "description": "<p>hello@bywildblooms.com<\/p>",
+            "border-right": false
           }
         },
         "title_L4Mcrd": {
           "type": "title",
           "settings": {
+            "image": "shopify:\/\/shop_images\/Icon_1.jpg",
             "title": "Location",
-            "description": "<p>4522 Laguna Vista St<\/p>"
+            "description": "<p>4522 Laguna Vista St<\/p>",
+            "border-right": false
           }
         }
       },
