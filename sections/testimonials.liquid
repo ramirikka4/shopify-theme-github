@@ -33,6 +33,10 @@
       max-height: 20px;
     }
 
+  .text-and-line-container{
+    display: flex;
+  }
+
   
   @media only screen and (max-width: 48em) {
     .testimonials-header h3{
@@ -50,7 +54,7 @@
 
 <div id="section-{{ section.id }}">
   <div class="testimonials-header">
-    <div> 
+    <div class="text-and-line-container"> 
         <div class="line"></div>
           {%- if section.settings.sub_title != blank -%}
                 <div class="header-line"> 
