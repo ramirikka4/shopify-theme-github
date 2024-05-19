@@ -9,7 +9,8 @@
           "type": "announcement",
           "settings": {
             "text": "Open daily for pick-up and delivery.",
-            "link": ""
+            "section_description": "<p><strong>Shop Now!<\/strong><\/p>",
+            "link": "shopify:\/\/collections\/all-2"
           }
         }
       },
