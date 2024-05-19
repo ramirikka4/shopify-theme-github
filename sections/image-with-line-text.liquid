@@ -11,6 +11,10 @@
     padding-right: {{ section.settings.section_padding_x }}px;
     color: {{ section.settings.text_color}};
   }
+
+  .more-info-header{
+    text-align: center;
+  }
   
   .more-info-line{
     display: flex;
@@ -72,7 +76,7 @@
                   <div class="more-info-line"> 
                     <div class="line"></div>
                       <h2
-                        class="image-with-text__heading inline-richtext {{ block.settings.heading_size }}"
+                        class="{{ block.settings.heading_size }}"
                         {{ block.shopify_attributes }}
                         >
                         {{ block.settings.heading }}
