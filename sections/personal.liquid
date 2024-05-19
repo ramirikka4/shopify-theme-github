@@ -53,7 +53,7 @@
             {%- if block.settings.staff_image != blank -%}
               {{
                 block.settings.staff_image
-                | image_url: width: '160x160'
+                | image_url: width: 600
                 | image_tag: block.settings.staff_image.alt, '160x160'
               }}
             {%- endif -%}
