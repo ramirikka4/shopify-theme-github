@@ -20,6 +20,19 @@
     font-size: {{ section.settings.sub_header_font_size }};
   }
 
+  .more-info-line{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .line:empty {
+    flex-grow: 1;
+    height: 1px;
+    background-color: #ccc;
+    display: block;
+  }
+
   @media only screen and (max-width: 48em) {
     .personal-header h2{
       font-size: 20px;
