@@ -126,7 +126,7 @@
 
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/Hero_Event_-_Image_2.png",
+        "image": "shopify:\/\/shop_images\/Hero_Event_-_Image_1.png",
         "height": "adapt",
         "desktop_image_width": "medium",
         "layout": "text_first",
@@ -228,25 +228,25 @@
         "title_4bNj7t": {
           "type": "title",
           "settings": {
-            "media_image": "shopify:\/\/shop_images\/Product4.jpg"
+            "media_image": "shopify:\/\/shop_images\/1.png"
           }
         },
         "title_B9tUD4": {
           "type": "title",
           "settings": {
-            "media_image": "shopify:\/\/shop_images\/Product4.jpg"
+            "media_image": "shopify:\/\/shop_images\/2.png"
           }
         },
         "title_kPj7cQ": {
           "type": "title",
           "settings": {
-            "media_image": "shopify:\/\/shop_images\/Product4.jpg"
+            "media_image": "shopify:\/\/shop_images\/3.png"
           }
         },
         "title_Ktw4HM": {
           "type": "title",
           "settings": {
-            "media_image": "shopify:\/\/shop_images\/Product4.jpg"
+            "media_image": "shopify:\/\/shop_images\/4.png"
           }
         }
       },
