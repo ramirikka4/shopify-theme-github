@@ -71,8 +71,8 @@
       ],
       "settings": {
         "image": "shopify:\/\/shop_images\/Product4.jpg",
-        "height": "medium",
-        "desktop_image_width": "medium",
+        "height": "small",
+        "desktop_image_width": "small",
         "layout": "text_first",
         "desktop_content_position": "middle",
         "desktop_content_alignment": "center",
