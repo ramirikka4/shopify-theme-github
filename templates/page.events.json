@@ -46,9 +46,57 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
+    },
+    "image_with_text_KBtgcF": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_Ch9XKm": {
+          "type": "heading",
+          "settings": {
+            "heading": "Tailored Floral Arrangements <em><strong>for Every Unique Event<\/strong><\/em>",
+            "heading_size": "h1"
+          }
+        },
+        "text_hyK6rq": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Have a unique event in mind? We cater to all types of events and tailor our floral arrangements to meet your specific needs.<\/p>",
+            "text_style": "body"
+          }
+        },
+        "button_E4h3Pp": {
+          "type": "button",
+          "settings": {
+            "button_label": "CONTACT US",
+            "button_link": "",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_Ch9XKm",
+        "text_hyK6rq",
+        "button_E4h3Pp"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/Hero_Event_-_Image_2.png",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "text_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "section_color_scheme": "",
+        "color_scheme": "",
+        "image_behavior": "none",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
-    "image_with_text_fehBXY"
+    "image_with_text_fehBXY",
+    "image_with_text_KBtgcF"
   ]
 }
