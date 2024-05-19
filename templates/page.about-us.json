@@ -27,7 +27,7 @@
         "height": "adapt",
         "desktop_image_width": "medium",
         "layout": "text_first",
-        "desktop_content_position": "top",
+        "desktop_content_position": "middle",
         "desktop_content_alignment": "left",
         "content_layout": "no-overlap",
         "section_color_scheme": "scheme-1",
@@ -82,10 +82,16 @@
       ],
       "settings": {
         "title": "MEET THE TEAM",
+        "header_font_size": "30px",
         "section_description": "<p>Explore our latest bouquets below<\/p>",
+        "sub_header_font_size": "18px",
         "join_button": "<p>JOIN THE TEAM<\/p>",
         "button_link": "",
-        "button_style_secondary": false
+        "button_style_secondary": false,
+        "background": "#ffffff",
+        "text_color": "#1c1b1b",
+        "section_padding_y": 36,
+        "section_padding_x": 0
       }
     },
     "image_with_text_6VPEGH": {
@@ -179,7 +185,13 @@
       ],
       "settings": {
         "title": "WE PROMISE",
-        "section_description": "<p>Fresh flowers and guaranteed happiness every time!<\/p>"
+        "header_font_size": "30px",
+        "section_description": "<p>Fresh flowers and guaranteed happiness every time!<\/p>",
+        "sub_header_font_size": "18px",
+        "background": "#ffffff",
+        "text_color": "#1c1b1b",
+        "section_padding_y": 36,
+        "section_padding_x": 0
       }
     },
     "social_media_images_jGUARH": {
@@ -218,7 +230,12 @@
       ],
       "settings": {
         "social_media_logo": "shopify:\/\/shop_images\/IG.png",
-        "section_title": "<p>Follow us <strong>@bywildblooms<\/strong> on Instagram<\/p>"
+        "section_title": "<p>Follow us <strong>@bywildblooms<\/strong> on Instagram<\/p>",
+        "font_size": "20px",
+        "background": "#ffffff",
+        "text_color": "#1c1b1b",
+        "section_padding_y": 36,
+        "section_padding_x": 0
       }
     }
   },
