@@ -209,14 +209,16 @@
       ],
       "settings": {
         "title": "OUR REVIEWS",
+        "header_font_size": "30px",
         "section_description": "<p>Customer Satisfaction is Our Only Goal<\/p>",
+        "sub_header_font_size": "18px",
         "review_button": "<p>Review us on Google<\/p>",
         "button_link": "https:\/\/google.com",
         "button_style_secondary": false,
         "background": "#ffffff",
         "text_color": "#1c1b1b",
         "section_padding_y": 36,
-        "section_padding_x": 20,
+        "section_padding_x": 0,
         "autoplay": false
       }
     },
