@@ -33,7 +33,7 @@
     max-height: 30px;
   }
 
-  .contact-us-icons_items.border {
+  .contact-us-icons_items.border_right {
     border-right: 1px solid #7f7f7f59;
   }
 
@@ -49,7 +49,7 @@
 <div id="section-{{ section.id }}">
   <div class="contact-us-icons_container">
     {%- for block in section.blocks -%}
-      <div class="contact-us-icons_items{% if section.settings.border %} border{% endif %}" {{ block.shopify_attributes }}>
+      <div class="contact-us-icons_items{% if block.settings.border_right %} border{% endif %}" {{ block.shopify_attributes }}>
         <div class="contact-us-image_container">
           {%- if block.settings.image != blank -%}
             {{
@@ -138,7 +138,7 @@
         },
         {
           "type": "checkbox",
-          "id": "border",
+          "id": "border_right",
           "label": "Toggle Border Right",
           "default": false
         }
