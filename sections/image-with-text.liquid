@@ -13,7 +13,7 @@
     }
   }
 
-  .h2.image-with-text__heading.inline-richtext.h2 p{
+  .image-with-text-header-rich p{
     padding: 0;
     margin: 0;
   }
@@ -76,7 +76,7 @@
                     class="image-with-text__heading inline-richtext {{ block.settings.heading_size }}"
                     {{ block.shopify_attributes }}
                   >
-                    {{ block.settings.heading }}
+                    <div class="image-with-text-header-rich">{{ block.settings.heading }}</div>
                   </h2>
                 {%- when 'caption' -%}
                   <p
