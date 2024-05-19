@@ -49,7 +49,7 @@
 <div id="section-{{ section.id }}">
   <div class="contact-us-icons_container">
     {%- for block in section.blocks -%}
-      <div class="contact-us-icons_items{% if block.settings.border_right %} border{% endif %}" {{ block.shopify_attributes }}>
+      <div class="contact-us-icons_items{% if block.settings.border_right %} border-right{% endif %}" {{ block.shopify_attributes }}>
         <div class="contact-us-image_container">
           {%- if block.settings.image != blank -%}
             {{
