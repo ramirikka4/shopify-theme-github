@@ -54,7 +54,7 @@
 
     <div>
       {%- for block in section.blocks -%}
-      <div class="more-info_items" {{ block.shopify_attributes }}>
+      <div class="iwl_items" {{ block.shopify_attributes }}>
         <div class="more-info-image_container">
           {%- if block.settings.image != blank -%}
             {{
@@ -64,14 +64,6 @@
             }}
           {%- else -%}
             {{ 'logo' | placeholder_svg_tag: 'placeholder-svg' }}
-          {%- endif -%}
-        </div>
-        <div class="item-details"> 
-          {%- if block.settings.title != blank -%}
-            <div class="item-title">{{ block.settings.title }}</div>
-          {%- endif -%}
-          {%- if block.settings.description != blank -%}
-            <div class="more-info_items_description">{{ block.settings.description }}</div>
           {%- endif -%}
         </div>
       </div>
