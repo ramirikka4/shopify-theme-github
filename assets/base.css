@@ -3488,7 +3488,7 @@ src: url("EditorsNote-Regular.woff2") format("woff2"),
 url("EditorsNote-Regular.woff") format("woff");
 }
 
-h1, h2, h3, h0 { font-family: "NAME OF FONT"!important; }
+h1, h2, h3, h0 { font-family: "EditorsNote"!important; }
 
 
 
