@@ -9,13 +9,14 @@
     padding-left: {{ section.settings.section_padding_x }}px;
     padding-right: {{ section.settings.section_padding_x }}px;
   }
-
-  .testimonials-header h2{
-    font-size: {{ section.settings.font_size }};
-  }
   
   .testimonials-header h2{
     color: {{ section.settings.header_color }};
+    font-size: {{ section.settings.header_font_size }};
+  }
+
+  .testimonials-header p{
+    font-size: {{ section.settings.sub_header_font_size }};
   }
 
   .testimonials-header p{
@@ -136,7 +137,7 @@
     },
     {
       "type": "select",
-      "id": "font_size",
+      "id": "header_font_size",
       "label": "Font size",
       "default": "30px",
       "options": [
@@ -158,6 +159,26 @@
       "type": "richtext",
       "id": "section_description",
       "label": "Section Description"
+    },
+    {
+      "type": "select",
+      "id": "sub_header_font_size",
+      "label": "Description Font size",
+      "default": "18px",
+      "options": [
+        {
+          "label": "Small",
+          "value": "16px"
+        },
+        {
+          "label": "Medium",
+          "value": "18px"
+        },
+        {
+          "label": "Large",
+          "value": "20px"
+        }
+      ]
     },
     {
       "type": "richtext",
