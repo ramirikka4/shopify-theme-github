@@ -73,6 +73,10 @@
   }
   
   .swiper-pagination-bullet-active {
+    opacity: 0.2;
+  }
+
+  .swiper-pagination-bullet-next {
     background: black;
     height: 10px;
     width: 10px;
