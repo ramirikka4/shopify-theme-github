@@ -289,7 +289,7 @@
         "header_font_size": "30px",
         "section_description": "<p>Customer Satisfaction is Our Only Goal<\/p>",
         "sub_header_font_size": "18px",
-        "review_button": "<p>Review us on Google<\/p>",
+        "review_button": "<p>Review us on<\/p>",
         "social_media_button_logo": "shopify:\/\/shop_images\/Review_us_on_Google.png",
         "button_link": "https:\/\/google.com",
         "button_style_secondary": false,
