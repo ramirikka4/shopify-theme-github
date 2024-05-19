@@ -32,9 +32,12 @@
       display: flex;
     }
 
+  
     .social-media-logo_container img{
       max-height: 20px;
     }
+
+  
   @media only screen and (max-width: 48em) {
     .testimonials-header h3{
       font-size: 20px;
@@ -57,10 +60,6 @@
           | image_url: width: 600
           | image_tag: height: 20, alt: section.settings.social_media_logo.alt, preload: true
         }} 
-        {%- else -%} 
-          {{ 
-          'logo' | placeholder_svg_tag: 'placeholder-svg' 
-          }} 
         {%- endif -%} 
     </div>
     {%- if section.settings.title != blank -%}
