@@ -52,6 +52,10 @@
   .line:empty{
     width: 100px;
   }
+
+  .logo-text-sub-title{
+    text-align: center;
+  }
   
   @media only screen and (max-width: 48em) {
     .testimonials-header h3{
@@ -90,7 +94,7 @@
     </div>
 
   {%- if section.settings.section_description != blank -%}
-      {{ section.settings.section_description }}
+      <div class="logo-text-sub-title">{{ section.settings.section_description }}</div>
     {%- endif -%}
 
   <div class="more-info_items_container">
