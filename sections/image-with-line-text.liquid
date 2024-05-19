@@ -11,11 +11,28 @@
     color: {{ section.settings.text_color}};
   }
 
+  .line-text-container{
+    display: flex;
+  }
+
+  .header-line{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .line:empty {
+    flex-grow: 1;
+    height: 1px;
+    background-color: #ccc;
+    display: block;
+  }
+
 </style>
 
 <div id="section-{{ section.id }}">
-  <div>
-    <div class="testimonials-header">
+  <div class="line-text-container">
+    <div class="iwl-header">
       {%- if section.settings.title != blank -%}
         <div class="header-line"> 
           <div class="line"></div>
