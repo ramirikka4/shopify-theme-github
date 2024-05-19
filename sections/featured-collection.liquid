@@ -4,6 +4,12 @@
 {{ 'component-slider.css' | asset_url | stylesheet_tag }}
 {{ 'template-collection.css' | asset_url | stylesheet_tag }}
 
+<style>
+  .collection__description.body.rte.scroll-trigger.animate--slide-in {
+    text-align: center;
+}
+</style>
+
 {% if section.settings.image_shape == 'blob' %}
   {{ 'mask-blobs.css' | asset_url | stylesheet_tag }}
 {%- endif -%}
