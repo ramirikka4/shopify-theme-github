@@ -47,6 +47,43 @@
         "padding_bottom": 36
       }
     },
+    "contact_us_icons_GMYJhi": {
+      "type": "contact-us-icons",
+      "blocks": {
+        "title_7QkKkX": {
+          "type": "title",
+          "settings": {
+            "title": "Phone",
+            "description": "<p>(702) 836-9236)<\/p>"
+          }
+        },
+        "title_FTgpaa": {
+          "type": "title",
+          "settings": {
+            "title": "Email",
+            "description": "<p>hello@bywildblooms.com<\/p>"
+          }
+        },
+        "title_L4Mcrd": {
+          "type": "title",
+          "settings": {
+            "title": "Location",
+            "description": "<p>4522 Laguna Vista St<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "title_7QkKkX",
+        "title_FTgpaa",
+        "title_L4Mcrd"
+      ],
+      "settings": {
+        "background": "#ffffff",
+        "text_color": "#1c1b1b",
+        "section_padding_y": 36,
+        "section_padding_x": 0
+      }
+    },
     "form": {
       "type": "contact-form",
       "settings": {
@@ -112,6 +149,7 @@
   },
   "order": [
     "image_with_text_FeG6U7",
+    "contact_us_icons_GMYJhi",
     "form",
     "main",
     "social_media_images_NDnH4R"
