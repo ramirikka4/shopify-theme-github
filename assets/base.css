@@ -3486,7 +3486,7 @@ h1, h2, h3, h4, h5, .h0, .h1, .h2, .h3, .h4, .h5 {
 }
 
 @font-face { font-family: GothamRounded; src: url('https://cdn.shopify.com/s/files/1/0591/6370/5430/files/Gotham-Rounded-Book.ttf?v=1716120810');}
-h3, link {
+h3, a {
   font-family: GothamRounded !important;
 }
 
