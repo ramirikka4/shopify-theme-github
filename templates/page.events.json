@@ -79,7 +79,7 @@
         "title_xdE9xc": {
           "type": "title",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Image_1.jpg",
+            "image": "shopify:\/\/shop_images\/Image_2.jpg",
             "font_size": "20px"
           }
         }
@@ -88,9 +88,9 @@
         "title_xdE9xc"
       ],
       "settings": {
-        "title": "WEDDINGS",
+        "title": "CORPORATE EVENTS",
         "header_font_size": "30px",
-        "section_description": "<p>From bridal bouquets to elegant center pieces, we create stunning floral designs to make your wedding day magical.<\/p>",
+        "section_description": "<p>Enhance your corporate events with our sophisticated floral arrangements, perfect for impressing clients and colleagues.<\/p>",
         "sub_header_font_size": "18px",
         "reverse_layout": true,
         "background": "#ffffff",
@@ -152,7 +152,7 @@
         "title_g3d8aD": {
           "type": "title",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Image_1.jpg",
+            "image": "shopify:\/\/shop_images\/Image_3.jpg",
             "font_size": "20px"
           }
         }
@@ -161,9 +161,9 @@
         "title_g3d8aD"
       ],
       "settings": {
-        "title": "WEDDINGS",
+        "title": "BIRTHDAYS",
         "header_font_size": "30px",
-        "section_description": "<p>From bridal bouquets to elegant center pieces, we create stunning floral designs to make your wedding day magical.<\/p>",
+        "section_description": "<p>Welcome the little one with charming and delightful floral arrangements, perfect for celebrating this special moment.<\/p>",
         "sub_header_font_size": "18px",
         "reverse_layout": false,
         "background": "#ffffff",
@@ -178,7 +178,7 @@
         "title_migc7h": {
           "type": "title",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Image_1.jpg",
+            "image": "shopify:\/\/shop_images\/Image_4.jpg",
             "font_size": "20px"
           }
         }
@@ -187,9 +187,9 @@
         "title_migc7h"
       ],
       "settings": {
-        "title": "WEDDINGS",
+        "title": "BABY SHOWERS",
         "header_font_size": "30px",
-        "section_description": "<p>From bridal bouquets to elegant center pieces, we create stunning floral designs to make your wedding day magical.<\/p>",
+        "section_description": "<p>Celebrate the joy of a new arrival with our charming and whimsical floral arrangements, perfect for any baby shower.<\/p>",
         "sub_header_font_size": "18px",
         "reverse_layout": true,
         "background": "#ffffff",
