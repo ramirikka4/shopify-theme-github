@@ -35,15 +35,8 @@
 
   
   
-  .social-media-logo_container img{
-      max-height: 25px;
-  }
 
-  .line:empty{
-    width: 100px;
-  }
-
-  .text-and-line-container{
+  .logo-text-container{
     display: flex;
     flex-direction: row;
     align-content: center;
@@ -52,6 +45,13 @@
     gap: 10px;
   }
 
+  .social-media-logo_container img{
+      
+  }
+
+  .line:empty{
+    width: 100px;
+  }
   
   @media only screen and (max-width: 48em) {
     .testimonials-header h3{
@@ -71,13 +71,8 @@
 </style>
 
 <div id="section-{{ section.id }}">
-  <div class="text-and-line-container"> 
+  <div class="logo-text-container"> 
         <div class="line"></div>
-          {%- if section.settings.sub_title != blank -%}
-                <div class="header-line"> 
-                  <h3>{{ section.settings.sub_title }}</h3>
-                </div>
-          {%- endif -%}
           <div class="social-media-logo_container"> 
             {%- if section.settings.social_media_logo != blank -%} 
               {{ section.settings.social_media_logo 
@@ -93,6 +88,10 @@
           {%- endif -%}
         <div class="line"></div>
     </div>
+
+  {%- if section.settings.section_description != blank -%}
+      {{ section.settings.section_description }}
+    {%- endif -%}
 
   <div class="more-info_items_container">
     {%- for block in section.blocks -%}
