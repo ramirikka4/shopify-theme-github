@@ -130,6 +130,14 @@
       href="{{ section.settings.button_link }}"
       {% endif %} class="button{% if section.settings.button_style_secondary %} button--secondary{% else %} button--primary{% endif %}">
         {{ section.settings.review_button }}
+        <div class="logo-text-logo_container"> 
+            {%- if section.settings.social_media_button_logo != blank -%} 
+              {{ section.settings.social_media_button_logo
+                | image_url: width: 600
+                | image_tag: height: 70, alt: section.settings.social_media_button_logo.alt, preload: true
+              }} 
+              {%- endif -%} 
+          </div>
       </a>
     </div>
     {%- endif -%}
