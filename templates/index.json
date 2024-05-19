@@ -215,6 +215,8 @@
         "button_style_secondary": false,
         "background": "#ffffff",
         "text_color": "#1c1b1b",
+        "section_padding_y": 36,
+        "section_padding_x": 20,
         "autoplay": false
       }
     },
@@ -254,7 +256,12 @@
       ],
       "settings": {
         "social_media_logo": "shopify:\/\/shop_images\/IG.png",
-        "section_title": "<p>Follow us<strong>@bywildblooms <\/strong>on Instagram<\/p>"
+        "section_title": "<p>Follow us <strong>@bywildblooms <\/strong>on Instagram<\/p>",
+        "font_size": "20px",
+        "background": "#ffffff",
+        "text_color": "#1c1b1b",
+        "section_padding_y": 36,
+        "section_padding_x": 0
       }
     }
   },
