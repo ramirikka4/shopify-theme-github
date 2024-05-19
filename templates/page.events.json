@@ -6,7 +6,7 @@
         "heading_WAyYML": {
           "type": "heading",
           "settings": {
-            "heading": "Events",
+            "heading": "<p>Events<\/p>",
             "heading_size": "h0"
           }
         },
@@ -105,7 +105,7 @@
         "heading_Ch9XKm": {
           "type": "heading",
           "settings": {
-            "heading": "Tailored Floral Arrangements <em>for Every Unique Event<\/em>",
+            "heading": "<p>Tailored Floral Arrangements<\/p><p><em>for Every Unique Event<\/em><\/p>",
             "heading_size": "h2"
           }
         },
