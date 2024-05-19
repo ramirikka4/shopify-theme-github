@@ -66,6 +66,33 @@
         "header_font_size": "30px",
         "section_description": "<p>From bridal bouquets to elegant center pieces, we create stunning floral designs to make your wedding day magical.<\/p>",
         "sub_header_font_size": "18px",
+        "reverse_layout": false,
+        "background": "#ffffff",
+        "text_color": "#1c1b1b",
+        "section_padding_y": 36,
+        "section_padding_x": 0
+      }
+    },
+    "image_with_line_text_Q6f9jh": {
+      "type": "image-with-line-text",
+      "blocks": {
+        "title_xdE9xc": {
+          "type": "title",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Image_1.jpg",
+            "font_size": "20px"
+          }
+        }
+      },
+      "block_order": [
+        "title_xdE9xc"
+      ],
+      "settings": {
+        "title": "WEDDINGS",
+        "header_font_size": "30px",
+        "section_description": "<p>From bridal bouquets to elegant center pieces, we create stunning floral designs to make your wedding day magical.<\/p>",
+        "sub_header_font_size": "18px",
+        "reverse_layout": true,
         "background": "#ffffff",
         "text_color": "#1c1b1b",
         "section_padding_y": 36,
@@ -119,13 +146,52 @@
         "padding_bottom": 36
       }
     },
-    "image_with_line_text_rddRQc": {
+    "image_with_line_text_hEJhyi": {
       "type": "image-with-line-text",
+      "blocks": {
+        "title_g3d8aD": {
+          "type": "title",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Image_1.jpg",
+            "font_size": "20px"
+          }
+        }
+      },
+      "block_order": [
+        "title_g3d8aD"
+      ],
       "settings": {
-        "title": "OUR REVIEWS",
+        "title": "WEDDINGS",
         "header_font_size": "30px",
-        "section_description": "",
+        "section_description": "<p>From bridal bouquets to elegant center pieces, we create stunning floral designs to make your wedding day magical.<\/p>",
         "sub_header_font_size": "18px",
+        "reverse_layout": false,
+        "background": "#ffffff",
+        "text_color": "#1c1b1b",
+        "section_padding_y": 36,
+        "section_padding_x": 0
+      }
+    },
+    "image_with_line_text_7xrWFM": {
+      "type": "image-with-line-text",
+      "blocks": {
+        "title_migc7h": {
+          "type": "title",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Image_1.jpg",
+            "font_size": "20px"
+          }
+        }
+      },
+      "block_order": [
+        "title_migc7h"
+      ],
+      "settings": {
+        "title": "WEDDINGS",
+        "header_font_size": "30px",
+        "section_description": "<p>From bridal bouquets to elegant center pieces, we create stunning floral designs to make your wedding day magical.<\/p>",
+        "sub_header_font_size": "18px",
+        "reverse_layout": true,
         "background": "#ffffff",
         "text_color": "#1c1b1b",
         "section_padding_y": 36,
@@ -180,8 +246,10 @@
   "order": [
     "image_with_text_fehBXY",
     "image_with_line_text_HXjKgA",
+    "image_with_line_text_Q6f9jh",
     "image_with_text_KBtgcF",
-    "image_with_line_text_rddRQc",
+    "image_with_line_text_hEJhyi",
+    "image_with_line_text_7xrWFM",
     "social_media_images_dx3YBx"
   ]
 }
