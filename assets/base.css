@@ -3493,7 +3493,7 @@ h3, h2.title.inline-richtext.h2 {
   font-family: GothamRounded !important;
 }
 
-.personal-header h2, .more-info-header h2{
+.personal-header h2, .more-info-header h2, .more-info-line h2{
   font-family: GothamRounded !important;
 }
 
