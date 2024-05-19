@@ -102,7 +102,7 @@
                     <p class="announcement-bar__message h5">
                       <span>{{ block.settings.text | escape }}</span>
                       {%- if block.settings.link != blank -%}
-                        {% render 'icon-arrow' %}
+                        {% render {{ block.settings.section_description }} %}
                       {%- endif -%}
                     </p>
                     {%- if block.settings.link != blank -%}
@@ -245,6 +245,11 @@
           "id": "text",
           "default": "Welcome to our store",
           "label": "t:sections.announcement-bar.blocks.announcement.settings.text.label"
+        },
+        {
+          "type": "richtext",
+          "id": "section_description",
+          "label": "Section Description"
         },
         {
           "type": "url",
