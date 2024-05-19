@@ -51,9 +51,9 @@
 <div id="section-{{ section.id }}">
   <div class="testimonials-header">
         <div class="line"></div>
-          {%- if section.settings.title != blank -%}
+          {%- if section.settings.sub_title != blank -%}
                 <div class="header-line"> 
-                  <h3>{{ section.settings.title }}</h3>
+                  <h3>{{ section.settings.sub_title }}</h3>
                 </div>
           {%- endif -%}
           <div class="social-media-logo_container"> 
@@ -160,9 +160,15 @@
   "settings": [
     {
       "type": "text",
+      "id": "sub_title",
+      "label": "Section Title",
+      "default": "OUR"
+    },
+    {
+      "type": "text",
       "id": "title",
       "label": "Section Title",
-      "default": "OUR REVIEWS"
+      "default": "REVIEWS"
     },
     {
       "type": "select",
