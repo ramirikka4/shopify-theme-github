@@ -53,8 +53,8 @@
             {%- if block.settings.staff_image != blank -%}
               {{
                 block.settings.staff_image
-                | image_url: width: 700
-                | image_tag: height: 180, alt: block.settings.staff_image.alt, preload: true
+                | image_url: width: 1500
+                | image_tag: height: 300, alt: block.settings.staff_image.alt, preload: true
               }}
             {%- endif -%}
           </div>
