@@ -130,7 +130,7 @@
       href="{{ section.settings.button_link }}"
       {% endif %} class="button{% if section.settings.button_style_secondary %} button--secondary{% else %} button--primary{% endif %}">
         {{ section.settings.review_button }}
-        <div class="logo-text-logo_container"> 
+        <div class="social_media_button_logo_container"> 
             {%- if section.settings.social_media_button_logo != blank -%} 
               {{ section.settings.social_media_button_logo
                 | image_url: width: 600
@@ -259,7 +259,7 @@
     {
       "type": "image_picker",
       "id": "social_media_button_logo",
-      "label": "Social Media Image"
+      "label": "Social Media Button Image"
     },
     {
       "type": "url",
