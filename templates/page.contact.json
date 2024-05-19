@@ -1,1 +1,119 @@
-{"sections":{"main":{"type":"main-page","settings":{"padding_top":36,"padding_bottom":36}},"form":{"type":"contact-form","settings":{"heading":"","heading_size":"h1","color_scheme":"scheme-1","padding_top":36,"padding_bottom":36}}},"order":["main","form"]}
+{
+  "sections": {
+    "image_with_text_FeG6U7": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_79Gn9g": {
+          "type": "heading",
+          "settings": {
+            "heading": "Contact",
+            "heading_size": "h0"
+          }
+        },
+        "text_MRb876": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Got questions? <a href=\"https:\/\/google.com\" title=\"https:\/\/google.com\">We have the answer.<\/a><\/p>",
+            "text_style": "body"
+          }
+        },
+        "button_kbdjFx": {
+          "type": "button",
+          "settings": {
+            "button_label": "",
+            "button_link": "",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_79Gn9g",
+        "text_MRb876",
+        "button_kbdjFx"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/Slider_Image_-_1.jpg",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "text_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "section_color_scheme": "",
+        "color_scheme": "",
+        "image_behavior": "none",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "form": {
+      "type": "contact-form",
+      "settings": {
+        "heading": "",
+        "heading_size": "h1",
+        "color_scheme": "scheme-1",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "social_media_images_NDnH4R": {
+      "type": "social-media-images",
+      "blocks": {
+        "title_MM4NAm": {
+          "type": "title",
+          "settings": {
+            "media_image": "shopify:\/\/shop_images\/Product4.jpg"
+          }
+        },
+        "title_ALzFgG": {
+          "type": "title",
+          "settings": {
+            "media_image": "shopify:\/\/shop_images\/Product4.jpg"
+          }
+        },
+        "title_7zfth6": {
+          "type": "title",
+          "settings": {
+            "media_image": "shopify:\/\/shop_images\/Product4.jpg"
+          }
+        },
+        "title_eRyxAz": {
+          "type": "title",
+          "settings": {
+            "media_image": "shopify:\/\/shop_images\/Product4.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "title_MM4NAm",
+        "title_ALzFgG",
+        "title_7zfth6",
+        "title_eRyxAz"
+      ],
+      "settings": {
+        "social_media_logo": "shopify:\/\/shop_images\/IG.png",
+        "section_title": "<p>Follow us <strong>@bywildblooms<\/strong> on Instagram<\/p>",
+        "font_size": "20px",
+        "background": "#ffffff",
+        "text_color": "#1c1b1b",
+        "section_padding_y": 36,
+        "section_padding_x": 0
+      }
+    }
+  },
+  "order": [
+    "image_with_text_FeG6U7",
+    "form",
+    "main",
+    "social_media_images_NDnH4R"
+  ]
+}
