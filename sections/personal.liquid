@@ -1,5 +1,6 @@
 {{ 'personal.css' | asset_url | stylesheet_tag }}
 
+<div id="section-{{ section.id }}">
   <div class="personal-header">
     {%- if section.settings.title != blank -%}
       <div class="personal-line"> 
@@ -42,15 +43,16 @@
     {%- endfor -%}
   </div>
 
-  {%- if section.settings.join_button != blank -%}
-  <div class="button-container">
-    <a {% if section.settings.button_link == blank %}
-    role="link" aria-disabled="true"
-    {% else %}
-    href="{{ section.settings.button_link }}"
-    {% endif %} class="button{% if section.settings.button_style_secondary %} button--secondary{% else %} button--primary{% endif %}">{{ section.settings.join_button }}</a>
+    {%- if section.settings.join_button != blank -%}
+    <div class="button-container">
+      <a {% if section.settings.button_link == blank %}
+      role="link" aria-disabled="true"
+      {% else %}
+      href="{{ section.settings.button_link }}"
+      {% endif %} class="button{% if section.settings.button_style_secondary %} button--secondary{% else %} button--primary{% endif %}">{{ section.settings.join_button }}</a>
+    </div>
+    {%- endif -%}
   </div>
-  {%- endif -%}
 
 {% schema %}
 {
