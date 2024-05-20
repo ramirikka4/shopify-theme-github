@@ -27,7 +27,9 @@
             "footer_contact_title": "Speak with a Florist",
             "font_size": "20px",
             "phone": "<p>(702) 836-9236<\/p>",
+            "phone_logo": "shopify:\/\/shop_images\/Phone_Icon_04f6052f-5f22-4840-a6b5-40542181985e.png",
             "location": "<p>4522 Laguna Vista St<\/p>",
+            "location_logo": "shopify:\/\/shop_images\/Location_Pin_Icon_ac50e50e-5ee0-4d80-841e-bba42da7834b.png",
             "instagram": ""
           }
         },
@@ -38,7 +40,8 @@
             "font_size": "20px",
             "phone": "<p>Instagram<\/p>",
             "location": "",
-            "instagram": ""
+            "instagram": "",
+            "instagram_logo": "shopify:\/\/shop_images\/IG.png"
           }
         }
       },
