@@ -1,113 +1,419 @@
-<footer class="footer">
-  <div class="width">
-    <div class="footer-top">
-      {% for block in section.blocks %}
-        {% if block.type == 'navigation' %}
-          <div class="footer-column footer-column--nav">
-            <h2>{{ block.settings.linklist.title }}</h2>
-            {% for link in block.settings.linklist.links %}
-              <li>
-                <a href="{{ link.url }}">{{ link.title }}</a>
-              </li>
-            {% endfor %}
-          </div>
-        {% elsif block.type == 'newsletter' %}
-          <div class="footer-column footer-column--news">
-            <h2>{{ block.settings.heading }}</h2>
-            {{ block.settings.text }}
+{{ 'testimonials.css' | asset_url | stylesheet_tag }}
 
-            {% form 'customer', id: 'footer-newsletter' %}
-              {% if form.posted_successfully? %}
-                <p class="footer-column-news-message">You've been subscribed!</p>
-              {% endif %}
+<style>
+  
+  #section-{{ section.id }} {
+    background: {{ section.settings.background }};
+    padding-top: {{ section.settings.section_padding_y }}px;
+    padding-bottom: {{ section.settings.section_padding_y }}px;
+    padding-left: {{ section.settings.section_padding_x }}px;
+    padding-right: {{ section.settings.section_padding_x }}px;
+    color: {{ section.settings.text_color}};
+  }
+  
+  .testimonials-header h3{
+    font-size: {{ section.settings.header_font_size }};
+  }
 
-              {% if form.errors %}
-                <p class="footer-column-news-message">{{ form.errors.messages.email }}</p>
-              {% endif %}
+  .testimonials-header p{
+    font-size: {{ section.settings.sub_header_font_size }};
+  }
 
-              <input type="hidden" name="contact[tags]" value="newsletter">
-              <input name="contact[email]" type="email" placeholder="Email address">
-              <button type="submit">Subscribe</button>
-            {% endform %}
+  .author-name{
+    font-size: {{ section.blocks.settings.font_size }};
+  }
+
+  .testimonials_description{
+    font-size: {{ section.blocks.settings.font_size }};
+    
+  }
+  
+    .testimonial-logo_container img{
+      max-height: 30px;
+    }
+
+  .line:empty{
+    width: 100px;
+  }
+
+  .text-and-line-container{
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .testimonial-logo_container{
+    display: flex;
+    margin-bottom: 5px;
+  }
+
+  .social_media_button_logo_container{
+    display: flex;
+    margin-top: 2px;
+    margin-left: 4px;
+  }
+  
+  .social_media_button_logo_container img{
+    max-height: 20px;
+  }
+
+  .button-container a.button.button--secondary {
+    background-color: #F4F4F4;
+  }
+
+  .button-container a.button.button--secondary:hover {
+    scale: 1.1;
+  }
+
+  .swiper-slide.testimonials {
+    display: flex;
+    justify-content: center;
+  }
+
+  
+  @media only screen and (max-width: 48em) {
+    .testimonials-header h3{
+      font-size: 20px;
+    }
+
+    .testimonials-header p{
+      font-size: 16px;
+    }
+
+    .line:empty{
+      width: 50px;
+    }
+    
+  }
+
+</style>
+
+<div id="section-{{ section.id }}">
+  <div class="testimonials-header">
+    <div class="text-and-line-container"> 
+        <div class="line"></div>
+          {%- if section.settings.sub_title != blank -%}
+                <div class="header-line"> 
+                  <h3>{{ section.settings.sub_title }}</h3>
+                </div>
+          {%- endif -%}
+          <div class="testimonial-logo_container"> 
+            {%- if section.settings.social_media_logo != blank -%} 
+              {{ section.settings.social_media_logo 
+                | image_url: width: 600
+                | image_tag: height: 50, alt: section.settings.social_media_logo.alt, preload: true
+              }} 
+              {%- endif -%} 
           </div>
-        {% elsif block.type == 'text' %}
-          <div class="footer-column footer-column--text">
-            <h2>{{ block.settings.heading }}</h2>
-            {{ block.settings.text }}
-          </div>
-        {% endif %}
-      {% endfor %}
+          {%- if section.settings.title != blank -%}
+            <div class="header-line"> 
+              <h3>{{ section.settings.title }}</h3>
+            </div>
+          {%- endif -%}
+        <div class="line"></div>
     </div>
-
-    <div class="footer-bottom">
-      <p class="footer-copyright">{{ section.settings.copyright }}</p>
-
-      <ul class="footer-cards">
-        <li>{% render 'icon-visa' %}</li>
-        <li>{% render 'icon-visa' %}</li>
-        <li>{% render 'icon-visa' %}</li>
-        <li>{% render 'icon-visa' %}</li>
-        <li>{% render 'icon-visa' %}</li>
-        <li>{% render 'icon-visa' %}</li>
-      </ul>
-    </div>
+    {%- if section.settings.section_description != blank -%}
+      {{ section.settings.section_description }}
+    {%- endif -%}
   </div>
-</footer>
+  
+  
+  <div class="swiper testimonials-slider">
+    <div class="swiper-wrapper">
+      {%- for block in section.blocks -%}
+        <div class="swiper-slide testimonials" {{ block.shopify_attributes }}>
+          <div class="testimonials-box">
+            {%- if block.settings.star_rating != blank -%}
+                <div class="star-rating" style="--star-rating: {{ block.settings.star_rating }};"></div>
+              {%- endif -%}
+          
+            {%- if block.settings.description != blank -%}
+              <div class="testimonials_description">
+                {{ block.settings.description -}}
+              </div>
+            {%- endif -%}
+          
+            {%- if block.settings.title != blank -%}
+              <div class="author-name">{{ block.settings.title }}</div>
+            {%- endif -%}
+          </div>
+        </div>
+      {%- endfor -%}
+    </div>
+    <div class="swiper-pagination"></div>
+  </div>
+  {%- if section.settings.review_button != blank -%}
+    <div class="button-container">
+      <a {% if section.settings.button_link == blank %}
+      role="link" aria-disabled="true"
+      {% else %}
+      href="{{ section.settings.button_link }}"
+      {% endif %} class="button{% if section.settings.button_style_secondary %} button--secondary{% else %} button--primary{% endif %}">
+        {{ section.settings.review_button }}
+        <div class="social_media_button_logo_container"> 
+            {%- if section.settings.social_media_button_logo != blank -%} 
+              {{ section.settings.social_media_button_logo
+                | image_url: width: 600
+                | image_tag: height: 70, alt: section.settings.social_media_button_logo.alt, preload: true
+              }} 
+              {%- endif -%} 
+          </div>
+      </a>
+    </div>
+    {%- endif -%}
+</div>
+
+<script>
+  addEventListener('DOMContentLoaded', (event) => {
+    var autoplayEnabled = {{ section.settings.autoplay | json }};
+    
+    var swiperOptions = {
+      scrollbar: {
+        draggable: true,
+      },
+      loop: true,
+      pagination: {
+        el: ".swiper-pagination",
+      },
+      breakpoints: {
+        // when window width is >= 768px (48em)
+        768: {
+          slidesPerView: 3,
+        },
+        // when window width is < 768px (48em)
+        0: {
+          slidesPerView: 1,
+        }
+      }
+    };
+    
+    if (autoplayEnabled) {
+      swiperOptions.autoplay = {
+        delay: 4500,
+        disableOnInteraction: false,
+      };
+    }
+    
+    var swiper = new Swiper('.testimonials-slider', swiperOptions);
+  });
+</script>
+
 
 {% schema %}
 {
-  "name": "second_footer",
+  "name": "Secondary Footer",
   "tag": "section",
-  "class": "section",
+  "class": "testimonials-section shopify-section page-width",
+  "disabled_on": {
+    "groups": ["header"]
+  },
   "settings": [
     {
-      "id": "copyright",
-      "label": "Copyright text",
-      "type": "text"
+      "type": "text",
+      "id": "sub_title",
+      "label": "Section Title",
+      "default": "OUR"
+    },
+    {
+          "type": "image_picker",
+          "id": "social_media_logo",
+          "label": "Social Media Image"
+        },
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Section Title",
+      "default": "REVIEWS"
+    },
+    {
+      "type": "select",
+      "id": "header_font_size",
+      "label": "Font size",
+      "default": "30px",
+      "options": [
+        {
+          "label": "Small",
+          "value": "20px"
+        },
+        {
+          "label": "Medium",
+          "value": "25px"
+        },
+        {
+          "label": "Large",
+          "value": "30px"
+        }
+      ]
+    },
+    {
+      "type": "richtext",
+      "id": "section_description",
+      "label": "Section Description"
+    },
+    {
+      "type": "select",
+      "id": "sub_header_font_size",
+      "label": "Description Font size",
+      "default": "18px",
+      "options": [
+        {
+          "label": "Small",
+          "value": "16px"
+        },
+        {
+          "label": "Medium",
+          "value": "18px"
+        },
+        {
+          "label": "Large",
+          "value": "20px"
+        }
+      ]
+    },
+    {
+      "type": "richtext",
+      "id": "review_button",
+      "label": "Button Label"
+    },
+    {
+      "type": "image_picker",
+      "id": "social_media_button_logo",
+      "label": "Social Media Button Image"
+    },
+    {
+      "type": "url",
+      "id": "button_link",
+      "label": "Button link"
+    },
+    {
+      "type": "checkbox",
+      "id": "button_style_secondary",
+      "default": false,
+      "label": "t:sections.image-with-text.blocks.button.settings.outline_button.label"
+    },
+    {
+      "type": "color",
+      "id": "background",
+      "label": "Background",
+      "default": "#ffffff"
+    },
+    {
+      "type": "color",
+      "id": "text_color",
+      "label": "Text",
+      "default": "#1c1b1b"
+    },
+    {
+      "type": "range",
+      "id": "section_padding_y",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "Section Padding Top & Bottom",
+      "default": 36
+    },
+    {
+      "type": "range",
+      "id": "section_padding_x",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "Section Padding Left & Right",
+      "default": 0
+    },
+    {
+      "type": "checkbox",
+      "id": "autoplay",
+      "label": "Enable Autoplay",
+      "default": true
     }
   ],
-  "max_blocks": 5,
   "blocks": [
     {
-      "type": "newsletter",
-      "name": "Newsletter",
+      "name": "Sub Footer",
+      "type": "title",
       "settings": [
         {
-          "id": "heading",
-          "type": "text",
-          "label": "Heading text"
+          "type": "richtext",
+          "id": "description",
+          "label": "Testimonial text"
         },
         {
-          "id": "text",
-          "type": "richtext",
-          "label": "Body text"
-        }
-      ]
-    },
-    {
-      "name": "Text",
-      "type": "text",
-      "settings": [
-        {
-          "id": "heading",
-          "type": "text",
-          "label": "Heading text"
+          "type": "select",
+          "id": "star_rating",
+          "label": "Star Rating",
+          "options": [
+            {
+              "value": "",
+              "label": "None"
+            },
+            {
+              "value": "3",
+              "label": "3 out of 5"
+            },
+            {
+              "value": "3.5",
+              "label": "3.5 out of 5"
+            },
+            {
+              "value": "4",
+              "label": "4 out of 5"
+            },
+            {
+              "value": "4.5",
+              "label": "4.5 out of 5"
+            },
+            {
+              "value": "5",
+              "label": "5 out of 5"
+            }
+          ]
         },
         {
-          "id": "text",
-          "type": "richtext",
-          "label": "Body text"
+          "type": "text",
+          "id": "title",
+          "label": "Author's name"
+        },
+        {
+          "type": "select",
+          "id": "font_size",
+          "label": "Font size",
+          "default": "20px",
+          "options": [
+            {
+              "label": "Small",
+              "value": "16px"
+            },
+            {
+              "label": "Medium",
+              "value": "20px"
+            },
+            {
+              "label": "Large",
+              "value": "24px"
+            }
+          ]
         }
       ]
-    },
+    }
+  ],
+  "presets": [
     {
-      "name": "Navigation column",
-      "type": "navigation",
-      "settings": [
+      "name": "Sub Footer",
+      "blocks": [
         {
-          "type": "link_list",
-          "id": "linklist",
-          "label": "Navigation menu"
+          "type": "title"
+        },
+        {
+          "type": "title"
+        },
+        {
+          "type": "title"
         }
       ]
     }
