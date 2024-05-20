@@ -420,6 +420,7 @@
 @media screen and (max-width: 750px) {
   .image-with-text__grid.grid.grid--gapless.grid--1-col.grid--2-col-tablet.image-with-text__grid--reverse {
     flex-direction: column-reverse;
+    align-items: center;
   }
   .image-with-text.section .page-width{
     padding: 0;
