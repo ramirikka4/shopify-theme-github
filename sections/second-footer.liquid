@@ -11,84 +11,14 @@
     color: {{ section.settings.text_color}};
   }
   
-  .testimonials-header h3{
-    font-size: {{ section.settings.header_font_size }};
-  }
-
-  .testimonials-header p{
-    font-size: {{ section.settings.sub_header_font_size }};
-  }
-
-  .author-name{
+  .secondary-footer-block-title{
     font-size: {{ section.blocks.settings.font_size }};
   }
 
-  .testimonials_description{
+  .secondary-footer_description{
     font-size: {{ section.blocks.settings.font_size }};
-    
   }
   
-    .testimonial-logo_container img{
-      max-height: 30px;
-    }
-
-  .line:empty{
-    width: 100px;
-  }
-
-  .text-and-line-container{
-    display: flex;
-    flex-direction: row;
-    align-content: center;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-  }
-
-  .testimonial-logo_container{
-    display: flex;
-    margin-bottom: 5px;
-  }
-
-  .social_media_button_logo_container{
-    display: flex;
-    margin-top: 2px;
-    margin-left: 4px;
-  }
-  
-  .social_media_button_logo_container img{
-    max-height: 20px;
-  }
-
-  .button-container a.button.button--secondary {
-    background-color: #F4F4F4;
-  }
-
-  .button-container a.button.button--secondary:hover {
-    scale: 1.1;
-  }
-
-  .swiper-slide.testimonials {
-    display: flex;
-    justify-content: center;
-  }
-
-  
-  @media only screen and (max-width: 48em) {
-    .testimonials-header h3{
-      font-size: 20px;
-    }
-
-    .testimonials-header p{
-      font-size: 16px;
-    }
-
-    .line:empty{
-      width: 50px;
-    }
-    
-  }
-
 </style>
 
 <div id="section-{{ section.id }}">  
