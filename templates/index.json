@@ -179,14 +179,14 @@
           "type": "heading",
           "settings": {
             "heading": "<p>Receive fresh flowers<\/p><p><em>with our floral subscription<\/em><\/p>",
-            "heading_size": "h2"
+            "heading_size": "h1"
           }
         },
         "text_APfM4g": {
           "type": "text",
           "settings": {
             "text": "<p>Wild Blooms is more than just a place for luxury flowers. It’s events and cherished moments, weddings, and any occasion you might have.<\/p>",
-            "text_style": "body"
+            "text_style": "subtitle"
           }
         },
         "button_4Y3Jbb": {
