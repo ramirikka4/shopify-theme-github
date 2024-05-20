@@ -87,6 +87,7 @@
 <div id="section-{{ section.id }}">
   <div class="logo-text-container"> 
         <div class="line"></div>
+      <div>
           <div class="logo-text-logo_container"> 
             {%- if section.settings.social_media_logo != blank -%} 
               {{ section.settings.social_media_logo 
@@ -101,6 +102,7 @@
             </div>
           {%- endif -%}
         <div class="line"></div>
+      </div>
     </div>
 
   {%- if section.settings.section_description != blank -%}
