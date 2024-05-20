@@ -1248,6 +1248,7 @@ button.shopify-payment-button__button--unbranded {
 
 .button--secondary:after {
   --border-opacity: var(--buttons-border-opacity);
+  background-color: #F4F4F4;
 }
 
 .button:focus-visible,
