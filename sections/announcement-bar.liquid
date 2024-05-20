@@ -41,7 +41,7 @@
             >
           {%- endif -%}
           <p class="announcement-bar__message h5">
-            <span>{{ section.blocks.first.settings.text | escape }}</span>
+            <span>{{ section.blocks.first.settings.text }}</span>
           </p>
           {%- if section.blocks.first.settings.link != blank -%}
             </a>
@@ -238,8 +238,8 @@
       "name": "t:sections.announcement-bar.blocks.announcement.name",
       "settings": [
         {
-          "type": "text",
-          "id": "richtext",
+          "type": "richtext",
+          "id": "text",
           "label": "t:sections.announcement-bar.blocks.announcement.settings.text.label"
         },
         {
