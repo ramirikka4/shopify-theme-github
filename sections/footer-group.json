@@ -52,7 +52,7 @@
         "text_RHD4i6"
       ],
       "settings": {
-        "secondary_footer_information": "<p>Privacy Notice | Terms of Use | Accessibility Statement | Site Map  ©  2024  bywildblooms.com   -  Laguna, LA<\/p>",
+        "secondary_footer_information": "<p><a href=\"https:\/\/google.com\" title=\"https:\/\/google.com\">Privacy Notice | Terms of Use | Accessibility Statement | Site Map <\/a> ©  2024  bywildblooms.com   -  Laguna, LA<\/p>",
         "header_font_size": "30px",
         "background": "#f4f4f4",
         "text_color": "#1c1b1b",
