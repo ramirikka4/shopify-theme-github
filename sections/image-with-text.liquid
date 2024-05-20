@@ -8,6 +8,11 @@
     padding-right: {{ section.settings.padding_right }}px;
   }
 
+  .new-page-styles{
+    margin-left: {{ section.settings.margin_left }}px;
+    margin-right: {{ section.settings.margin_left }}px;
+  }
+
   @media screen and (min-width: 750px) {
     .section-{{ section.id }}-padding {
       padding-top: {{ section.settings.padding_top }}px;
@@ -351,6 +356,26 @@
       "unit": "px",
       "label": "Padding Right",
       "default": 36
+    },
+    {
+      "type": "range",
+      "id": "margin_left",
+      "min": 0,
+      "max": 200,
+      "step": 4,
+      "unit": "px",
+      "label": "Padding Left",
+      "default": 100
+    },
+    {
+      "type": "range",
+      "id": "margin_right",
+      "min": 0,
+      "max": 200,
+      "step": 4,
+      "unit": "px",
+      "label": "Padding Right",
+      "default": 100
     }
   ],
   "blocks": [
