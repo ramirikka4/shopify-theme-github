@@ -98,14 +98,14 @@
           "type": "heading",
           "settings": {
             "heading": "<p>Creating Memorable Events<\/p><p><em>with Elegance and Style<\/em><\/p>",
-            "heading_size": "h2"
+            "heading_size": "h1"
           }
         },
         "text_8QCqek": {
           "type": "text",
           "settings": {
-            "text": "<p> is more than just a one-stop shop for luxury flowers. It’s events and special memories, weddings, and any event you might have.<br\/><\/p>",
-            "text_style": "body"
+            "text": "<p>Wild Blooms is more than just a place for luxury flowers. It’s events and cherished moments, weddings, and any occasion you might have.<\/p>",
+            "text_style": "subtitle"
           }
         },
         "button_ije7qR": {
