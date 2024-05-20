@@ -61,10 +61,10 @@
               <div class="secon-footer-contact">
                 <div class="secon-footer-logo-title-container">
                   <div class="testimonial-logo_container"> 
-                    {%- if section.settings.phone_logo != blank -%} 
-                      {{ section.settings.phone_logo 
+                    {%- if block.settings.phone_logo != blank -%} 
+                      {{ block.settings.phone_logo 
                         | image_url: width: 600
-                        | image_tag: height: 50, alt: section.settings.phone_logo.alt, preload: true
+                        | image_tag: height: 50, alt: block.settings.phone_logo.alt, preload: true
                       }} 
                       {%- endif -%} 
                   </div>
@@ -77,10 +77,10 @@
 
                 <div class="secon-footer-logo-title-container">
                   <div class="testimonial-logo_container"> 
-                    {%- if section.settings.location_logo != blank -%} 
-                      {{ section.settings.location_logo 
+                    {%- if block.settings.location_logo != blank -%} 
+                      {{ block.settings.location_logo 
                         | image_url: width: 600
-                        | image_tag: height: 50, alt: section.settings.location_logo.alt, preload: true
+                        | image_tag: height: 50, alt: block.settings.location_logo.alt, preload: true
                       }} 
                       {%- endif -%} 
                     </div>
@@ -94,10 +94,10 @@
 
               <div class="secon-footer-logo-title-container">
                   <div class="testimonial-logo_container"> 
-                    {%- if section.settings.instagram_logo != blank -%} 
-                      {{ section.settings.instagram_logo 
+                    {%- if block.settings.instagram_logo != blank -%} 
+                      {{ block.settings.instagram_logo 
                         | image_url: width: 600
-                        | image_tag: height: 50, alt: section.settings.instagram_logo.alt, preload: true
+                        | image_tag: height: 50, alt: block.settings.instagram_logo.alt, preload: true
                       }} 
                       {%- endif -%} 
                     </div>
