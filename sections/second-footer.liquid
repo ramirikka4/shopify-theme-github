@@ -92,41 +92,20 @@
 </style>
 
 <div id="section-{{ section.id }}">
-  <div class="testimonials-header">
     <div class="text-and-line-container"> 
-        <div class="line"></div>
-          {%- if section.settings.sub_title != blank -%}
-                <div class="header-line"> 
-                  <h3>{{ section.settings.sub_title }}</h3>
-                </div>
-          {%- endif -%}
-          <div class="testimonial-logo_container"> 
-            {%- if section.settings.social_media_logo != blank -%} 
-              {{ section.settings.social_media_logo 
-                | image_url: width: 600
-                | image_tag: height: 50, alt: section.settings.social_media_logo.alt, preload: true
-              }} 
-              {%- endif -%} 
-          </div>
           {%- if section.settings.title != blank -%}
             <div class="header-line"> 
               <h3>{{ section.settings.title }}</h3>
             </div>
           {%- endif -%}
-        <div class="line"></div>
     </div>
     {%- if section.settings.section_description != blank -%}
       {{ section.settings.section_description }}
     {%- endif -%}
-  </div>
   
       {%- for block in section.blocks -%}
         <div class="swiper-slide testimonials" {{ block.shopify_attributes }}>
           <div class="testimonials-box">
-            {%- if block.settings.star_rating != blank -%}
-                <div class="star-rating" style="--star-rating: {{ block.settings.star_rating }};"></div>
-              {%- endif -%}
-          
             {%- if block.settings.description != blank -%}
               <div class="testimonials_description">
                 {{ block.settings.description -}}
