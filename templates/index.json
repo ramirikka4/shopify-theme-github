@@ -105,7 +105,7 @@
           "type": "text",
           "settings": {
             "text": "<p>Wild Blooms is more than just a place for luxury flowers. It’s events and cherished moments, weddings, and any occasion you might have.<\/p>",
-            "text_style": "subtitle"
+            "text_style": "body"
           }
         },
         "button_ije7qR": {
@@ -186,7 +186,7 @@
           "type": "text",
           "settings": {
             "text": "<p>Wild Blooms is more than just a place for luxury flowers. It’s events and cherished moments, weddings, and any occasion you might have.<\/p>",
-            "text_style": "subtitle"
+            "text_style": "body"
           }
         },
         "button_4Y3Jbb": {
