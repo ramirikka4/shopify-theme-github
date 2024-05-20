@@ -8,7 +8,7 @@
         "title_BxQBG4": {
           "type": "title",
           "settings": {
-            "footer_menu_title": "Flower & Events",
+            "footer_menu_title": "<strong>Flower & Events<\/strong>",
             "font_size": "20px",
             "footer-menu": "footer"
           }
@@ -16,7 +16,7 @@
         "title_C7VXjV": {
           "type": "title",
           "settings": {
-            "footer_menu_title": "Our Company",
+            "footer_menu_title": "<strong>Our Company<\/strong>",
             "font_size": "20px",
             "footer-menu": "footer"
           }
@@ -24,7 +24,7 @@
         "text_8Py99E": {
           "type": "text",
           "settings": {
-            "footer_contact_title": "Speak with a Florist",
+            "footer_contact_title": "<strong>Speak with a Florist<\/strong>",
             "font_size": "20px",
             "phone": "<p>(702) 836-9236<\/p>",
             "phone_logo": "shopify:\/\/shop_images\/Phone_Icon_04f6052f-5f22-4840-a6b5-40542181985e.png",
@@ -36,7 +36,7 @@
         "text_RHD4i6": {
           "type": "text",
           "settings": {
-            "footer_contact_title": "Follow Us",
+            "footer_contact_title": "<strong>Follow Us<\/strong>",
             "font_size": "20px",
             "phone": "<p>Instagram<\/p>",
             "location": "",
