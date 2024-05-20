@@ -25,7 +25,6 @@
           "type": "text",
           "settings": {
             "footer_contact_title": "<strong>Speak with a Florist<\/strong>",
-            "font_size": "20px",
             "phone": "<p>(702) 836-9236<\/p>",
             "phone_logo": "shopify:\/\/shop_images\/Phone_Icon_04f6052f-5f22-4840-a6b5-40542181985e.png",
             "location": "<p>4522 Laguna Vista St<\/p>",
@@ -33,14 +32,11 @@
             "instagram": ""
           }
         },
-        "text_RHD4i6": {
-          "type": "text",
+        "social_kYMTU8": {
+          "type": "social",
           "settings": {
-            "footer_contact_title": "<strong>Follow Us<\/strong>",
-            "font_size": "20px",
-            "phone": "<p>Instagram<\/p>",
-            "location": "",
-            "instagram": "",
+            "footer_social_title": "<strong>Follow Us<\/strong>",
+            "instagram": "<p>Instagram<\/p>",
             "instagram_logo": "shopify:\/\/shop_images\/IG.png"
           }
         }
@@ -49,7 +45,7 @@
         "title_BxQBG4",
         "title_C7VXjV",
         "text_8Py99E",
-        "text_RHD4i6"
+        "social_kYMTU8"
       ],
       "settings": {
         "secondary_footer_information": "<p><a href=\"https:\/\/google.com\" title=\"https:\/\/google.com\">Privacy Notice | Terms of Use | Accessibility Statement | Site Map <\/a> ©  2024  bywildblooms.com   -  Laguna, LA<\/p>",
