@@ -14,6 +14,10 @@
   margin-bottom: 1.5rem;
 }
 
+.contact__fields {
+    display: flex;
+  }
+
 @media screen and (min-width: 750px) {
   .contact .field {
     margin-bottom: 2rem;
@@ -31,9 +35,5 @@
 }
 
 @media screen and (min-width: 750px) {
-  .contact__fields {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-column-gap: 2rem;
-  }
+  
 }
