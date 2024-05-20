@@ -8,10 +8,7 @@
     padding-right: {{ section.settings.padding_right }}px;
   }
 
-  .new-page-styles{
-    margin-left: {{ section.settings.margin_left }}px;
-    margin-right: {{ section.settings.margin_left }}px;
-  }
+  
 
   @media screen and (min-width: 750px) {
     .section-{{ section.id }}-padding {
@@ -20,6 +17,11 @@
       padding-left: {{ section.settings.padding_left }}px;
       padding-right: {{ section.settings.padding_right }}px;
     }
+
+    .new-page-styles{
+    margin-left: {{ section.settings.margin_left }}px;
+    margin-right: {{ section.settings.margin_left }}px;
+  }
   }
 
   .image-with-text-header-rich p{
@@ -364,7 +366,7 @@
       "max": 200,
       "step": 4,
       "unit": "px",
-      "label": "Padding Left",
+      "label": "Margin Left",
       "default": 100
     },
     {
@@ -374,7 +376,7 @@
       "max": 200,
       "step": 4,
       "unit": "px",
-      "label": "Padding Right",
+      "label": "Margin Right",
       "default": 100
     }
   ],
