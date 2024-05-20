@@ -1146,6 +1146,7 @@ deferred-media {
 .button--tertiary {
   --color-button: var(--color-secondary-button);
   --color-button-text: var(--color-secondary-button-text);
+  background-color: #F4F4F4;
 }
 
 .button--tertiary {
@@ -1233,7 +1234,7 @@ button.shopify-payment-button__button--unbranded {
   top: var(--buttons-border-width);
   right: var(--buttons-border-width);
   bottom: var(--buttons-border-width);
-  left: var(--buttons-border-width);
+  left: var(--buttons-border-width); 
   z-index: 1;
   border-radius: var(--buttons-radius);
   transition: box-shadow var(--duration-short) ease;
