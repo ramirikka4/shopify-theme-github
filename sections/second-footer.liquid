@@ -57,18 +57,20 @@
               {%- if block.settings.footer_contact_title != blank -%}
                 <div class="secondary-footer-block-title">{{ block.settings.footer_contact_title }}</div>
               {%- endif -%}
-              
-              {%- if block.settings.phone != blank -%}
-                <div class="secondary-footer_description">
-                  {{ block.settings.phone -}}
-                </div>
-              {%- endif -%}
 
-              {%- if block.settings.location != blank -%}
-                <div class="secondary-footer_description">
-                  {{ block.settings.location -}}
-                </div>
-              {%- endif -%}
+              <div> 
+                {%- if block.settings.phone != blank -%}
+                  <div class="secondary-footer_description">
+                    {{ block.settings.phone -}}
+                  </div>
+                {%- endif -%}
+                
+                {%- if block.settings.location != blank -%}
+                  <div class="secondary-footer_description">
+                    {{ block.settings.location -}}
+                  </div>
+                {%- endif -%}
+              </div>
 
               {%- if block.settings.instagram != blank -%}
                 <div class="secondary-footer_description">
