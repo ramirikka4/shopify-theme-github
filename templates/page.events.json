@@ -146,8 +146,8 @@
         "mobile_content_alignment": "left",
         "padding_top": 36,
         "padding_bottom": 36,
-        "padding_left": 36,
-        "padding_right": 36
+        "padding_left": 100,
+        "padding_right": 100
       }
     },
     "image_with_line_text_hEJhyi": {
