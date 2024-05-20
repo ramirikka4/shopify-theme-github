@@ -5,16 +5,17 @@
     "announcement-bar": {
       "type": "announcement-bar",
       "blocks": {
-        "announcement-bar-0": {
+        "announcement_PzQKx7": {
           "type": "announcement",
           "settings": {
-            "text": "<p>Open daily for pick-up and delivery. <a href=\"\/collections\/all\" title=\"All products\"><strong>Shop Now<\/strong><\/a><\/p>",
+            "text": "Open daily for pick-up and delivery. Shop Now!",
+            "section_description": "",
             "link": "shopify:\/\/collections\/all"
           }
         }
       },
       "block_order": [
-        "announcement-bar-0"
+        "announcement_PzQKx7"
       ],
       "settings": {
         "color_scheme": "scheme-1",
