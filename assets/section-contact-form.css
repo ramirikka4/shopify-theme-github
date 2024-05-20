@@ -4,6 +4,7 @@
 
 .contact .form__message {
   align-items: flex-start;
+  padding: 10px;
 }
 
 .contact .icon-success {
