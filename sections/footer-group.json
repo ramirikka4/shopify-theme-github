@@ -2,11 +2,6 @@
   "name": "t:sections.footer.name",
   "type": "footer",
   "sections": {
-    "second_footer": {
-      "type": "newsletter",
-      "settings": {
-      }
-    },
     "newsletter_dK86Yd": {
       "type": "newsletter",
       "blocks": {
@@ -43,7 +38,6 @@
     }
   },
   "order": [
-    "newsletter_dK86Yd",
-    "second_footer"
+    "newsletter_dK86Yd"
   ]
 }
