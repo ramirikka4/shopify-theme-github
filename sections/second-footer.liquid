@@ -117,23 +117,6 @@
                       {%- endif -%}
                     </div>
                 </div>
-                
-                <div class="secon-footer-logo-title-container">
-                  <div class="testimonial-logo_container"> 
-                    {%- if block.settings.instagram_logo != blank -%} 
-                      {{ block.settings.instagram_logo 
-                        | image_url: width: 600
-                        | image_tag: height: 50, alt: block.settings.instagram_logo.alt, preload: true
-                      }} 
-                      {%- endif -%} 
-                    </div>
-                    {%- if block.settings.instagram != blank -%}
-                      <div class="secondary-footer_description">
-                        {{ block.settings.instagram -}}
-                      </div>
-                    {%- endif -%}
-                </div>
-                
               </div>
               
             </div>
