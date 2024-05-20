@@ -130,7 +130,7 @@
       ],
       "settings": {
         "image": "shopify:\/\/shop_images\/Hero_Event_-_Image_2_441f9f65-ed42-4421-bebb-b8fd12608491.png",
-        "height": "small",
+        "height": "adapt",
         "desktop_image_width": "medium",
         "layout": "text_first",
         "desktop_content_position": "middle",
