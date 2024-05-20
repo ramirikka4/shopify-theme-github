@@ -44,25 +44,10 @@
         "padding_top": 20,
         "padding_bottom": 20
       }
-    },
-    "breadcrumb_6VWYUL": {
-      "type": "breadcrumb",
-      "settings": {
-        "breadcrumbs_home_icon_bool": false,
-        "breadcrumb_delimeter": "angle_right",
-        "breadcrumb_bg_color": "#ffffff",
-        "breadcrumb_text_color": "#465076",
-        "breadcrumb_accent_color_bool": false,
-        "breadcrumb_accent_color": "#4770db",
-        "enable_product_page": false,
-        "enable_collection_page": false,
-        "enable_complete_site": true
-      }
     }
   },
   "order": [
     "announcement-bar",
-    "header",
-    "breadcrumb_6VWYUL"
+    "header"
   ]
 }
