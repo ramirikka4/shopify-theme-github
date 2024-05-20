@@ -42,9 +42,6 @@
           {%- endif -%}
           <p class="announcement-bar__message h5">
             <span>{{ section.blocks.first.settings.text | escape }}</span>
-            {%- if section.blocks.first.settings.link != blank -%}
-              {% render 'icon-arrow' %}
-            {%- endif -%}
           </p>
           {%- if section.blocks.first.settings.link != blank -%}
             </a>
@@ -242,14 +239,8 @@
       "settings": [
         {
           "type": "text",
-          "id": "text",
-          "default": "Welcome to our store",
+          "id": "richtext",
           "label": "t:sections.announcement-bar.blocks.announcement.settings.text.label"
-        },
-        {
-          "type": "richtext",
-          "id": "section_description",
-          "label": "Section Description"
         },
         {
           "type": "url",
