@@ -2,6 +2,51 @@
   "name": "t:sections.footer.name",
   "type": "footer",
   "sections": {
+    "second_footer_nx69gh": {
+      "type": "second-footer",
+      "blocks": {
+        "title_BxQBG4": {
+          "type": "title",
+          "settings": {
+            "title": "Flower & Events",
+            "font_size": "20px",
+            "footer-menu": "footer"
+          }
+        },
+        "title_C7VXjV": {
+          "type": "title",
+          "settings": {
+            "title": "Our Company",
+            "font_size": "20px",
+            "footer-menu": "footer"
+          }
+        },
+        "text_8Py99E": {
+          "type": "text",
+          "settings": {
+            "title": "Speak with a Florist",
+            "font_size": "20px",
+            "phone": "<p>(702) 836-9236<\/p>",
+            "location": "<p>4522 Laguna Vista St<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "title_BxQBG4",
+        "title_C7VXjV",
+        "text_8Py99E"
+      ],
+      "settings": {
+        "title": "FOOTER TITLE",
+        "header_font_size": "30px",
+        "section_description": "",
+        "sub_header_font_size": "18px",
+        "background": "#ffffff",
+        "text_color": "#1c1b1b",
+        "section_padding_y": 36,
+        "section_padding_x": 0
+      }
+    },
     "newsletter_dK86Yd": {
       "type": "newsletter",
       "blocks": {
@@ -38,6 +83,7 @@
     }
   },
   "order": [
+    "second_footer_nx69gh",
     "newsletter_dK86Yd"
   ]
 }
