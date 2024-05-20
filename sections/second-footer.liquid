@@ -43,11 +43,15 @@
             </div>
 
             <div> 
-            {%- if block.settings.description != blank -%}
-              <div class="secondary-footer_description">
-                {{ block.settings.description -}}
-              </div>
-            {%- endif -%}
+              {%- if block.settings.footer_contact_title != blank -%}
+                <div class="secondary-footer-block-title">{{ block.settings.footer_contact_title }}</div>
+              {%- endif -%}
+
+              {%- if block.settings.description != blank -%}
+                <div class="secondary-footer_description">
+                  {{ block.settings.description -}}
+                </div>
+              {%- endif -%}
             </div>
 
           </div>
