@@ -51,51 +51,14 @@
       "settings": {
         "secondary_footer_information": "<p>Privacy Notice | Terms of Use | Accessibility Statement | Site Map  ©  2024  bywildblooms.com   -  Laguna, LA<\/p>",
         "header_font_size": "30px",
-        "section_description": "",
-        "sub_header_font_size": "18px",
         "background": "#f4f4f4",
         "text_color": "#1c1b1b",
         "section_padding_y": 36,
         "section_padding_x": 0
       }
-    },
-    "newsletter_dK86Yd": {
-      "type": "newsletter",
-      "blocks": {
-        "heading_D8gAKK": {
-          "type": "heading",
-          "settings": {
-            "heading": "Get Flowers in Your Inbox",
-            "heading_size": "h2"
-          }
-        },
-        "paragraph_e3Y8pR": {
-          "type": "paragraph",
-          "settings": {
-            "text": "<p>Be the first to learn about exclusive deals, in-store offers and discounts.<\/p>"
-          }
-        },
-        "email_form_pVTFXJ": {
-          "type": "email_form",
-          "settings": {
-          }
-        }
-      },
-      "block_order": [
-        "heading_D8gAKK",
-        "paragraph_e3Y8pR",
-        "email_form_pVTFXJ"
-      ],
-      "settings": {
-        "color_scheme": "scheme-2",
-        "full_width": true,
-        "padding_top": 40,
-        "padding_bottom": 40
-      }
     }
   },
   "order": [
-    "second_footer_nx69gh",
-    "newsletter_dK86Yd"
+    "second_footer_nx69gh"
   ]
 }
