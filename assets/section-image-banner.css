@@ -15,6 +15,10 @@
   transform: perspective(0);
 }
 
+.banner__text rte{
+  color: FFFFFF;
+}
+
 @media only screen and (max-width: 749px) {
   .banner--content-align-mobile-right .banner__box {
     text-align: right;
