@@ -33,7 +33,7 @@
       ],
       "settings": {
         "image": "shopify:\/\/shop_images\/Events_Hero_Image.jpg",
-        "height": "medium",
+        "height": "adapt",
         "desktop_image_width": "medium",
         "layout": "text_first",
         "desktop_content_position": "middle",
