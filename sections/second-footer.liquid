@@ -118,7 +118,22 @@
                     </div>
                 </div>
               </div>
-              
+
+              <div class="secon-footer-logo-title-container">
+                    <div class="testimonial-logo_container"> 
+                      {%- if block.settings.location_logo != blank -%} 
+                        {{ block.settings.location_logo 
+                          | image_url: width: 600
+                          | image_tag: height: 50, alt: block.settings.location_logo.alt, preload: true
+                        }} 
+                        {%- endif -%} 
+                      </div>
+                      {%- if block.settings.location != blank -%}
+                        <div class="secondary-footer_description">
+                          {{ block.settings.location -}}
+                        </div>
+                      {%- endif -%}
+                </div>
             </div>
           </div>
         </div>
