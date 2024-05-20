@@ -34,12 +34,13 @@
       {%- for block in section.blocks -%}
         <div class="secondary-footer-content-container" {{ block.shopify_attributes }}>
           <div class="secondary-footer-content-container-inner">
-
+  hello1
             <div class="secondary-footer-menu-container"> 
               {%- if block.settings.footer_menu_title != blank -%}
                 <div class="secondary-footer-block-title">{{ block.settings.footer_menu_title }}</div>
               {%- endif -%}
 
+              hello2
               <ul class="menu">
                 {% for link in section.settings.footer-menu.links %}
                   <li class="menu-link">
@@ -74,6 +75,7 @@
                 <div class="secondary-footer-block-title">{{ block.settings.footer_contact_title }}</div>
               {%- endif -%}
 
+              hello 3
               {%- if block.settings.phone != blank -%}
                 <div class="secondary-footer_description">
                   {{ block.settings.phone -}}
