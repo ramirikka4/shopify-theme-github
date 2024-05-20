@@ -3501,6 +3501,10 @@ h3, h2.title.inline-richtext.h2 {
   font-family: EditorsNote !important; 
 }
 
+.banner__heading.inline-richtext.h0{
+  font-size: 80px;
+}
+
 @media screen and (max-width: 750px) {
   .image-with-text-header-rich p:nth-child(2){
   line-height: 40px;
