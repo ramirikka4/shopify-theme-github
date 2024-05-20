@@ -1100,10 +1100,6 @@ summary::-webkit-details-marker {
 
 }
 
-.media>*:not(.zoom):not(.deferred-media__poster-button) img{
-    object-fit: cover;
-}
-
 .media > img {
   object-fit: cover;
   object-position: center center;
