@@ -29,12 +29,22 @@
             "phone": "<p>(702) 836-9236<\/p>",
             "location": "<p>4522 Laguna Vista St<\/p>"
           }
+        },
+        "text_RHD4i6": {
+          "type": "text",
+          "settings": {
+            "title": "Follow Us",
+            "font_size": "20px",
+            "phone": "<p>Instagram<\/p>",
+            "location": ""
+          }
         }
       },
       "block_order": [
         "title_BxQBG4",
         "title_C7VXjV",
-        "text_8Py99E"
+        "text_8Py99E",
+        "text_RHD4i6"
       ],
       "settings": {
         "title": "FOOTER TITLE",
