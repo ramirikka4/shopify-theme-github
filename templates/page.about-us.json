@@ -36,8 +36,8 @@
         "mobile_content_alignment": "left",
         "padding_top": 0,
         "padding_bottom": 0,
-        "padding_left": 36,
-        "padding_right": 36,
+        "padding_left": 352,
+        "padding_right": 0,
         "margin": false
       }
     },
