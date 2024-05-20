@@ -47,8 +47,7 @@
         "padding_bottom": 0,
         "padding_left": 0,
         "padding_right": 0,
-        "margin_left": 104,
-        "margin_right": 0
+        "margin": false
       }
     },
     "image_with_line_text_HXjKgA": {
@@ -150,8 +149,7 @@
         "padding_bottom": 36,
         "padding_left": 100,
         "padding_right": 100,
-        "margin_left": 200,
-        "margin_right": 200
+        "margin": true
       }
     },
     "image_with_line_text_hEJhyi": {
