@@ -16,7 +16,7 @@
 }
 
 .banner__text rte{
-  color: FFFFFF;
+  color: white;
 }
 
 @media only screen and (max-width: 749px) {
