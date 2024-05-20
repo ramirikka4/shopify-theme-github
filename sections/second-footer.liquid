@@ -119,43 +119,27 @@
       {{ section.settings.section_description }}
     {%- endif -%}
   </div>
+  
+      {%- for block in section.blocks -%}
+        <div class="swiper-slide testimonials" {{ block.shopify_attributes }}>
+          <div class="testimonials-box">
+            {%- if block.settings.star_rating != blank -%}
+                <div class="star-rating" style="--star-rating: {{ block.settings.star_rating }};"></div>
+              {%- endif -%}
+          
+            {%- if block.settings.description != blank -%}
+              <div class="testimonials_description">
+                {{ block.settings.description -}}
+              </div>
+            {%- endif -%}
+          
+            {%- if block.settings.title != blank -%}
+              <div class="author-name">{{ block.settings.title }}</div>
+            {%- endif -%}
+          </div>
+        </div>
+      {%- endfor -%}
 </div>
-
-<script>
-  addEventListener('DOMContentLoaded', (event) => {
-    var autoplayEnabled = {{ section.settings.autoplay | json }};
-    
-    var swiperOptions = {
-      scrollbar: {
-        draggable: true,
-      },
-      loop: true,
-      pagination: {
-        el: ".swiper-pagination",
-      },
-      breakpoints: {
-        // when window width is >= 768px (48em)
-        768: {
-          slidesPerView: 3,
-        },
-        // when window width is < 768px (48em)
-        0: {
-          slidesPerView: 1,
-        }
-      }
-    };
-    
-    if (autoplayEnabled) {
-      swiperOptions.autoplay = {
-        delay: 4500,
-        disableOnInteraction: false,
-      };
-    }
-    
-    var swiper = new Swiper('.testimonials-slider', swiperOptions);
-  });
-</script>
-
 
 {% schema %}
 {
