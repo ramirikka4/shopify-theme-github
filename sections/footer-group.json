@@ -8,7 +8,7 @@
         "title_BxQBG4": {
           "type": "title",
           "settings": {
-            "title": "Flower & Events",
+            "footer_menu_title": "Flower & Events",
             "font_size": "20px",
             "footer-menu": "footer"
           }
@@ -16,7 +16,7 @@
         "title_C7VXjV": {
           "type": "title",
           "settings": {
-            "title": "Our Company",
+            "footer_menu_title": "Our Company",
             "font_size": "20px",
             "footer-menu": "footer"
           }
@@ -24,19 +24,21 @@
         "text_8Py99E": {
           "type": "text",
           "settings": {
-            "title": "Speak with a Florist",
+            "footer_contact_title": "Speak with a Florist",
             "font_size": "20px",
             "phone": "<p>(702) 836-9236<\/p>",
-            "location": "<p>4522 Laguna Vista St<\/p>"
+            "location": "<p>4522 Laguna Vista St<\/p>",
+            "instagram": ""
           }
         },
         "text_RHD4i6": {
           "type": "text",
           "settings": {
-            "title": "Follow Us",
+            "footer_contact_title": "Follow Us",
             "font_size": "20px",
             "phone": "<p>Instagram<\/p>",
-            "location": ""
+            "location": "",
+            "instagram": ""
           }
         }
       },
