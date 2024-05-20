@@ -91,18 +91,7 @@
 
 </style>
 
-<div id="section-{{ section.id }}">
-    <div class="text-and-line-container"> 
-          {%- if section.settings.title != blank -%}
-            <div class="header-line"> 
-              <h3>{{ section.settings.title }}</h3>
-            </div>
-          {%- endif -%}
-    </div>
-    {%- if section.settings.section_description != blank -%}
-      {{ section.settings.section_description }}
-    {%- endif -%}
-  
+<div id="section-{{ section.id }}">  
       {%- for block in section.blocks -%}
         <div class="secondary-footer-content-container" {{ block.shopify_attributes }}>
           <div class="secondary-footer-content-container-inner">
