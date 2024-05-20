@@ -3495,7 +3495,7 @@ h3, h2.title.inline-richtext.h2 {
   line-height: 70px;
 }
 
-.banner__heading h2 {
+.banner__heading {
   font-family: EditorsNoteItalic !important; 
   font-size: 80px;
 }
