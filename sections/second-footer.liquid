@@ -18,11 +18,15 @@
   .secondary-footer_description{
     font-size: {{ section.blocks.settings.font_size }};
   }
+
+  .secondary-footer-block-container{
+    display: flex;
+  }
   
 </style>
 
 <div id="section-{{ section.id }}">  
-  <div>
+  <div class="secondary-footer-block-container">
       {%- for block in section.blocks -%}
         <div class="secondary-footer-content-container" {{ block.shopify_attributes }}>
           <div class="secondary-footer-content-container-inner">
