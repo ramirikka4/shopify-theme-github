@@ -1,24 +1,25 @@
 {{ 'testimonials.css' | asset_url | stylesheet_tag }}
 
 <style>
+  
   #section-{{ section.id }} {
     background: {{ section.settings.background }};
     padding-top: {{ section.settings.section_padding_y }}px;
     padding-bottom: {{ section.settings.section_padding_y }}px;
     padding-left: {{ section.settings.section_padding_x }}px;
     padding-right: {{ section.settings.section_padding_x }}px;
-    color: {{ section.settings.text_color }};
+    color: {{ section.settings.text_color}};
+  }
+  
+  .secondary-footer-block-title{
+    font-size: {{ section.blocks.settings.font_size }};
   }
 
-  .secondary-footer-block-title {
-    font-size: {{ block.settings.font_size }};
+  .secondary-footer_description{
+    font-size: {{ section.blocks.settings.font_size }};
   }
 
-  .secondary-footer-description {
-    font-size: {{ block.settings.font_size }};
-  }
-
-  .secondary-footer-flex-container {
+  .secondary-footer-flex-container{
     display: flex;
     flex-direction: column;
     gap: 60px;
@@ -33,127 +34,107 @@
     flex: 1;
   }
 
-  .secondary-footer-content-container {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .secondary-footer-description p {
-    padding: 0;
-    margin: 0;
-  }
-
-  .secondary-footer-contact-container {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .secondary-footer-logo-title-container {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-  }
-
-  .secondary-footer-logo-title-container img {
-    max-height: 20px;
-  }
-
-  .secondary-footer-information-header {
+  .secondary-footer-information-header{
     text-align: center;
     color: #848484;
     border-top: 1px solid #dbdbdb;
   }
 
-  .secondary-footer-information-header a {
+  .secondary-footer-information-header a{
     margin-right: 5px;
   }
+  
 </style>
 
 <div id="section-{{ section.id }}">
   <div class="secondary-footer-flex-container"> 
-    <div class="secondary-footer-block-container">
+  <div class="secondary-footer-block-container">
       {%- for block in section.blocks -%}
         <div class="secondary-footer-content-container" {{ block.shopify_attributes }}>
-          {%- if block.type == 'Footer_Menu' -%}
-            <div class="secondary-footer-menu-container">
+            <div class="secondary-footer-menu-container"> 
               {%- if block.settings.footer_menu_title != blank -%}
                 <div class="secondary-footer-block-title">{{ block.settings.footer_menu_title }}</div>
               {%- endif -%}
-            </div>
-          {%- endif -%}
+          </div>
 
-          {%- if block.type == 'Footer_Contact' -%}
-            <div class="secondary-footer-contact-container">
-              {%- if block.settings.footer_contact_title != blank -%}
-                <div class="secondary-footer-block-title">{{ block.settings.footer_contact_title }}</div>
-              {%- endif -%}
+            <div class="secondary-footer-contact-container"> 
+                 {%- if block.settings.footer_contact_title != blank -%}
+                  <div class="secondary-footer-block-title">{{ block.settings.footer_contact_title }}</div>
+                {%- endif -%}
 
-              {%- if block.settings.phone_logo != blank or block.settings.phone != blank -%}
-                <div class="secondary-footer-logo-title-container">
-                  {%- if block.settings.phone_logo != blank -%}
-                    <div class="testimonial-logo_container">
-                      {{ block.settings.phone_logo 
-                        | image_url: width: 600
-                        | image_tag: height: 50, alt: block.settings.phone_logo.alt, preload: true }}
+                <div class="secon-footer-contact">
+                  <div class="secon-footer-logo-title-container">
+                    <div class="testimonial-logo_container"> 
+                      {%- if block.settings.phone_logo != blank -%} 
+                        {{ block.settings.phone_logo 
+                          | image_url: width: 600
+                          | image_tag: height: 50, alt: block.settings.phone_logo.alt, preload: true
+                        }} 
+                        {%- endif -%} 
                     </div>
-                  {%- endif -%}
-                  {%- if block.settings.phone != blank -%}
-                    <div class="secondary-footer-description">{{ block.settings.phone }}</div>
-                  {%- endif -%}
-                </div>
-              {%- endif -%}
-
-              {%- if block.settings.location_logo != blank or block.settings.location != blank -%}
-                <div class="secondary-footer-logo-title-container">
-                  {%- if block.settings.location_logo != blank -%}
-                    <div class="testimonial-logo_container">
-                      {{ block.settings.location_logo 
-                        | image_url: width: 600
-                        | image_tag: height: 50, alt: block.settings.location_logo.alt, preload: true }}
+                    {%- if block.settings.phone != blank -%}
+                      <div class="secondary-footer_description">
+                        {{ block.settings.phone -}}
+                      </div>
+                    {%- endif -%}
                     </div>
-                  {%- endif -%}
-                  {%- if block.settings.location != blank -%}
-                    <div class="secondary-footer-description">{{ block.settings.location }}</div>
-                  {%- endif -%}
+  
+                  <div class="secon-footer-logo-title-container">
+                    <div class="testimonial-logo_container"> 
+                      {%- if block.settings.location_logo != blank -%} 
+                        {{ block.settings.location_logo 
+                          | image_url: width: 600
+                          | image_tag: height: 50, alt: block.settings.location_logo.alt, preload: true
+                        }} 
+                        {%- endif -%} 
+                      </div>
+                      {%- if block.settings.location != blank -%}
+                        <div class="secondary-footer_description">
+                          {{ block.settings.location -}}
+                        </div>
+                      {%- endif -%}
+                    </div>
                 </div>
-              {%- endif -%}
-            </div>
-          {%- endif -%}
+              </div>
 
-          {%- if block.type == 'Footer_Social' -%}
-            <div class="secondary-footer-logo-title-container">
-              {%- if block.settings.footer_social_title != blank -%}
-                <div class="secondary-footer-block-title">{{ block.settings.footer_social_title }}</div>
-              {%- endif -%}
-              {%- if block.settings.instagram_logo != blank -%}
-                <div class="testimonial-logo_container">
-                  {{ block.settings.instagram_logo 
-                    | image_url: width: 600
-                    | image_tag: height: 50, alt: block.settings.instagram_logo.alt, preload: true }}
+        <div class="secon-footer-logo-title-container">
+                 {%- if block.settings.footer_social_title != blank -%}
+                  <div class="secondary-footer-block-title">{{ block.settings.footer_social_title }}</div>
+                {%- endif -%}
+                    <div class="testimonial-logo_container"> 
+                      {%- if block.settings.instagram_logo != blank -%} 
+                        {{ block.settings.instagram_logo 
+                          | image_url: width: 600
+                          | image_tag: height: 50, alt: block.settings.instagram_logo.alt, preload: true
+                        }} 
+                        {%- endif -%} 
+                      </div>
+                      {%- if block.settings.instagram != blank -%}
+                      <div class="secondary-footer_description">
+                  {{ block.settings.instagram -}}
                 </div>
               {%- endif -%}
-              {%- if block.settings.instagram != blank -%}
-                <div class="secondary-footer-description">{{ block.settings.instagram }}</div>
-              {%- endif -%}
-            </div>
-          {%- endif -%}
+          </div>
         </div>
       {%- endfor -%}
     </div>
-    
+  
     {%- if section.settings.secondary_footer_information != blank -%}
-      <div class="secondary-footer-information-header">
-        {{ section.settings.secondary_footer_information }}
-      </div>
-    {%- endif -%}
-  </div>
+        <div class="secondary-footer-information-header"> 
+          {{ section.settings.secondary_footer_information }}
+        </div>
+      {%- endif -%}
+    </div>
 </div>
 
 {% schema %}
 {
   "name": "Secondary Footer",
   "tag": "section",
-  "class": "secondary-footer-section shopify-section",
+  "class": "secondary-foooter-section shopify-section",
+  "disabled_on": {
+    "groups": ["header"]
+  },
   "settings": [
     {
       "type": "richtext",
