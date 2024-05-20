@@ -1097,7 +1097,11 @@ summary::-webkit-details-marker {
   left: 0;
   height: 100%;
   width: 100%;
-  object-fit: cover;
+
+}
+
+.media>*:not(.zoom):not(.deferred-media__poster-button){
+    object-fit: cover;
 }
 
 .media > img {
