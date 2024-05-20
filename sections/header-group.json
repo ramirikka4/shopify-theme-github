@@ -8,8 +8,7 @@
         "announcement-bar-0": {
           "type": "announcement",
           "settings": {
-            "text": "Open daily for pick-up and delivery.",
-            "section_description": "<p><strong>Shop Now!<\/strong><\/p>",
+            "text": "<p>Open daily for pick-up and delivery. <a href=\"\/collections\/all\" title=\"All products\"><strong>Shop Now<\/strong><\/a><\/p>",
             "link": "shopify:\/\/collections\/all"
           }
         }
