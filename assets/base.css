@@ -3495,12 +3495,10 @@ h3, h2.title.inline-richtext.h2 {
   line-height: 70px;
 }
 
-
-
 .banner__heading.inline-richtext.h1,
 .banner__heading.inline-richtext.h0,
 .banner__heading.inline-richtext.h2{
-  font-family: EditorsNoteItalic !important; 
+  font-family: EditorsNote !important; 
 }
 
 @media screen and (max-width: 750px) {
