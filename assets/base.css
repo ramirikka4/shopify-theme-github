@@ -3508,7 +3508,6 @@ h3, h2.title.inline-richtext.h2 {
 
 .banner__text.rte p{
   font-size: 30px;
-  letter-spacing: 5px;
 }
 
 @media screen and (max-width: 750px) {
