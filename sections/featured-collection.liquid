@@ -198,14 +198,14 @@
     {%- endif -%}
   </div>
 
-  {%- if section.settings.review_button != blank -%}
+  {%- if section.settings.shop_all_button != blank -%}
     <div class="button-container">
       <a {% if section.settings.button_link == blank %}
       role="link" aria-disabled="true"
       {% else %}
       href="{{ section.settings.button_link }}"
       {% endif %} class="button{% if section.settings.button_style_secondary %} button--secondary{% else %} button--primary{% endif %}">
-        {{ section.settings.review_button }}
+        {{ section.settings.shop_all_button }}
       </a>
     </div>
     {%- endif -%}
@@ -502,7 +502,7 @@
     },
     {
       "type": "richtext",
-      "id": "review_button",
+      "id": "shop_all_button",
       "label": "Button Label"
     },
     {
