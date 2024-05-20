@@ -15,7 +15,7 @@
   transform: perspective(0);
 }
 
-.banner__text rte{
+.banner__text.rte p{
   color: white;
 }
 
