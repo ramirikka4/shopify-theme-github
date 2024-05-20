@@ -50,33 +50,7 @@
               {%- if block.settings.footer_menu_title != blank -%}
                 <div class="secondary-footer-block-title">{{ block.settings.footer_menu_title }}</div>
               {%- endif -%}
-              <ul class="menu">
-                {% for link in section.settings.footer-menu.links %}
-                  <li class="menu-link">
-                    <a href="{{ link.url }}">{{ link.title }}</a>
               
-                    {% if link.links.size > 0 %}
-                      <ul class="menu dropdown-child">
-                        {% for child_link in link.links %}
-                          <li class="menu-link">
-                            <a href="{{ child_link.url }}">{{ child_link.title }}</a>
-              
-                            {% if child_link.links.size > 0 %}
-                              <ul class="menu dropdown-grandchild">
-                                {% for grandchild_link in child_link.links %}
-                                  <li class="menu-link">
-                                    <a href="{{ grandchild_link.url }}">{{ grandchild_link.title }}</a>
-                                  </li>
-                                {% endfor %}
-                              </ul>
-                            {% endif %}
-                          </li>
-                        {% endfor %}
-                      </ul>
-                    {% endif %}
-                  </li>
-                {% endfor %}
-              </ul>
             </div>
 
             <div> 
