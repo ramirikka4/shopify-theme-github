@@ -119,51 +119,6 @@
       {{ section.settings.section_description }}
     {%- endif -%}
   </div>
-  
-  
-  <div class="swiper testimonials-slider">
-    <div class="swiper-wrapper">
-      {%- for block in section.blocks -%}
-        <div class="swiper-slide testimonials" {{ block.shopify_attributes }}>
-          <div class="testimonials-box">
-            {%- if block.settings.star_rating != blank -%}
-                <div class="star-rating" style="--star-rating: {{ block.settings.star_rating }};"></div>
-              {%- endif -%}
-          
-            {%- if block.settings.description != blank -%}
-              <div class="testimonials_description">
-                {{ block.settings.description -}}
-              </div>
-            {%- endif -%}
-          
-            {%- if block.settings.title != blank -%}
-              <div class="author-name">{{ block.settings.title }}</div>
-            {%- endif -%}
-          </div>
-        </div>
-      {%- endfor -%}
-    </div>
-    <div class="swiper-pagination"></div>
-  </div>
-  {%- if section.settings.review_button != blank -%}
-    <div class="button-container">
-      <a {% if section.settings.button_link == blank %}
-      role="link" aria-disabled="true"
-      {% else %}
-      href="{{ section.settings.button_link }}"
-      {% endif %} class="button{% if section.settings.button_style_secondary %} button--secondary{% else %} button--primary{% endif %}">
-        {{ section.settings.review_button }}
-        <div class="social_media_button_logo_container"> 
-            {%- if section.settings.social_media_button_logo != blank -%} 
-              {{ section.settings.social_media_button_logo
-                | image_url: width: 600
-                | image_tag: height: 70, alt: section.settings.social_media_button_logo.alt, preload: true
-              }} 
-              {%- endif -%} 
-          </div>
-      </a>
-    </div>
-    {%- endif -%}
 </div>
 
 <script>
