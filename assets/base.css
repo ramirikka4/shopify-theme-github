@@ -3495,5 +3495,9 @@ h3, h2.title.inline-richtext.h2 {
 }
 }
 
+a.button.button--primary:hover {
+    scale: 1.1;
+  }
+
 
 

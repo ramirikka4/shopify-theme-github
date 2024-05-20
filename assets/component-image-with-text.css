@@ -373,10 +373,6 @@
   margin-bottom: 1rem;
 }
 
-a.button.button--primary:hover {
-    scale: 1.1;
-  }
-
 @media screen and (max-width: 749px) {
   .collapse-padding .image-with-text__grid .image-with-text__content {
     padding-left: 0;
