@@ -58,27 +58,56 @@
                 <div class="secondary-footer-block-title">{{ block.settings.footer_contact_title }}</div>
               {%- endif -%}
 
-              <div class="secon-footer-contact"> 
-                {%- if block.settings.phone != blank -%}
-                  <div class="secondary-footer_description">
-                    {{ block.settings.phone -}}
+              <div class="secon-footer-contact">
+                <div class="secon-footer-logo-title-container">
+                  <div class="testimonial-logo_container"> 
+                    {%- if section.settings.social_media_logo != blank -%} 
+                      {{ section.settings.social_media_logo 
+                        | image_url: width: 600
+                        | image_tag: height: 50, alt: section.settings.social_media_logo.alt, preload: true
+                      }} 
+                      {%- endif -%} 
                   </div>
-                {%- endif -%}
-                
-                {%- if block.settings.location != blank -%}
-                  <div class="secondary-footer_description">
-                    {{ block.settings.location -}}
+                  {%- if block.settings.phone != blank -%}
+                    <div class="secondary-footer_description">
+                      {{ block.settings.phone -}}
+                    </div>
+                  {%- endif -%}
                   </div>
-                {%- endif -%}
+
+                <div class="secon-footer-logo-title-container">
+                  <div class="testimonial-logo_container"> 
+                    {%- if section.settings.social_media_logo != blank -%} 
+                      {{ section.settings.social_media_logo 
+                        | image_url: width: 600
+                        | image_tag: height: 50, alt: section.settings.social_media_logo.alt, preload: true
+                      }} 
+                      {%- endif -%} 
+                    </div>
+                    {%- if block.settings.location != blank -%}
+                      <div class="secondary-footer_description">
+                        {{ block.settings.location -}}
+                      </div>
+                    {%- endif -%}
+                  </div>
               </div>
 
-              {%- if block.settings.instagram != blank -%}
-                <div class="secondary-footer_description">
-                  {{ block.settings.instagram -}}
+              <div class="secon-footer-logo-title-container">
+                  <div class="testimonial-logo_container"> 
+                    {%- if section.settings.social_media_logo != blank -%} 
+                      {{ section.settings.social_media_logo 
+                        | image_url: width: 600
+                        | image_tag: height: 50, alt: section.settings.social_media_logo.alt, preload: true
+                      }} 
+                      {%- endif -%} 
+                    </div>
+                    {%- if block.settings.instagram != blank -%}
+                      <div class="secondary-footer_description">
+                        {{ block.settings.instagram -}}
+                      </div>
+                    {%- endif -%}
                 </div>
-              {%- endif -%}
             </div>
-
           </div>
         </div>
       {%- endfor -%}
