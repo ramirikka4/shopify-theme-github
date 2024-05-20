@@ -120,6 +120,11 @@
               </div>
 
               <div class="secon-footer-logo-title-container">
+
+                 {%- if block.settings.footer_contact_title != blank -%}
+                  <div class="secondary-footer-block-title">{{ block.settings.footer_contact_title }}</div>
+                {%- endif -%}
+                
                     <div class="testimonial-logo_container"> 
                       {%- if block.settings.instagram_logo != blank -%} 
                         {{ block.settings.instagram_logo 
