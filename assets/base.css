@@ -3499,6 +3499,7 @@ h3, h2.title.inline-richtext.h2 {
   font-family: EditorsNote !important; 
   font-size: 80px;
   letter-spacing: 10px;
+  min-width: 200px;
 }
 
 @media screen and (max-width: 750px) {
