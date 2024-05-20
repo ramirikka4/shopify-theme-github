@@ -104,16 +104,16 @@
     {%- endif -%}
   
       {%- for block in section.blocks -%}
-        <div class="swiper-slide testimonials" {{ block.shopify_attributes }}>
-          <div class="testimonials-box">
+        <div class="secondary-footer-content-container" {{ block.shopify_attributes }}>
+          <div class="secondary-footer-content-container-inner">
             {%- if block.settings.description != blank -%}
-              <div class="testimonials_description">
+              <div class="secondary-footer_description">
                 {{ block.settings.description -}}
               </div>
             {%- endif -%}
           
             {%- if block.settings.title != blank -%}
-              <div class="author-name">{{ block.settings.title }}</div>
+              <div class="secondary-footer-block-title">{{ block.settings.title }}</div>
             {%- endif -%}
           </div>
         </div>
