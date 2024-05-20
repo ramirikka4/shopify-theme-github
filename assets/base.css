@@ -99,7 +99,7 @@ body:has(.section-header .drawer-menu) .announcement-bar-section .page-width {
 
 @media screen and (min-width: 750px) {
   .page-width {
-    padding: 0 1rem;
+    
   }
 
   .header.page-width,
@@ -3490,7 +3490,7 @@ h3, h2.title.inline-richtext.h2 {
 
 @media screen and (max-width: 750px) {
   .image-with-text-header-rich p:nth-child(2){
-  line-height: 50px;
+  line-height: 40px;
 }
 }
 
