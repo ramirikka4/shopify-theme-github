@@ -82,7 +82,7 @@
               {%- endif -%}
           </div>
 
-                        <div class="secondary-footer-contact-container"> 
+            <div class="secondary-footer-contact-container"> 
                  {%- if block.settings.footer_contact_title != blank -%}
                   <div class="secondary-footer-block-title">{{ block.settings.footer_contact_title }}</div>
                 {%- endif -%}
@@ -122,12 +122,10 @@
                 </div>
               </div>
 
-              <div class="secon-footer-logo-title-container">
-
+        <div class="secon-footer-logo-title-container">
                  {%- if block.settings.footer_social_title != blank -%}
                   <div class="secondary-footer-block-title">{{ block.settings.footer_social_title }}</div>
                 {%- endif -%}
-                
                     <div class="testimonial-logo_container"> 
                       {%- if block.settings.instagram_logo != blank -%} 
                         {{ block.settings.instagram_logo 
@@ -137,11 +135,11 @@
                         {%- endif -%} 
                       </div>
                       {%- if block.settings.instagram != blank -%}
-                        <div class="secondary-footer_description">
-                          {{ block.settings.instagram -}}
-                        </div>
-                      {%- endif -%}
+                      <div class="secondary-footer_description">
+                  {{ block.settings.instagram -}}
                 </div>
+              {%- endif -%}
+          </div>
         </div>
       {%- endfor -%}
     </div>
