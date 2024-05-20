@@ -3484,6 +3484,10 @@ h3, h2.title.inline-richtext.h2 {
   font-family: GothamRounded !important;
 }
 
+.image-with-text-header-rich:nth-child(2){
+  font-family: EditorsNoteItalic !important; 
+}
+
 
 
 
