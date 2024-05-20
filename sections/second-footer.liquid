@@ -49,7 +49,19 @@
 
               {%- if block.settings.description != blank -%}
                 <div class="secondary-footer_description">
-                  {{ block.settings.description -}}
+                  {{ block.settings.phone -}}
+                </div>
+              {%- endif -%}
+
+              {%- if block.settings.description != blank -%}
+                <div class="secondary-footer_description">
+                  {{ block.settings.location -}}
+                </div>
+              {%- endif -%}
+
+              {%- if block.settings.description != blank -%}
+                <div class="secondary-footer_description">
+                  {{ block.settings.instagram -}}
                 </div>
               {%- endif -%}
             </div>
