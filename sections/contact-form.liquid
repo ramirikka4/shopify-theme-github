@@ -37,12 +37,18 @@
 }
 
   form#ContactForm {
-    min-width: 70rem;
+    min-width: 60rem;
   }
 
   .text-area {
     min-height: 15rem;
 }
+
+  @media screen and (max-width: 750px) {
+    form#ContactForm {
+      min-width: 35rem;
+    }
+  }
 {%- endstyle -%}
 
 <div class="color-{{ section.settings.color_scheme }} gradient">
