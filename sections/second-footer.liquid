@@ -102,10 +102,10 @@
           </div>
       {%- endfor -%}
 
-    
-            
-        <div class="secon-footer-logo-title-container">
-                 {%- if block.settings.footer_social_title != blank -%}
+
+      {%- for block in section.blocks -%}
+         <div class="secondary-footer-social-container">
+                {%- if block.settings.footer_social_title != blank -%}
                   <div class="secondary-footer-block-title">{{ block.settings.footer_social_title }}</div>
                 {%- endif -%}
                     <div class="testimonial-logo_container"> 
@@ -122,7 +122,8 @@
                 </div>
               {%- endif -%}
           </div>
-        </div>
+      {%- endfor -%}
+    
     </div>
   
     {%- if section.settings.secondary_footer_information != blank -%}
