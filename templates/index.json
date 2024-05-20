@@ -66,6 +66,9 @@
 
       ],
       "settings": {
+        "add_button": true,
+        "review_button": "<p>SHOP ALL<\/p>",
+        "button_link": "shopify:\/\/collections\/all",
         "title": "FRESH PICKS",
         "heading_size": "h2",
         "description": "<p>Explore our latest bouquets below<\/p>",
@@ -147,6 +150,9 @@
     "featured_collection_GTjPGH": {
       "type": "featured-collection",
       "settings": {
+        "add_button": true,
+        "review_button": "",
+        "button_link": "",
         "title": "BEST SELLERS",
         "heading_size": "h2",
         "description": "<p>Explore our best bouquests below<\/p>",
