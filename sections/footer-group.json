@@ -2,6 +2,20 @@
   "name": "t:sections.footer.name",
   "type": "footer",
   "sections": {
+    "breadcrumb_HaLKAy": {
+      "type": "breadcrumb",
+      "settings": {
+        "breadcrumbs_home_icon_bool": true,
+        "breadcrumb_delimeter": "angle_right",
+        "breadcrumb_bg_color": "#fff",
+        "breadcrumb_text_color": "#465076",
+        "breadcrumb_accent_color_bool": false,
+        "breadcrumb_accent_color": "#4770db",
+        "enable_product_page": false,
+        "enable_collection_page": false,
+        "enable_complete_site": true
+      }
+    },
     "newsletter_dK86Yd": {
       "type": "newsletter",
       "blocks": {
@@ -38,6 +52,7 @@
     }
   },
   "order": [
+    "breadcrumb_HaLKAy",
     "newsletter_dK86Yd"
   ]
 }
