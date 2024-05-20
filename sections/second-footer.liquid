@@ -95,6 +95,12 @@
         </div>
       {%- endfor -%}
     </div>
+  
+    {%- if section.settings.secondary_footer_information != blank -%}
+        <div class="header-line"> 
+          <h3>{{ section.settings.secondary_footer_information }}</h3>
+        </div>
+      {%- endif -%}
 </div>
 
 {% schema %}
