@@ -104,14 +104,14 @@
           "type": "heading",
           "settings": {
             "heading": "<p>Wild Blooms Floral Studio,<\/p><p>We Tell Stories With Flowers<\/p>",
-            "heading_size": "h2"
+            "heading_size": "h1"
           }
         },
         "text_8M4aLd": {
           "type": "text",
           "settings": {
             "text": "<p>Our journey started with a vision of infusing modern aesthetics into our floral designs for our diverse clients, transcending traditional boundaries. Providing top-quality, stunning floral arrangements.<\/p>",
-            "text_style": "body"
+            "text_style": "subtitle"
           }
         },
         "button_gPxDQH": {
@@ -142,8 +142,8 @@
         "mobile_content_alignment": "left",
         "padding_top": 36,
         "padding_bottom": 36,
-        "padding_left": 100,
-        "padding_right": 100,
+        "padding_left": 36,
+        "padding_right": 36,
         "margin": true
       }
     },
