@@ -17,22 +17,18 @@
   }
   }
 
-  @media screen and (min-width: 1020px) {
+   @media screen and (max-width: 1050px) {
     .section-{{ section.id }}-padding {
-      padding-top: {{ section.settings.padding_top }}px;
-      padding-bottom: {{ section.settings.padding_bottom }}px;
-      padding-left: {{ section.settings.padding_left }}px;
-      padding-right: {{ section.settings.padding_right }}px;
-    }
-
-    .ImageWithText--{{ section.id }} .new-page-styles{
-      margin-right: {{ section.settings.margin_right }}px !important;
-      margin-left: {{ section.settings.margin_left }}px !important;
+    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
+    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+    padding-left: 0px;
+    padding-right: 0px;
   }
-
-    .new-page-styles.margin{
-    margin-right: 200px;
-    margin-left: 200px;
+  
+  .image-with-text .section-{{ section.id }} .new-page-styles{
+    margin-left: 0px;
+    margin-right: 0px;
+  }
   }
 
   @media screen and (max-width: 990px) {
