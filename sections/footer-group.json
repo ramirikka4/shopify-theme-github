@@ -47,11 +47,11 @@
         "text_RHD4i6"
       ],
       "settings": {
-        "title": "FOOTER TITLE",
+        "title": "",
         "header_font_size": "30px",
         "section_description": "",
         "sub_header_font_size": "18px",
-        "background": "#ffffff",
+        "background": "#f4f4f4",
         "text_color": "#1c1b1b",
         "section_padding_y": 36,
         "section_padding_x": 0
