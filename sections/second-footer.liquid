@@ -22,6 +22,7 @@
 </style>
 
 <div id="section-{{ section.id }}">  
+  <div>
       {%- for block in section.blocks -%}
         <div class="secondary-footer-content-container" {{ block.shopify_attributes }}>
           <div class="secondary-footer-content-container-inner">
@@ -37,6 +38,7 @@
           </div>
         </div>
       {%- endfor -%}
+    </div>
 </div>
 
 {% schema %}
