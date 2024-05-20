@@ -3486,6 +3486,7 @@ h3, h2.title.inline-richtext.h2 {
 
 .image-with-text-header-rich p:nth-child(2){
   font-family: EditorsNoteItalic !important; 
+  line-height: 2;
 }
 
 
