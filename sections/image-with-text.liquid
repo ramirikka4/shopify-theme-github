@@ -1,6 +1,23 @@
 {{ 'component-image-with-text.css' | asset_url | stylesheet_tag }}
 
 {%- style -%}
+
+  .section-{{ section.id }}-padding {
+      padding-top: {{ section.settings.padding_top }}px;
+      padding-bottom: {{ section.settings.padding_bottom }}px;
+      padding-left: {{ section.settings.padding_left }}px;
+      padding-right: {{ section.settings.padding_right }}px;
+    }
+
+    .ImageWithText--{{ section.id }} .new-page-styles{
+      margin-right: {{ section.settings.margin_right }}px !important;
+      margin-left: {{ section.settings.margin_left }}px !important;
+  }
+
+    .new-page-styles.margin{
+    margin-right: 200px;
+    margin-left: 200px;
+  }
   
 
   @media screen and (max-width: 750px) {
@@ -17,26 +34,6 @@
   }
   }
   
-
-  @media screen and (min-width: 750px) {
-    .section-{{ section.id }}-padding {
-      padding-top: {{ section.settings.padding_top }}px;
-      padding-bottom: {{ section.settings.padding_bottom }}px;
-      padding-left: {{ section.settings.padding_left }}px;
-      padding-right: {{ section.settings.padding_right }}px;
-    }
-
-    .ImageWithText--{{ section.id }} .new-page-styles{
-      margin-right: {{ section.settings.margin_right }}px !important;
-      margin-left: {{ section.settings.margin_left }}px !important;
-  }
-
-    .new-page-styles.margin{
-    margin-right: 200px;
-    margin-left: 200px;
-  }
-
-  }
 
   .image-with-text-header-rich p{
     padding: 0;
