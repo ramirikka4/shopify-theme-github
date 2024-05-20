@@ -25,7 +25,7 @@
       "settings": {
         "image": "shopify:\/\/shop_images\/About_Header_Image.jpg",
         "height": "medium",
-        "desktop_image_width": "large",
+        "desktop_image_width": "medium",
         "layout": "text_first",
         "desktop_content_position": "middle",
         "desktop_content_alignment": "left",
