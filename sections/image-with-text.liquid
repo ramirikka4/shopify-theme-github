@@ -18,20 +18,6 @@
     margin-right: 200px;
     margin-left: 200px;
   }
-
-  @media screen and (max-width: 1200px) {
-    .section-{{ section.id }}-padding {
-    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
-    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
-    padding-left: {{ section.settings.padding_left }}px;
-    padding-right: {{ section.settings.padding_right }}px;
-  }
-  
-  .image-with-text .section-{{ section.id }} .new-page-styles{
-    margin-left: 50px;
-    margin-right: 50px;
-  }
-  }
   
 
   @media screen and (max-width: 750px) {
