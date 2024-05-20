@@ -5,10 +5,10 @@
     "breadcrumb_HaLKAy": {
       "type": "breadcrumb",
       "settings": {
-        "breadcrumbs_home_icon_bool": true,
+        "breadcrumbs_home_icon_bool": false,
         "breadcrumb_delimeter": "angle_right",
         "breadcrumb_bg_color": "#f4f4f4",
-        "breadcrumb_text_color": "#465076",
+        "breadcrumb_text_color": "#121212",
         "breadcrumb_accent_color_bool": false,
         "breadcrumb_accent_color": "#4770db",
         "enable_product_page": false,
