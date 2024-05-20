@@ -108,15 +108,15 @@
         "heading_Ch9XKm": {
           "type": "heading",
           "settings": {
-            "heading": "<p>Tailored Floral Arrangements<\/p><p><em>for Every Unique Event<\/em><\/p>",
-            "heading_size": "h2"
+            "heading": "<p>Tailored Floral Arrangements<\/p><p>for Every Unique Event<\/p>",
+            "heading_size": "h1"
           }
         },
         "text_hyK6rq": {
           "type": "text",
           "settings": {
             "text": "<p>Have a unique event in mind? We cater to all types of events and tailor our floral arrangements to meet your specific needs.<\/p>",
-            "text_style": "body"
+            "text_style": "subtitle"
           }
         },
         "button_E4h3Pp": {
@@ -147,8 +147,8 @@
         "mobile_content_alignment": "left",
         "padding_top": 36,
         "padding_bottom": 36,
-        "padding_left": 100,
-        "padding_right": 100,
+        "padding_left": 36,
+        "padding_right": 36,
         "margin": true
       }
     },
