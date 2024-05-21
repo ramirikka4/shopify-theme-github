@@ -306,7 +306,7 @@
         "background": "#ffffff",
         "text_color": "#121212",
         "section_padding_y": 36,
-        "section_padding_x": 0,
+        "section_padding_x": 100,
         "autoplay": true
       }
     },
