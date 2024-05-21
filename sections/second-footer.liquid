@@ -30,6 +30,7 @@
     flex-direction: row;
     justify-content: center;
     flex-wrap: wrap;
+    align-items
     gap: 60px;
     flex: 1;
   }
@@ -319,7 +320,7 @@
         <!-- Existing footer content -->
         <div class="newsletter-signup">
             <h3 class="newsletter-title">{{ section.settings.newsletter_title }}</h3>
-            <div>{{ section.settings.newsletter_description }}</div>
+            <div class="newsletter-description">{{ section.settings.newsletter_description }}</div>
             <form action="/subscribe" method="post" class="newsletter-form">
                 <div class="input-container">
                     <input type="email" name="email" placeholder="Enter your email" required class="newsletter-input">
