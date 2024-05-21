@@ -102,7 +102,7 @@
             {{
               block.settings.image
               | image_url: width: 1500
-              | image_tag: height: 500, alt: block.settings.image.alt, preload: true
+              | image_tag: height: 400, alt: block.settings.image.alt, preload: true
             }}
           {%- else -%}
             {{ 'logo' | placeholder_svg_tag: 'placeholder-svg' }}
