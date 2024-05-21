@@ -317,8 +317,10 @@
       <div class="secondary-footer-flex-container">
         <!-- Existing footer content -->
         <div class="newsletter-signup">
+          <div class="newsletter-title-container">
             <div class="newsletter-title">{{ section.settings.newsletter_title }}</div>
             <div class="newsletter-description">{{ section.settings.newsletter_description }}</div>
+          </div>
             <form action="/subscribe" method="post" class="newsletter-form">
                 <div class="input-container">
                     <input type="email" name="email" placeholder="Enter your email" required class="newsletter-input">
