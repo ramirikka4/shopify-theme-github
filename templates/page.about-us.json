@@ -1,26 +1,35 @@
 {
   "sections": {
-    "image_with_text_fehBXY": {
-      "type": "image-with-text",
+    "image_with_header_P9nY6r": {
+      "type": "image-with-header",
       "blocks": {
-        "heading_WAyYML": {
+        "heading_fLHgb8": {
           "type": "heading",
           "settings": {
             "heading": "<p>About Us<\/p>",
             "heading_size": "h0"
           }
         },
-        "text_iULLxH": {
+        "text_4D4LVj": {
           "type": "text",
           "settings": {
             "text": "<p>Wild Blooms Floral Studio: Where every bloom tells your story, creating memories that last forever.<\/p>",
             "text_style": "body"
           }
+        },
+        "button_BwCdCi": {
+          "type": "button",
+          "settings": {
+            "button_label": "",
+            "button_link": "",
+            "button_style_secondary": false
+          }
         }
       },
       "block_order": [
-        "heading_WAyYML",
-        "text_iULLxH"
+        "heading_fLHgb8",
+        "text_4D4LVj",
+        "button_BwCdCi"
       ],
       "settings": {
         "image": "shopify:\/\/shop_images\/About_Header_Image.jpg",
@@ -36,7 +45,7 @@
         "mobile_content_alignment": "left",
         "padding_top": 0,
         "padding_bottom": 0,
-        "padding_left": 0,
+        "padding_left": 100,
         "padding_right": 0,
         "margin": false
       }
@@ -247,7 +256,7 @@
     }
   },
   "order": [
-    "image_with_text_fehBXY",
+    "image_with_header_P9nY6r",
     "personal_DxjXeB",
     "image_with_text_6VPEGH",
     "logo_text_dPM8fd",
