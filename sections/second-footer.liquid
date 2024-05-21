@@ -262,6 +262,15 @@
           </div>
       {%- endfor -%}
     </div>
+    
+        <div class="newsletter-signup">
+          <h3 class="newsletter-title">Subscribe to our Newsletter</h3>
+          <form action="/subscribe" method="post" class="newsletter-form">
+              <input type="email" name="email" placeholder="Enter your email" required class="newsletter-input">
+              <button type="submit" class="newsletter-button">Subscribe</button>
+          </form>
+        </div>
+
     </div>
   
     {%- if section.settings.secondary_footer_information != blank -%}
@@ -297,25 +306,17 @@
       "label": "Footer Information"
     },
     {
-      "type": "select",
-      "id": "header_font_size",
-      "label": "Font size",
-      "default": "30px",
-      "options": [
-        {
-          "label": "Small",
-          "value": "20px"
+            "type": "text",
+            "id": "newsletter_title",
+            "label": "Newsletter Title",
+            "default": "Subscribe to our Newsletter"
         },
         {
-          "label": "Medium",
-          "value": "25px"
+            "type": "text",
+            "id": "button_text",
+            "label": "Button Text",
+            "default": "Subscribe"
         },
-        {
-          "label": "Large",
-          "value": "30px"
-        }
-      ]
-    },
     {
       "type": "color",
       "id": "background",
