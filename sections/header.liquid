@@ -76,31 +76,47 @@
       padding-top: 0.5rem;
     }
   }
-</style>
 
-{%- style -%}
   .header {
     padding: {{ section.settings.padding_top | times: 0.5 | round: 0 }}px 3rem {{ section.settings.padding_bottom | times: 0.5 | round: 0 }}px 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
   }
 
-  .section-header {
-    position: sticky; /* This is for fixing a Safari z-index issue. PR #2147 */
-    margin-bottom: {{ section.settings.margin_bottom | times: 0.75 | round: 0 }}px;
+  .header__navigation {
+    display: flex;
+    align-items: center;
   }
 
-  @media screen and (min-width: 750px) {
-    .section-header {
-      margin-bottom: {{ section.settings.margin_bottom }}px;
-    }
+  .header__logo {
+    display: flex;
+    justify-content: center;
+    flex: 1;
   }
 
-  @media screen and (min-width: 990px) {
-    .header {
-      padding-top: {{ section.settings.padding_top }}px;
-      padding-bottom: {{ section.settings.padding_bottom }}px;
-    }
+  .header__menu {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
   }
-{%- endstyle -%}
+
+  .header__menu-left, .header__menu-right {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+  }
+
+  .header__menu-item {
+    margin: 0 1rem;
+  }
+
+  .header__icons {
+    display: flex;
+    align-items: center;
+  }
+</style>
 
 <script src="{{ 'details-disclosure.js' | asset_url }}" defer="defer"></script>
 <script src="{{ 'details-modal.js' | asset_url }}" defer="defer"></script>
@@ -188,55 +204,29 @@
       {%- endif -%}
     {%- endif -%}
 
-    {%- liquid
-      if section.settings.menu != blank
-        if section.settings.menu_type_desktop == 'dropdown'
-          render 'header-dropdown-menu'
-        elsif section.settings.menu_type_desktop != 'drawer'
-          render 'header-mega-menu'
-        endif
-      endif
-    %}
+    <nav class="header__navigation">
+      <ul class="header__menu header__menu-left">
+        {% for link in linklists.main-menu.links limit: 3 %}
+          <li class="header__menu-item">
+            <a href="{{ link.url }}" class="header__menu-link">{{ link.title }}</a>
+          </li>
+        {% endfor %}
+      </ul>
 
-    {%- if section.settings.logo_position == 'middle-center' -%}
-      {%- if request.page_type == 'index' -%}
-        <h1 class="header__heading">
-      {%- endif -%}
-          <a href="{{ routes.root_url }}" class="header__heading-link link link--text focus-inset">
-            {%- if settings.logo != blank -%}
-              <div class="header__heading-logo-wrapper">
-                {%- assign logo_alt = settings.logo.alt | default: shop.name | escape -%}
-                {%- assign logo_height = settings.logo_width | divided_by: settings.logo.aspect_ratio -%}
-                {% capture sizes %}(min-width: 750px) {{ settings.logo_width }}px, 50vw{% endcapture %}
-                {% capture widths %}{{ settings.logo_width }}, {{ settings.logo_width | times: 1.5 | round }}, {{ settings.logo_width | times: 2 }}{% endcapture %}
-                {{ settings.logo | image_url: width: 600 | image_tag:
-                  class: 'header__heading-logo',
-                  widths: widths,
-                  height: logo_height,
-                  width: settings.logo_width,
-                  alt: logo_alt,
-                  sizes: sizes,
-                  preload: true
-                }}
-              </div>
-            {%- else -%}
-              <span class="h2">{{ shop.name }}</span>
-            {%- endif -%}
-          </a>
-      {%- if request.page_type == 'index' -%}
-        </h1>
-      {%- endif -%}
-    {%- endif -%}
+      <div class="header__logo">
+        <a href="{{ shop.url }}">
+          <img src="{{ settings.logo | asset_url }}" alt="{{ shop.name }}">
+        </a>
+      </div>
 
-    {%- liquid
-      if section.settings.menu != blank
-        if section.settings.menu_type_desktop == 'dropdown'
-          render 'header-dropdown-menu'
-        elsif section.settings.menu_type_desktop != 'drawer'
-          render 'sub-nav'
-        endif
-      endif
-    %}
+      <ul class="header__menu header__menu-right">
+        {% for link in linklists.main-menu.links offset: 3 %}
+          <li class="header__menu-item">
+            <a href="{{ link.url }}" class="header__menu-link">{{ link.title }}</a>
+          </li>
+        {% endfor %}
+      </ul>
+    </nav>
 
     <div class="header__icons{% if section.settings.enable_country_selector or section.settings.enable_language_selector %} header__icons--localization header-localization{% endif %}">
       <div class="desktop-localization-wrapper">
@@ -311,8 +301,6 @@
         {%- endif -%}
       </a>
     </div>
-
-    
   </header>
 </{% if section.settings.sticky_header_type != 'none' %}sticky-header{% else %}div{% endif %}>
 
