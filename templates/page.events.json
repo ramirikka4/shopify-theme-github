@@ -6,21 +6,21 @@
         "heading_pethkJ": {
           "type": "heading",
           "settings": {
-            "heading": "",
-            "heading_size": "h1"
+            "heading": "<p>Events<\/p>",
+            "heading_size": "h0"
           }
         },
         "text_WaNheq": {
           "type": "text",
           "settings": {
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "text": "<p>We believe every event deserves to be unforgettable and extraordinary.<\/p>",
             "text_style": "body"
           }
         },
         "button_EJHeAW": {
           "type": "button",
           "settings": {
-            "button_label": "Button label",
+            "button_label": "",
             "button_link": "",
             "button_style_secondary": false
           }
@@ -39,63 +39,13 @@
         "desktop_content_position": "middle",
         "desktop_content_alignment": "left",
         "content_layout": "no-overlap",
-        "section_color_scheme": "",
-        "color_scheme": "",
-        "image_behavior": "none",
-        "mobile_content_alignment": "left",
-        "padding_top": 0,
-        "padding_bottom": 0,
-        "padding_left": 60,
-        "padding_right": 0,
-        "margin": false
-      }
-    },
-    "image_with_text_fehBXY": {
-      "type": "image-with-text",
-      "blocks": {
-        "heading_WAyYML": {
-          "type": "heading",
-          "settings": {
-            "heading": "<p>Events<\/p>",
-            "heading_size": "h0"
-          }
-        },
-        "text_iULLxH": {
-          "type": "text",
-          "settings": {
-            "text": "<p>We believe every event deserves to be unforgettable and extraordinary.<\/p>",
-            "text_style": "body"
-          }
-        },
-        "button_yn6Xyx": {
-          "type": "button",
-          "settings": {
-            "button_label": "",
-            "button_link": "",
-            "button_style_secondary": false
-          }
-        }
-      },
-      "block_order": [
-        "heading_WAyYML",
-        "text_iULLxH",
-        "button_yn6Xyx"
-      ],
-      "settings": {
-        "image": "shopify:\/\/shop_images\/Events_Hero_Image.jpg",
-        "height": "medium",
-        "desktop_image_width": "medium",
-        "layout": "text_first",
-        "desktop_content_position": "middle",
-        "desktop_content_alignment": "left",
-        "content_layout": "no-overlap",
         "section_color_scheme": "scheme-2",
         "color_scheme": "scheme-2",
         "image_behavior": "none",
         "mobile_content_alignment": "left",
         "padding_top": 0,
         "padding_bottom": 0,
-        "padding_left": 0,
+        "padding_left": 60,
         "padding_right": 0,
         "margin": false
       }
@@ -301,7 +251,6 @@
   },
   "order": [
     "image_with_header_WTyTUH",
-    "image_with_text_fehBXY",
     "image_with_line_text_HXjKgA",
     "image_with_line_text_Q6f9jh",
     "image_with_text_KBtgcF",
