@@ -117,6 +117,19 @@
     align-items: center;
   }
 
+  .header__menu-link {
+    color: var(--color-foreground);
+    text-decoration: none;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+    transition: color 0.3s;
+  }
+
+  .header__menu-link:hover,
+  .header__menu-link:focus {
+    color: var(--color-accent);
+  }
+
   /* Add media queries to hide the split menu and show the hamburger menu on mobile */
   @media screen and (max-width: 749px) {
     .header__menu-left,
@@ -129,30 +142,6 @@
     }
   }
 </style>
-
-{%- style -%}
-  .header {
-    padding: {{ section.settings.padding_top | times: 0.5 | round: 0 }}px 3rem {{ section.settings.padding_bottom | times: 0.5 | round: 0 }}px 3rem;
-  }
-
-  .section-header {
-    position: sticky; /* This is for fixing a Safari z-index issue. PR #2147 */
-    margin-bottom: {{ section.settings.margin_bottom | times: 0.75 | round: 0 }}px;
-  }
-
-  @media screen and (min-width: 750px) {
-    .section-header {
-      margin-bottom: {{ section.settings.margin_bottom }}px;
-    }
-  }
-
-  @media screen and (min-width: 990px) {
-    .header {
-      padding-top: {{ section.settings.padding_top }}px;
-      padding-bottom: {{ section.settings.padding_bottom }}px;
-    }
-  }
-{%- endstyle -%}
 
 <script src="{{ 'details-disclosure.js' | asset_url }}" defer="defer"></script>
 <script src="{{ 'details-modal.js' | asset_url }}" defer="defer"></script>
@@ -241,10 +230,10 @@
     {%- endif -%}
 
     <nav class="header__navigation">
-      <ul class="header__menu header__menu-left list-menu list-menu--inline">
+      <ul class="header__menu header__menu-left">
         {% for link in linklists.main-menu.links limit: 3 %}
-          <li class="header__menu-item list-menu__item">
-            <a href="{{ link.url }}" class="header__menu-link list-menu__item--link">{{ link.title }}</a>
+          <li class="header__menu-item">
+            <a href="{{ link.url }}" class="header__menu-link">{{ link.title }}</a>
           </li>
         {% endfor %}
       </ul>
@@ -259,10 +248,10 @@
         </a>
       </div>
 
-      <ul class="header__menu header__menu-right list-menu list-menu--inline">
+      <ul class="header__menu header__menu-right">
         {% for link in linklists.main-menu.links offset: 3 %}
-          <li class="header__menu-item list-menu__item">
-            <a href="{{ link.url }}" class="header__menu-link list-menu__item--link">{{ link.title }}</a>
+          <li class="header__menu-item">
+            <a href="{{ link.url }}" class="header__menu-link">{{ link.title }}</a>
           </li>
         {% endfor %}
       </ul>
