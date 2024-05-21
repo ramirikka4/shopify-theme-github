@@ -58,7 +58,7 @@
               {%- endif -%}
           </div>
           <ul class="menu">
-            {% for link in section.settings.menu.links %}
+            {% for link in block.settings.footer-menu.links %}
               <li class="menu-link">
                 <a href="{{ link.url }}">{{ link.title }}</a>
           
@@ -237,26 +237,6 @@
           "type": "inline_richtext",
           "id": "footer_menu_title",
           "label": "Item Title"
-        },
-        {
-          "type": "select",
-          "id": "font_size",
-          "label": "Font size",
-          "default": "20px",
-          "options": [
-            {
-              "label": "Small",
-              "value": "16px"
-            },
-            {
-              "label": "Medium",
-              "value": "20px"
-            },
-            {
-              "label": "Large",
-              "value": "24px"
-            }
-          ]
         },
         {
           "type": "link_list",
