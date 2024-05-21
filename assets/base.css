@@ -3530,16 +3530,3 @@ h3, h2.title.inline-richtext.h2 {
     scale: 1.1;
   }
 
-
-
-
-.header {
-height: 80px;
-}
-
-.header__inline-menu {
-transform: translateY(-52px);
-}
-.list-menu--inline li:nth-child(4) {
-margin-left: 170px;
-}
