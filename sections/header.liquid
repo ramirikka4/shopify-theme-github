@@ -87,12 +87,13 @@
   .header__navigation {
     display: flex;
     align-items: center;
+    flex: 1;
   }
 
   .header__logo {
     display: flex;
     justify-content: center;
-    flex: 1;
+    flex: 0 0 auto; /* Ensure logo does not shrink */
   }
 
   .header__menu {
@@ -100,12 +101,8 @@
     list-style: none;
     padding: 0;
     margin: 0;
-  }
-
-  .header__menu-left, .header__menu-right {
-    flex: 1;
-    display: flex;
     justify-content: center;
+    flex: 1; /* Ensure menu takes available space */
   }
 
   .header__menu-item {
