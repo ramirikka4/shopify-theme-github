@@ -9,7 +9,6 @@
           "type": "title",
           "settings": {
             "footer_menu_title": "<strong>Flower & Events<\/strong>",
-            "font_size": "20px",
             "footer-menu": "flower-events"
           }
         },
@@ -17,14 +16,34 @@
           "type": "title",
           "settings": {
             "footer_menu_title": "<strong>Our Company<\/strong>",
-            "font_size": "20px",
             "footer-menu": "our-company"
+          }
+        },
+        "text_P6Gdxc": {
+          "type": "text",
+          "settings": {
+            "footer_contact_title": "<strong>Contact Us<\/strong>",
+            "phone": "<p>(702) 836-9236<\/p>",
+            "phone_logo": "shopify:\/\/shop_images\/Phone_Icon_04f6052f-5f22-4840-a6b5-40542181985e.png",
+            "location": "<p>4522 Laguna Vista St<\/p>",
+            "location_logo": "shopify:\/\/shop_images\/Location_Pin_Icon_ac50e50e-5ee0-4d80-841e-bba42da7834b.png",
+            "instagram": ""
+          }
+        },
+        "social_9yHejk": {
+          "type": "social",
+          "settings": {
+            "footer_social_title": "<strong>Follow Us<\/strong>",
+            "instagram": "<p>@bywildblooms<\/p>",
+            "instagram_logo": "shopify:\/\/shop_images\/IG.png"
           }
         }
       },
       "block_order": [
         "title_BxQBG4",
-        "title_C7VXjV"
+        "title_C7VXjV",
+        "text_P6Gdxc",
+        "social_9yHejk"
       ],
       "settings": {
         "secondary_footer_information": "<p><a href=\"https:\/\/google.com\" title=\"https:\/\/google.com\">Privacy Notice | Terms of Use | Accessibility Statement | Site Map <\/a> ©  2024  bywildblooms.com   -  Laguna, LA<\/p>",
