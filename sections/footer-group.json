@@ -2,6 +2,40 @@
   "name": "t:sections.footer.name",
   "type": "footer",
   "sections": {
+    "newsletter_gMGPJE": {
+      "type": "newsletter",
+      "blocks": {
+        "heading_gadVCD": {
+          "type": "heading",
+          "settings": {
+            "heading": "Get Flowers in Your Inbox",
+            "heading_size": "h1"
+          }
+        },
+        "paragraph_xbiY8r": {
+          "type": "paragraph",
+          "settings": {
+            "text": "<p>Be the first to learn about exclusive deals, in-store offers and discounts.<\/p>"
+          }
+        },
+        "email_form_w76LWn": {
+          "type": "email_form",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "heading_gadVCD",
+        "paragraph_xbiY8r",
+        "email_form_w76LWn"
+      ],
+      "settings": {
+        "color_scheme": "scheme-2",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 0
+      }
+    },
     "second_footer_nx69gh": {
       "type": "second-footer",
       "blocks": {
@@ -50,6 +84,7 @@
     }
   },
   "order": [
+    "newsletter_gMGPJE",
     "second_footer_nx69gh"
   ]
 }
