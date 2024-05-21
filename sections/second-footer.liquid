@@ -97,6 +97,12 @@
   <div class="secondary-footer-flex-container"> 
   <div class="secondary-footer-block-container">
 
+    {%- if section.settings.main_footer_menu_title != blank -%}
+        <div class="secondary-footer-information-header"> 
+          {{ section.settings.main_footer_menu_title }}
+        </div>
+      {%- endif -%}
+
      <ul class="secondary-footer-menu">
             {% for link in section.settings.main_footer-menu.links %}
               <li class="menu-link">
