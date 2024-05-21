@@ -233,6 +233,7 @@
                 {%- if block.settings.footer_social_title != blank -%}
                   <div class="secondary-footer-block-title">{{ block.settings.footer_social_title }}</div>
                 {%- endif -%}
+           
                   <div class="secondary-footer-logo-image"> 
                       {%- if block.settings.instagram_logo != blank -%} 
                         {{ block.settings.instagram_logo 
@@ -241,11 +242,13 @@
                         }} 
                         {%- endif -%} 
                     </div>
-                  {%- if block.settings.instagram != blank -%}
-                <div class="secondary-footer_description">
-                  {{ block.settings.instagram -}}
-                </div>
-              {%- endif -%}
+           
+                {%- if block.settings.instagram != blank -%}
+                  <div class="secondary-footer_description">
+                    {{ block.settings.instagram -}}
+                  </div>
+                {%- endif -%}
+           
           </div>
       {%- endfor -%}
     </div>
