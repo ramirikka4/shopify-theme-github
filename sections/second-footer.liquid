@@ -263,12 +263,12 @@
       {%- endfor -%}
     </div>
     
-        <div class="newsletter-signup">
-          <h3 class="newsletter-title">Subscribe to our Newsletter</h3>
-          <form action="/subscribe" method="post" class="newsletter-form">
-              <input type="email" name="email" placeholder="Enter your email" required class="newsletter-input">
-              <button type="submit" class="newsletter-button">Subscribe</button>
-          </form>
+       <div class="newsletter-signup">
+            <h3 class="newsletter-title">{{ section.settings.newsletter_title }}</h3>
+            <form action="/subscribe" method="post" class="newsletter-form">
+                <input type="email" name="email" placeholder="Enter your email" required class="newsletter-input">
+                <button type="submit" class="newsletter-button">{{ section.settings.button_text }}</button>
+            </form>
         </div>
 
     </div>
