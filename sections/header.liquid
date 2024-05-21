@@ -116,6 +116,18 @@
     display: flex;
     align-items: center;
   }
+
+  /* Add media queries to hide the split menu and show the hamburger menu on mobile */
+  @media screen and (max-width: 749px) {
+    .header__menu-left,
+    .header__menu-right {
+      display: none;
+    }
+
+    .header-drawer {
+      display: block;
+    }
+  }
 </style>
 
 <script src="{{ 'details-disclosure.js' | asset_url }}" defer="defer"></script>
