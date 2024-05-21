@@ -95,6 +95,7 @@
     
     <div class="secondary-footer-content-container">
       {%- for block in section.blocks -%}
+        <div>
           <div class="secondary-footer-menu-container"> 
               {%- if block.settings.footer_menu_title != blank -%}
                 <div class="secondary-footer-block-title">{{ block.settings.footer_menu_title }}</div>
@@ -127,6 +128,7 @@
               </li>
             {% endfor %}
           </ul>
+        </div>
       {%- endfor -%}
     </div>
 
