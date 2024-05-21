@@ -1,0 +1,15 @@
+.header__inline-menu {
+position: absolute;
+top: 25%; /* Adjust's verticle position */
+pointer-events: none; /* Disables Menu */
+}
+
+/* Chooses which menu item to target */
+.list-menu--inline li:nth-child(#) { /* Change '#' to the position (number) of the menu item to add the margin after */
+margin-right: 175px; /* Adds a margin to break the menu in half */
+}
+
+/* Activates Menu Buttons */
+.header__menu-item {
+pointer-events: auto;
+}
