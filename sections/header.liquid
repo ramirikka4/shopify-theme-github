@@ -150,6 +150,13 @@
     justify-content: center;
     align-items: center;
   }
+
+  /* Add the padding adjustment */
+  @media screen and (min-width: 990px) {
+    .header:not(.drawer-menu).page-width {
+      padding-left: 12rem;
+    }
+  }
 </style>
 
 <script src="{{ 'details-disclosure.js' | asset_url }}" defer="defer"></script>
