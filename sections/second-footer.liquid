@@ -43,7 +43,10 @@
   .secondary-footer-information-header a{
     margin-right: 5px;
   }
-  
+
+  .secondary-footer-menu{
+    text-decoration: none;
+  }
 </style>
 
 <div id="section-{{ section.id }}">
@@ -57,7 +60,7 @@
                 <div class="secondary-footer-block-title">{{ block.settings.footer_menu_title }}</div>
               {%- endif -%}
           </div>
-          <ul class="menu">
+          <ul class="secondary-footer-menu">
             {% for link in block.settings.footer-menu.links %}
               <li class="menu-link">
                 <a href="{{ link.url }}">{{ link.title }}</a>
