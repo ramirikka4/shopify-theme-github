@@ -253,13 +253,7 @@
       <div class="header__logo">
         <a href="{{ routes.root_url }}">
           {% if settings.logo != blank %}
-            <img src="{{ settings.logo | image_url: width: 300, format: 'pjpg' }}" 
-                 srcset="{{ settings.logo | image_url: width: 150, format: 'pjpg' }} 150w, 
-                         {{ settings.logo | image_url: width: 300, format: 'pjpg' }} 300w, 
-                         {{ settings.logo | image_url: width: 450, format: 'pjpg' }} 450w, 
-                         {{ settings.logo | image_url: width: 600, format: 'pjpg' }} 600w" 
-                 sizes="(max-width: 749px) 150px, 300px" 
-                 alt="{{ settings.logo.alt | escape }}" class="header__heading-logo">
+            <img src="{{ settings.logo | image_url: width: 300 }}" alt="{{ settings.logo.alt | escape }}" class="header__heading-logo">
           {% else %}
             <span class="h2">{{ shop.name }}</span>
           {% endif %}
