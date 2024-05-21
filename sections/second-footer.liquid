@@ -233,16 +233,16 @@
                 {%- if block.settings.footer_social_title != blank -%}
                   <div class="secondary-footer-block-title">{{ block.settings.footer_social_title }}</div>
                 {%- endif -%}
-                    <div class="secondary-footer-logo-image"> 
+                  <div class="secondary-footer-logo-image"> 
                       {%- if block.settings.instagram_logo != blank -%} 
                         {{ block.settings.instagram_logo 
                           | image_url: width: 600
                           | image_tag: height: 50, alt: block.settings.instagram_logo.alt, preload: true
                         }} 
                         {%- endif -%} 
-                      </div>
-                      {%- if block.settings.instagram != blank -%}
-                      <div class="secondary-footer_description">
+                    </div>
+                  {%- if block.settings.instagram != blank -%}
+                <div class="secondary-footer_description">
                   {{ block.settings.instagram -}}
                 </div>
               {%- endif -%}
