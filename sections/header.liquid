@@ -122,7 +122,7 @@
     text-decoration: none;
     padding-bottom: 1rem;
     padding-top: 1rem;
-    transition: color 0.3s;
+    transition: color 0.3s, text-decoration 0.3s;
     font-size: 14px;
     white-space: nowrap; /* Prevent line breaks */
   }
@@ -130,6 +130,7 @@
   .header__menu-link:hover,
   .header__menu-link:focus {
     color: var(--color-accent);
+    text-decoration: underline; /* Add underline on hover */
   }
 
   /* Add media queries to hide the split menu and show the hamburger menu on mobile */
@@ -142,6 +143,15 @@
     .header-drawer {
       display: block;
     }
+  }
+
+  /* Center the announcement bar */
+  .announcement-bar {
+    text-align: center;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 </style>
 
