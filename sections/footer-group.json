@@ -5,13 +5,6 @@
     "second_footer_nx69gh": {
       "type": "second-footer",
       "blocks": {
-        "title_BxQBG4": {
-          "type": "title",
-          "settings": {
-            "footer_menu_title": "<strong>Flower & Events<\/strong>",
-            "footer-menu": "flower-events"
-          }
-        },
         "title_C7VXjV": {
           "type": "title",
           "settings": {
@@ -40,12 +33,13 @@
         }
       },
       "block_order": [
-        "title_BxQBG4",
         "title_C7VXjV",
         "text_P6Gdxc",
         "social_9yHejk"
       ],
       "settings": {
+        "main_footer_menu_title": "",
+        "main_footer-menu": "flower-events",
         "secondary_footer_information": "<p><a href=\"https:\/\/google.com\" title=\"https:\/\/google.com\">Privacy Notice | Terms of Use | Accessibility Statement | Site Map <\/a> ©  2024  bywildblooms.com   -  Laguna, LA<\/p>",
         "header_font_size": "30px",
         "background": "#f4f4f4",
